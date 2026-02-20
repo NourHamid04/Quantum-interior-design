@@ -1,0 +1,382 @@
+/* ================================
+   Mission Statement - Luxury Style
+================================ */
+
+/* Section Background */
+.mission-section {
+  background: #f5f3ef; /* soft luxury beige */
+  padding: 120px 0;
+}
+
+/* Subtitle */
+.mission-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #8b5e3c; /* warm brown */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Main Heading */
+.mission-title {
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* Quote Text */
+.mission-quote {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  color: #8b5e3c;
+  font-weight: 400;
+  position: relative;
+}
+
+/* Decorative Left Line */
+.mission-quote::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  height: 80%;
+  width: 3px;
+  background: #8b5e3c;
+}
+
+/* Button */
+.btn-mission {
+  font-family: 'Cinzel', serif;
+  background: transparent;
+  border: 1px solid #8b5e3c;
+  color: #8b5e3c;
+  padding: 14px 32px;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.btn-mission:hover {
+  background: #8b5e3c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mission-title {
+    font-size: 32px;
+  }
+
+  .mission-quote {
+    font-size: 18px;
+  }
+
+  .mission-quote::before {
+    display: none;
+  }
+}
+
+
+
+/* =========================================
+   MAX PREMIUM VIDEO HERO (Cinematic / Luxury)
+   Works on desktop + mobile (iOS friendly)
+========================================= */
+/* ===============================
+   HERO VIDEO (Premium Fit System)
+   - BG video: cover + blur (fills)
+   - Main video: contain (no crop)
+================================ */
+
+.video-hero{
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+  background: #ffffff;
+  isolation: isolate;
+}
+
+/* Background blurred video (fills the screen) */
+.hero-video-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(18px) brightness(0.65) saturate(1.1);
+  transform: scale(1.15); /* prevents blur edges */
+  z-index: 0;
+}
+
+/* Main video (shows the whole frame) */
+.hero-video{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;          /* ✅ Desktop: fill, no side bars */
+  object-position: center;    /* adjust if needed */
+
+  z-index: 1;
+  background: transparent;
+}
+
+/* Overlay to unify tone / luxury feel */
+.video-overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 60% at 50% 40%, rgb(0, 0, 0) 0%, rgba(127, 76, 39, 0.361) 0%),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(250, 250, 250, 0) 35%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (max-width: 768px){
+
+  .video-hero{
+    background: #ddbfa4; /* same beige tone as your video */
+  }
+
+  .hero-video{
+    object-fit: contain;   
+    object-position: center;
+    background: transparent;
+  }
+
+  .hero-video-bg{
+    display: none; /* remove blur layer on mobile */
+  }
+
+  .video-overlay{
+    background:
+      radial-gradient(
+        70% 60% at 50% 40%,
+        rgba(139, 94, 60, 0.342) 0%,
+        rgba(139, 94, 60, 0.25) 100%
+      );
+  }
+
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .hero-video-bg, .hero-video{ animation: none; }
+}
+
+
+/* ================================
+   QID Story Section (Luxury Brand)
+================================ */
+
+.qid-story-section{
+  background: #f5f3ef; /* same luxury beige as mission */
+  padding: 110px 0;
+}
+
+.qid-story-head{
+  margin-bottom: 40px;
+}
+
+.qid-story-subtitle{
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.qid-story-title{
+  font-family: 'Cinzel', serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Card / content block */
+.qid-story-card{
+  background: rgba(139, 94, 60, 0.06);
+  border-left: 4px solid #8b5e3c;
+  padding: 38px 40px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.qid-story-card p{
+  font-family: 'Cinzel', serif;
+  color: rgba(139, 94, 60, 0.95);
+  font-size: 18px;
+  line-height: 1.95;
+  margin-bottom: 22px;
+  font-weight: 400;
+}
+
+/* Optional: make the “2014 / 2025” pop slightly */
+.qid-story-card p strong{
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .qid-story-section{
+    padding: 80px 0;
+  }
+
+  .qid-story-title{
+    font-size: 30px;
+  }
+
+  .qid-story-card{
+    padding: 26px 22px;
+    border-left-width: 3px;
+  }
+
+  .qid-story-card p{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+
+
+/* ==================================
+   Services Section (QID Luxury Style)
+================================== */
+
+/* ==================================
+   Services Section (QID Luxury Style)
+================================== */
+
+.services-qid-section{
+  background: #f5f3ef;
+}
+
+/* Create the gap between the two columns safely */
+
+
+/* Image block */
+.services-img{
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: #f5f3ef; /* ✅ use color without killing background-image */
+
+  overflow: hidden;
+}
+/* Optional overlay for luxury depth */
+
+
+/* Content block */
+.services-content{
+  height: 100%;
+  background: #f5f3ef;
+
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading */
+
+
+.services-subtitle{
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.services-title{
+  font-family: 'Cinzel', serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+/* List */
+.services-list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.services-list li{
+  font-family: 'Cinzel', serif;
+  color: rgba(139,94,60,0.95);
+  font-size: 18px;
+  line-height: 2.0;
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* Bullet */
+.services-bullet{
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8b5e3c;
+  border-radius: 50%;
+  margin-top: 10px;
+  flex: 0 0 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .services-qid-section{
+    padding: 80px 0;
+  }
+
+  .services-img{
+    min-height: 280px;
+    margin-bottom: 18px;
+  }
+
+  .services-content{
+    padding: 34px 22px;
+  }
+
+  .services-title{
+    font-size: 28px;
+  }
+
+  .services-list li{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
