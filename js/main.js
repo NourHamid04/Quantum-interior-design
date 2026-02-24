@@ -285,4 +285,46 @@
       autoclose: true,
     });
   }
+
+
+
+$(".home-slider").owlCarousel({
+  loop: true,
+  items: 1,
+
+  // ✅ manual only
+  autoplay: false,
+  autoplayHoverPause: false,
+
+  // ✅ show navigation buttons
+  nav: true,
+  dots: true,
+
+  // optional: keep your fade design
+  animateOut: "fadeOut",
+  animateIn: "fadeIn",
+
+  // optional: allow drag (or keep disabled)
+  touchDrag: true,
+  mouseDrag: true,
+  pullDrag: true,
+  freeDrag: false,
+
+  navText: [
+    "<span class='ion-ios-arrow-back'></span>",
+    "<span class='ion-ios-arrow-forward'></span>",
+  ],
+
+  responsive: {
+    0: { items: 1 },
+    600: { items: 1 },
+    1000: { items: 1 },
+  },
+});
+
+
+
+
+
+
 })(jQuery);

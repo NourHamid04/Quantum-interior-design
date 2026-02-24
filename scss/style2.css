@@ -380,3 +380,570 @@
     line-height: 1.85;
   }
 }
+
+
+/* ==========================
+   Navbar Brand (QID Luxury)
+========================== */
+
+.qid-brand{
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Main brand word */
+.qid-brand-main{
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #8b5e3c !important; /* company profile brown */
+}
+
+/* Small subtitle */
+.qid-brand-sub{
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba(139, 94, 60, 0.75);
+  margin-top: 4px;
+}
+
+/* If navbar becomes dark, ensure brand stays visible */
+.ftco-navbar-light .navbar-brand.qid-brand:hover .qid-brand-main{
+  color: #a8764d !important;
+}
+
+/* Mobile sizing */
+@media (max-width: 768px){
+  .qid-brand-main{
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  .qid-brand-sub{
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}
+#ftco-navbar .nav-link{
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgba(255,255,255,0.85) !important;
+}
+
+#ftco-navbar .nav-link{
+  color: #7d5232 !important;
+}
+
+/* ===============================
+   QID Hero Button (Luxury Style)
+================================ */
+
+.qid-btn{
+  position: relative;
+  display: inline-block;
+  padding: 14px 34px;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #8b5e3c;
+  background: transparent;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* Brown fill animation */
+.qid-btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #8b5e3c;
+  z-index: -1;
+  transition: height 0.35s ease;
+}
+
+.qid-btn:hover::before{
+  height: 100%;
+}
+
+.qid-btn:hover{
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+/* Small animated underline accent */
+.qid-btn-line{
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #ffffff;
+  margin-top: 6px;
+  transition: width 0.35s ease;
+}
+
+.qid-btn:hover .qid-btn-line{
+  width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .qid-btn{
+    font-size: 12px;
+    padding: 12px 24px;
+  }
+}
+
+
+/* =========================================
+   QID Services Cards (Luxury / Profile Style)
+========================================= */
+
+.qid-services-cards{
+  background: #f5f3ef; /* luxury beige */
+  padding: 110px 0;
+}
+
+/* Section header */
+.qid-subtitle{
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.qid-title{
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+/* Card */
+.qid-card{
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(139,94,60,0.12);
+  padding: 46px 34px;
+  border-radius: 4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.04);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle top accent line */
+.qid-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(139,94,60,0.55);
+  transform: scaleX(0.25);
+  transform-origin: left;
+  transition: transform .35s ease;
+}
+
+.qid-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.08);
+  border-color: rgba(139,94,60,0.22);
+}
+
+.qid-card:hover::before{
+  transform: scaleX(1);
+}
+
+/* Icon */
+.qid-icon{
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(139,94,60,0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  background: rgba(139,94,60,0.06);
+}
+
+.qid-icon span{
+  font-size: 26px;
+  color: #8b5e3c;
+}
+
+/* Text */
+.qid-heading{
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8b5e3c;
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+
+.qid-text{
+  color: rgba(60,40,25,0.78);
+  font-size: 15.5px;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .qid-services-cards{ padding: 80px 0; }
+  .qid-title{ font-size: 28px; }
+  .qid-card{ padding: 34px 22px; }
+}
+
+
+
+/* =========================================
+   QID Mini Services (3 Cards) — Profile Look
+========================================= */
+
+.qid-services-mini{
+  background: #f5f3ef; /* luxury beige */
+  padding: 90px 0;
+}
+
+/* Card styling without breaking the template */
+.qid-mini-card{
+  background: #ffffff;
+  border: 1px solid rgba(139,94,60,0.14);
+  border-radius: 4px;
+  padding: 42px 28px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.04);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* top accent line */
+.qid-mini-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(139,94,60,0.65);
+  transform: scaleX(0.25);
+  transform-origin: left;
+  transition: transform .35s ease;
+}
+
+.qid-mini-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.08);
+  border-color: rgba(139,94,60,0.25);
+}
+
+.qid-mini-card:hover::before{
+  transform: scaleX(1);
+}
+
+/* Icon circle */
+.qid-mini-icon{
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid rgba(139,94,60,0.35);
+  background: rgba(139,94,60,0.07);
+}
+
+.qid-mini-icon span{
+  font-size: 28px;
+  color: #8b5e3c;
+}
+
+/* Headings + text */
+.qid-mini-heading{
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #8b5e3c;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.qid-mini-text{
+  color: rgba(60,40,25,0.78);
+  font-size: 15.5px;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+  .qid-services-mini{
+    padding: 70px 0;
+  }
+  .qid-mini-card{
+    padding: 34px 22px;
+  }
+  .qid-mini-heading{
+    font-size: 15px;
+  }
+  .qid-mini-text{
+    font-size: 15px;
+  }
+}
+
+
+/* ==============================
+   QID Typography & Color Override
+   (NO layout changes)
+============================== */
+
+/* Section background */
+.ftco-services{
+  background-color: #f5f3ef !important; /* luxury beige */
+}
+
+/* Icon color only */
+.ftco-services .icon span{
+  color: #8b5e3c !important;
+}
+
+/* Headings */
+.ftco-services .heading{
+  font-family: 'Cinzel', serif !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #8b5e3c !important;
+}
+
+/* Paragraph text */
+.ftco-services p{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.80) !important;
+}
+
+
+.home-slider { display:block; }
+.home-slider .slider-item { display:none; }
+.home-slider .slider-item:first-child { display:block; } /* show first slide quickly */
+.home-slider.owl-loaded .slider-item { display:block; }  /* once owl ready, show all */
+
+
+
+.home-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.home-slider .owl-nav button {
+  pointer-events: all;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.45) !important;
+  background: rgba(0,0,0,.25) !important;
+  color: #fff !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-slider .owl-nav .owl-prev { position: absolute; left: 20px; }
+.home-slider .owl-nav .owl-next { position: absolute; right: 20px; }
+
+.home-slider .owl-dots {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.home-slider .owl-dot span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(255,255,255,.6);
+  background: transparent;
+}
+.home-slider .owl-dot.active span {
+  background: rgba(255,255,255,.85);
+}
+
+
+
+
+.carousel-item,
+.slider-item {
+  height: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon::after {
+  content: "‹";
+  font-size: 26px;
+  color: #fff;
+}
+
+.carousel-control-next-icon::after {
+  content: "›";
+  font-size: 26px;
+  color: #fff;
+}
+
+
+
+/* HERO TEXT STYLE */
+.carousel-item h3 {
+  font-family: 'Cinzel', serif !important;
+  font-weight: 600;
+  font-size: 52px;
+  letter-spacing: 1px;
+  color: #8b5e3c !important;
+  line-height: 1.2;
+}
+
+.carousel-item p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Keep content vertically centered */
+.slider-text {
+  height: 100vh;
+}
+
+
+.qid-btn {
+  position: relative;
+  display: inline-block;
+  padding: 14px 34px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: transparent;
+  transition: all .4s ease;
+}
+
+.qid-btn:hover {
+  background: #8b5e3c !important;
+;
+  color: #fff;
+  text-decoration: none;
+}
+
+.qid-btn-line {
+  display: block;
+  height: 1px;
+  width: 0;
+  background: #fff;
+  margin-top: 6px;
+  transition: width .4s ease;
+}
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 80px;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease;
+}
+
+.carousel-control-prev-icon::after {
+  content: "‹";
+  font-size: 28px;
+  color: #fff;
+}
+
+.carousel-control-next-icon::after {
+  content: "›";
+  font-size: 28px;
+  color: #fff;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background: #fff;
+  border-color: #fff;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon::after,
+.carousel-control-next:hover .carousel-control-next-icon::after {
+  color: #111;
+}
