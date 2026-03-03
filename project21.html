@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quantum | Retail / Salon — Project #021</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/style2.css" />
+
+    <!-- Page-specific styling (only for this detail page) -->
+    <style>
+           :root{
+        --qid-brown:#996D54;
+        --qid-beige:#EBE2DD;
+        --qid-gray:#676668;
+        --qid-charcoal:#414042;
+      }
+
+      /* Hero (project detail) */
+      .qid-project-hero{
+        position: relative;
+        min-height: 70vh;
+        display:flex;
+        align-items:center;
+        background-size: cover;
+        background-position: center;
+        background-repeat:no-repeat;
+      }
+      .qid-project-hero .overlay{
+        background: rgba(0,0,0,0.45);
+      }
+      .qid-hero-card{
+        background: rgba(235,226,221,0.92);
+        border: 1px solid rgba(153,109,84,0.18);
+        border-radius: 6px;
+        padding: 34px 34px;
+        box-shadow: 0 30px 70px rgba(0,0,0,0.10);
+      }
+      .qid-kicker{
+        font-family: 'Cinzel', serif;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: var(--qid-brown);
+        margin-bottom: 10px;
+        display:inline-block;
+      }
+      .qid-hero-title{
+        font-family: 'Cinzel', serif;
+        color: var(--qid-charcoal);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 1.15;
+        margin: 0 0 14px;
+      }
+      .qid-hero-sub{
+        color: rgba(65,64,66,0.85);
+        margin: 0 0 18px;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+      .qid-breadcrumbs{
+        margin: 0;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family:'Cinzel', serif;
+      }
+      .qid-breadcrumbs a{ color: var(--qid-brown); }
+      .qid-breadcrumbs span{ color: rgba(65,64,66,0.75); }
+
+      /* Overview section */
+      .qid-project-overview{
+        background: var(--qid-beige);
+      }
+      .qid-section-head .qid-subtitle{
+        font-family: 'Cinzel', serif;
+        font-size: 13px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--qid-brown);
+        display:inline-block;
+        margin-bottom: 14px;
+      }
+      .qid-section-head .qid-title{
+        font-family: 'Cinzel', serif;
+        font-size: 38px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--qid-brown);
+        font-weight: 500;
+        margin: 0;
+      }
+
+      .qid-facts{
+        background: #fff;
+        border: 1px solid rgba(153,109,84,0.14);
+        border-radius: 6px;
+        padding: 26px 26px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.04);
+      }
+      .qid-fact{
+        display:flex;
+        gap: 18px;
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+      }
+      .qid-fact:last-child{ border-bottom: none; }
+      .qid-fact .label{
+        min-width: 140px;
+        font-family:'Cinzel', serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(65,64,66,0.75);
+        font-size: 12px;
+      }
+      .qid-fact .value{
+        color: rgba(65,64,66,0.90);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .qid-block{
+        background: rgba(153,109,84,0.06);
+        border-left: 4px solid var(--qid-brown);
+        border-radius: 6px;
+        padding: 24px 24px;
+      }
+      .qid-block h3{
+        font-family:'Cinzel', serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--qid-brown);
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      .qid-block p{
+        margin: 0;
+        color: rgba(65,64,66,0.85);
+        line-height: 1.9;
+      }
+      .qid-list{
+        list-style:none;
+        padding: 0;
+        margin: 16px 0 0;
+      }
+      .qid-list li{
+        display:flex;
+        gap: 12px;
+        padding: 10px 0;
+        color: rgba(65,64,66,0.85);
+      }
+      .qid-dot{
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--qid-brown);
+        border-radius: 50%;
+        margin-top: 8px;
+        flex: 0 0 10px;
+      }
+
+      /* Gallery */
+      .qid-gallery-head{
+        background: #f5f3ef;
+      }
+      .qid-gallery .project{
+        border-radius: 6px;
+        overflow:hidden;
+      }
+      .qid-gallery .project .text{
+        background: rgba(0,0,0,0.45);
+      }
+      .qid-gallery .project .text h3{
+        font-family:'Cinzel', serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin: 0;
+      }
+
+      /* CTA */
+      .qid-cta{
+        background: #f5f3ef;
+      }
+      .qid-cta-card{
+        background: #fff;
+        border: 1px solid rgba(153,109,84,0.14);
+        border-radius: 6px;
+        padding: 28px 28px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.04);
+      }
+
+      @media (max-width: 768px){
+        .qid-project-hero{ min-height: 75vh; }
+        .qid-hero-title{ font-size: 22px; }
+        .qid-section-head .qid-title{ font-size: 28px; }
+      }
+      /* ============ NAVBAR OVERLAP FIX (ALL DEVICES + ZOOM) ============ */
+    nav ul li{
+        display: none;
+    }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand qid-brand" href="index.html">
+          <span class="qid-brand-main">QUANTUM</span>
+          <span class="qid-brand-sub">INTERIOR DESIGN</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+          aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#mission" class="nav-link">About</a></li>
+            <li class="nav-item active"><a href="project.html" class="nav-link">Project</a></li>
+            <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <!-- HERO -->
+    <!-- Replace background-image with your real cover photo for Project #021 -->
+    <section class="qid-project-hero" style="background-image:url('images/image_2.jpg');">
+      <div class="overlay"></div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="qid-hero-card ftco-animate">
+              <span class="qid-kicker">Retail / Salon</span>
+              <h1 class="qid-hero-title">Project #021</h1>
+
+              <p class="qid-hero-sub">
+                Design &amp; build delivery for a retail/salon environment—focused on clean customer flow, brand presence, and controlled execution from approvals to handover.
+              </p>
+
+              <p class="qid-breadcrumbs">
+                <span class="mr-2"><a href="index.html">Home</a></span>
+                <span class="mr-2">/</span>
+                <span class="mr-2"><a href="projects-retail.html">Retail</a></span>
+                <span class="mr-2">/</span>
+                <span>Project #021</span>
+              </p>
+
+              <a href="javascript:history.back()" class="btn btn-mission mt-3 mr-2">Back</a>
+              <a href="#gallery" class="btn btn-mission mt-3">View Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="ftco-section qid-project-overview">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center ftco-animate qid-section-head">
+            <span class="qid-subtitle">Case Study</span>
+            <h2 class="qid-title">Retail / Salon — DIFC</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Facts -->
+          <div class="col-lg-5 ftco-animate">
+            <div class="qid-facts">
+              <div class="qid-fact">
+                <div class="label">Project</div>
+                <div class="value">#021 — Retail / Salon</div>
+              </div>
+              <div class="qid-fact">
+                <div class="label">Project Size</div>
+                <div class="value">340 sqm</div>
+              </div>
+              <div class="qid-fact">
+                <div class="label">Location</div>
+                <div class="value">DIFC, Dubai</div>
+              </div>
+              <div class="qid-fact">
+                <div class="label">Duration</div>
+                <div class="value">1 month design + 2 months execution</div>
+              </div>
+              <div class="qid-fact">
+                <div class="label">Scope</div>
+                <div class="value">Design &amp; Build</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative -->
+          <div class="col-lg-7 ftco-animate">
+            <div class="qid-block mb-4">
+              <h3>Project Summary</h3>
+              <p>
+                Project #021 is a retail/salon fit-out in DIFC delivered under a design &amp; build scope.
+                The work prioritized efficient zoning, customer journey clarity, and a clean premium finish—managed through a structured timeline across design and execution.
+              </p>
+            </div>
+
+            <div class="qid-block">
+              <h3>Key Deliverables</h3>
+              <ul class="qid-list">
+                <li><span class="qid-dot"></span>Design development aligned with brand identity and operational layout</li>
+                <li><span class="qid-dot"></span>Authority approvals support and coordination</li>
+                <li><span class="qid-dot"></span>Full execution management: trades, finishes, and site control</li>
+                <li><span class="qid-dot"></span>Quality checks, snagging, and final handover</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="ftco-section qid-gallery-head" id="gallery">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-10 text-center ftco-animate qid-section-head">
+            <span class="qid-subtitle">Gallery</span>
+            <h2 class="qid-title">Project Photos</h2>
+            <p style="max-width:860px;margin:18px auto 0;color:rgba(65,64,66,0.85);line-height:1.9;">
+               real photos for Project #021. Clicking any image opens a full-size preview.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid qid-gallery">
+        <div class="row no-gutters">
+          <!-- Replace placeholders with Project #021 photos -->
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/9.jpg" class="img-fluid" alt="Project #021 Photo 01" />
+              <div class="text"><h3>Photo 01</h3></div>
+              <a href="images/9.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/10.jpg" class="img-fluid" alt="Project #021 Photo 02" />
+              <div class="text"><h3>Photo 02</h3></div>
+              <a href="images/10.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/11.jpg" class="img-fluid" alt="Project #021 Photo 03" />
+              <div class="text"><h3>Photo 03</h3></div>
+              <a href="images/11.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/work-4.jpg" class="img-fluid" alt="Project #021 Photo 04" />
+              <div class="text"><h3>Photo 04</h3></div>
+              <a href="images/work-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/work-5.jpg" class="img-fluid" alt="Project #021 Photo 05" />
+              <div class="text"><h3>Photo 05</h3></div>
+              <a href="images/work-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/work-6.jpg" class="img-fluid" alt="Project #021 Photo 06" />
+              <div class="text"><h3>Photo 06</h3></div>
+              <a href="images/work-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/work-7.jpg" class="img-fluid" alt="Project #021 Photo 07" />
+              <div class="text"><h3>Photo 07</h3></div>
+              <a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="project">
+              <img src="images/work-8.jpg" class="img-fluid" alt="Project #021 Photo 08" />
+              <div class="text"><h3>Photo 08</h3></div>
+              <a href="images/work-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                <span class="icon-expand"></span>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ftco-section qid-cta">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 ftco-animate">
+            <div class="qid-cta-card text-center">
+              <span class="qid-kicker">Next Step</span>
+              <h2 class="qid-hero-title" style="font-size:30px;margin-bottom:10px;">Plan Your Retail Fit-Out</h2>
+              <p class="qid-hero-sub" style="max-width:760px;margin:0 auto 18px;">
+                If you’re launching a retail or salon space and need a design &amp; build partner with structured delivery and premium detailing, Quantum can support your project end-to-end.
+              </p>
+              <!-- <a href="contact.html" class="btn btn-mission">Request Consultation</a>
+              <a href="projects-retail.html" class="btn btn-mission ml-2">Back to Category</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quantum</h2>
+              <p>High-performance interior fit-out delivery through design intelligence, technical expertise, and disciplined execution.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#mission">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Turnkey Interior Projects</a></li>
+                <li><a href="#">Design &amp; Build Projects</a></li>
+                <li><a href="#">Renovations</a></li>
+                <li><a href="#">Project Management Solutions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">DIFC, Dubai</span></li>
+                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+00 000 000 000</span></a></li>
+                  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |
+              This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
