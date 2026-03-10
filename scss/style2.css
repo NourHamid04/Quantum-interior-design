@@ -1,61 +1,146 @@
 /* ================================
-   Mission Statement - Luxury Style
+   Mission Statement - Brand Luxury
 ================================ */
 
-/* Section Background */
-.mission-section {
-  background: #EBE2DD; /* soft luxury beige */
-  padding: 120px 0;
+.mission-section{
+  background: #916349;
+  padding: 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle luxury overlay */
+.mission-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.06), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(0,0,0,0.12), transparent 45%);
+  pointer-events:none;
 }
 
 /* Subtitle */
-.mission-subtitle {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #996D54; /* warm brown */
-  display: inline-block;
-  margin-bottom: 20px;
+.mission-subtitle{
+  font-family:'Cormorant Garamond', serif;
+  font-size:14px;
+  letter-spacing:6px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.85);
+  display:inline-block;
+  margin-bottom:20px;
 }
 
 /* Main Heading */
-.mission-title {
-  font-family: 'Cinzel', serif;
-  font-size: 48px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #996D54;
-  margin-bottom: 40px;
-  font-weight: 500;
+.mission-title{
+
+
+
+
+
+
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#ffffff;
+  margin-bottom:40px;
+  font-weight:500;
+  position:relative;
+
+
+  font-family: ' Cormorant Garamond', serif;
+font-weight: 500;
+letter-spacing: 6px;
+text-transform: uppercase;
+}
+
+/* decorative underline */
+.mission-title::after{
+  content:"";
+  display:block;
+  width:70px;
+  height:2px;
+  background:rgba(255,255,255,0.6);
+  margin:18px auto 0;
 }
 
 /* Quote Text */
-.mission-quote {
-  font-family: 'Cinzel', serif;
-  font-size: 24px;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto 50px;
-  color: #996D54;
-  font-weight: 400;
-  position: relative;
+.mission-quote{
+  font-family:' Cormorant Garamond', serif;
+  font-size:24px;
+  line-height:1.9;
+  max-width:820px;
+  margin:0 auto 50px;
+  color:rgba(255,255,255,0.95);
+  font-weight:400;
+  position:relative;
+  padding:0 30px;
 }
 
-/* Decorative Left Line */
-.mission-quote::before {
-  content: "";
-  position: absolute;
-  left: -40px;
-  top: 10px;
-  height: 80%;
-  width: 3px;
-  background: #996D54;
+/* decorative quote marks */
+.mission-quote::before{
+  content:"“";
+  position:absolute;
+  left:-10px;
+  top:-20px;
+  font-size:70px;
+  color:rgba(255,255,255,0.2);
+  font-family:' Cormorant Garamond', serif;
+}
+
+.mission-quote::after{
+  content:"”";
+  position:absolute;
+  right:-10px;
+  bottom:-20px;
+  font-size:70px;
+  color:rgba(255,255,255,0.2);
+  font-family:' Cormorant Garamond', serif;
 }
 
 /* Button */
+.mission-section .btn-mission{
+  font-family:' Cormorant Garamond', serif;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.7);
+  color:#ffffff;
+  padding:14px 34px;
+  border-radius:0;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:14px;
+  transition:all .35s ease;
+}
+
+/* Hover */
+.mission-section .btn-mission:hover{
+  background:#ffffff;
+  color:#996D54;
+  border-color:#ffffff;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+  .mission-title{
+    font-size:34px;
+  }
+
+  .mission-quote{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .mission-quote::before,
+  .mission-quote::after{
+    display:none;
+  }
+}
+
+
+
+/* Button */
 .btn-mission {
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   background: transparent;
   border: 1px solid #996D54;
   color: #996D54;
@@ -66,31 +151,12 @@
   font-size: 14px;
   transition: all 0.3s ease;
 }
-
 /* Button Hover */
 .btn-mission:hover {
   background: #996D54;
   color: #ffffff;
   text-decoration: none;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .mission-title {
-    font-size: 32px;
-  }
-
-  .mission-quote {
-    font-size: 18px;
-  }
-
-  .mission-quote::before {
-    display: none;
-  }
-}
-
-
-
 /* =========================================
    MAX PREMIUM VIDEO HERO (Cinematic / Luxury)
    Works on desktop + mobile (iOS friendly)
@@ -195,7 +261,7 @@
 }
 
 .qid-story-subtitle{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 24px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -205,7 +271,7 @@
 }
 
 .qid-story-title{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 42px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -224,7 +290,7 @@
 }
 
 .qid-story-card p{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   color: rgba(139, 94, 60, 0.95);
   font-size: 18px;
   line-height: 1.95;
@@ -307,7 +373,7 @@
 
 
 .services-subtitle{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 24px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -317,8 +383,8 @@
 }
 
 .services-title{
-  font-family: 'Cinzel', serif;
-  font-size: 42px;
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 32px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #996D54;
@@ -335,7 +401,7 @@
 }
 
 .services-list li{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   color: rgba(139,94,60,0.95);
   font-size: 18px;
   line-height: 2.0;
@@ -396,7 +462,7 @@
 
 /* Main brand word */
 .qid-brand-main{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-weight: 600;
   letter-spacing: 5px;
   font-size: 22px;
@@ -406,7 +472,7 @@
 
 /* Small subtitle */
 .qid-brand-sub{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-weight: 400;
   letter-spacing: 3px;
   font-size: 10px;
@@ -432,7 +498,7 @@
   }
 }
 #ftco-navbar .nav-link{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 13px;
@@ -451,7 +517,7 @@
   position: relative;
   display: inline-block;
   padding: 14px 34px;
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 13px;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -520,7 +586,7 @@
 
 /* Section header */
 .qid-subtitle{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 13px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -530,7 +596,7 @@
 }
 
 .qid-title{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -597,7 +663,7 @@
 
 /* Text */
 .qid-heading{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -684,7 +750,7 @@
 
 /* Headings + text */
 .qid-mini-heading{
-  font-family: 'Cinzel', serif;
+  font-family: ' Cormorant Garamond', serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -734,7 +800,7 @@
 
 /* Headings */
 .ftco-services .heading{
-  font-family: 'Cinzel', serif !important;
+  font-family: ' Cormorant Garamond', serif !important;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -849,7 +915,7 @@
 
 /* HERO TEXT STYLE */
 .carousel-item h3 {
-  font-family: 'Cinzel', serif !important;
+  font-family: ' Cormorant Garamond', serif !important;
   font-weight: 600;
   font-size: 52px;
   letter-spacing: 1px;
@@ -974,3 +1040,960 @@
   margin-top: auto;     /* pushes button to bottom */
   align-self: center;   /* keeps it centered */
 }
+
+
+
+/* ================================
+   QID Story Section
+   Matching Services Section Style
+================================ */
+
+.qid-story-section{
+  background: #f5f3ef;
+  padding: 110px 0;
+}
+
+.qid-story-row{
+  align-items: stretch;
+}
+
+/* Text side */
+.qid-story-content{
+  height: 100%;
+  background: #f5f3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+/* heading style aligned with services */
+.qid-story-head{
+  margin-bottom: 30px;
+}
+
+.qid-story-title{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #996D54;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+/* text card */
+.qid-story-card{
+  background: rgba(139, 94, 60, 0.06);
+  border-left: 3px solid #996D54;
+  padding: 34px 30px;
+}
+
+.qid-story-card p{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.82);
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+
+.qid-story-card p strong{
+  font-family: ' Cormorant Garamond', serif;
+  color: #996D54;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Image side */
+.qid-story-image{
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.qid-story-image-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.12), rgba(0,0,0,0.03));
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .qid-story-section{
+    padding: 80px 0;
+  }
+
+  .qid-story-content{
+    padding-right: 0;
+    margin-bottom: 18px;
+  }
+
+  .qid-story-title{
+    font-size: 28px;
+  }
+
+  .qid-story-card{
+    padding: 24px 20px;
+  }
+
+  .qid-story-card p{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .qid-story-image{
+    min-height: 280px;
+  }
+}
+
+.qid-story-section{
+  background: #f5f3ef;
+  padding: 110px 0;
+}
+
+.qid-story-row{
+  align-items: stretch;
+}
+
+.qid-story-content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qid-story-card{
+  background: rgba(139,94,60,0.06);
+  border-left: 3px solid #996D54;
+  padding: 34px 30px;
+}
+
+.qid-story-card p{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.82);
+  font-size: 18px;
+  line-height: 2;
+}
+
+.qid-story-image{
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qid-story-image-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.12), rgba(0,0,0,0.03));
+}
+
+
+
+
+/* ==================================
+   QID Story inside original template structure
+================================== */
+
+.qid-about-section{
+  background: #f5f3ef;
+}
+
+.qid-about-image{
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qid-about-wrap{
+  background: #f5f3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qid-heading-line .subheading.qid-about-subheading{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #996D54;
+}
+
+.qid-about-title{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #996D54;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.qid-about-text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  color: rgba(60,40,25,0.82);
+  margin-bottom: 22px;
+}
+
+.qid-about-text p strong{
+  font-family: ' Cormorant Garamond', serif;
+  color: #996D54;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* optional: soften the default line style from template */
+.qid-heading-line.heading-section-with-line:after,
+.qid-heading-line.heading-section-with-line:before{
+  background: rgba(153,109,84,0.25) !important;
+}
+
+@media (max-width: 768px){
+  .qid-about-image{
+    min-height: 300px;
+  }
+
+  .qid-about-title{
+    font-size: 30px;
+  }
+
+  .qid-about-text p{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+
+/* =========================================
+   Project Category Cards with Images
+========================================= */
+
+.qid-project-cards .qid-project-intro{
+  max-width: 820px;
+  margin: 18px auto 0;
+}
+
+/* make project cards image-based and cleaner */
+.qid-project-card{
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* top image */
+.qid-project-image{
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* elegant dark overlay for luxury feel */
+.qid-project-image::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.20), rgba(0,0,0,0.03));
+  transition: opacity .35s ease;
+}
+
+/* subtle zoom on hover */
+.qid-project-card:hover .qid-project-image{
+  transform: scale(1.02);
+  transition: transform .45s ease;
+}
+
+.qid-project-card:hover .qid-project-image::after{
+  opacity: 0.85;
+}
+
+/* card body */
+.qid-project-body{
+  padding: 28px 24px 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  background: #ffffff;
+}
+
+/* slightly refine title inside project cards */
+.qid-project-card .qid-heading{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #996D54;
+  margin-bottom: 14px;
+  line-height: 1.45;
+  min-height: 52px;
+}
+
+/* slightly refine body text */
+.qid-project-card .qid-text{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.78);
+  font-size: 15px;
+  line-height: 1.85;
+  margin-bottom: 0;
+}
+
+/* optional luxury accent line under image */
+.qid-project-card .qid-project-body::before{
+  content: "";
+  display: block;
+  width: 42px;
+  height: 1px;
+  background: rgba(153,109,84,0.45);
+  margin: 0 auto 18px;
+}
+
+/* spacing between cards on smaller screens */
+@media (max-width: 991px){
+  .qid-project-image{
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-project-image{
+    height: 220px;
+  }
+
+  .qid-project-body{
+    padding: 24px 20px 26px;
+  }
+
+  .qid-project-card .qid-heading{
+    font-size: 16px;
+    min-height: auto;
+  }
+
+  .qid-project-card .qid-text{
+    font-size: 14.5px;
+  }
+}
+
+
+
+/* ==================================
+   Services Section in QID Story Structure
+================================== */
+
+.qid-services-structured{
+  background: #f5f3ef;
+}
+
+.qid-services-image{
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.qid-services-wrap{
+  background: #f5f3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* keep heading line elegant and consistent */
+.qid-services-structured .qid-heading-line.heading-section-with-line:after,
+.qid-services-structured .qid-heading-line.heading-section-with-line:before{
+  background: rgba(153,109,84,0.25) !important;
+}
+
+/* content spacing */
+.qid-services-text{
+  color: rgba(60,40,25,0.82);
+}
+
+/* services list styled to match QID story */
+.qid-services-list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.qid-services-list li{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.82);
+  font-size: 18px;
+  line-height: 1.95;
+  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* bullet refined */
+.qid-services-list .services-bullet{
+  width: 12px;
+  height: 12px;
+  border: 2px solid #996D54;
+  border-radius: 50%;
+  margin-top: 10px;
+  flex: 0 0 12px;
+}
+
+/* optional subtle emphasis on hover */
+.qid-services-list li:hover{
+  color: #996D54;
+  transition: color .3s ease;
+}
+
+/* responsive */
+@media (max-width: 768px){
+  .qid-services-image{
+    min-height: 300px;
+  }
+
+  .qid-services-list li{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+
+
+/* =====================================
+   Project Cards Typography (Brand Style)
+===================================== */
+
+.qid-project-staff h3{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #996D54;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.qid-project-staff p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.85;
+  color: rgba(60,40,25,0.78);
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* =================================
+   Mission Section – Blurred Image
+================================= */
+
+.mission-section{
+  position: relative;
+  padding: 140px 0;
+
+  background-image: url("../images/miss1.jpg"); /* your uploaded image */
+background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* blur layer */
+.mission-section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(14px);
+  transform: scale(1.15);
+  z-index:0;
+}
+
+/* dark overlay for readability */
+.mission-section::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    to bottom,
+    rgba(40,18,8,0.65),
+    rgba(60,25,10,0.75)
+  );
+  z-index:1;
+}
+
+/* keep content above blur */
+.mission-section .container{
+  position:relative;
+  z-index:2;
+}
+
+
+
+/* title */
+.mission-title{
+  font-family:' Cormorant Garamond', serif;
+  font-size:46px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#ffffff;
+  margin-bottom:10px;
+}
+
+/* subtitle */
+.mission-subtitle{
+  font-family:' Cormorant Garamond', serif;
+  font-size:18px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#E7D6C9;
+  display:block;
+  margin-bottom:35px;
+}
+
+/* quote */
+.mission-quote{
+  font-family:' Cormorant Garamond', serif;
+  font-size:24px;
+  line-height:1.9;
+  max-width:850px;
+  margin:0 auto 50px;
+  color:rgba(255,255,255,0.92);
+}
+
+/* button */
+.mission-section .btn-mission{
+  border:1px solid rgba(255,255,255,0.7);
+  color:#ffffff;
+}
+
+.mission-section .btn-mission:hover{
+  background:#ffffff;
+  color:#6d3f24;
+}
+
+
+
+
+
+/* =====================================
+   Clickable project cards
+===================================== */
+
+.qid-project-trigger{
+  cursor: pointer;
+}
+
+/* =====================================
+   Modal Popup Gallery
+===================================== */
+
+.qid-modal{
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(20, 10, 6, 0.78);
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+.qid-modal.active{
+  display: block;
+}
+
+.qid-modal-box{
+  max-width: 1150px;
+  margin: 40px auto;
+  background: #f5f3ef;
+  padding: 35px 35px 30px;
+  position: relative;
+  box-shadow: 0 35px 80px rgba(0,0,0,0.22);
+}
+
+.qid-modal-close{
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 34px;
+  line-height: 1;
+  color: #996D54;
+  cursor: pointer;
+}
+
+.qid-modal-title{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #996D54;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.qid-modal-gallery{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.qid-modal-gallery img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  background: #ddd;
+}
+
+@media (max-width: 768px){
+  .qid-modal-box{
+    padding: 28px 18px 22px;
+  }
+
+  .qid-modal-title{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .qid-modal-gallery{
+    grid-template-columns: 1fr;
+  }
+
+  .qid-modal-gallery img{
+    height: 220px;
+  }
+}
+
+
+
+
+/* =========================================
+   QID Project Blur Cards
+========================================= */
+
+.qid-project-blur-section{
+  background: #EBE2DD;
+  padding: 110px 0;
+}
+
+.qid-project-blur-section .qid-project-intro{
+  font-family: 'Roboto', sans-serif;
+  color: rgba(60,40,25,0.78);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.qid-project-blur-card{
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+  transition: transform .35s ease, box-shadow .35s ease;
+  cursor: pointer;
+  background: #2b1a12;
+}
+
+.qid-project-blur-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.16);
+}
+
+.qid-project-blur-image{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(7px) brightness(0.72);
+  transform: scale(1.12);
+  transition: transform .45s ease, filter .45s ease;
+}
+
+.qid-project-blur-card:hover .qid-project-blur-image{
+  filter: blur(2px) brightness(0.82);
+  transform: scale(1.06);
+}
+
+.qid-project-blur-overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(35,20,12,0.90) 0%,
+    rgba(35,20,12,0.58) 45%,
+    rgba(35,20,12,0.28) 100%
+  );
+  z-index: 1;
+}
+
+.qid-project-blur-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 28px 24px 26px;
+  text-align: left;
+}
+
+.qid-project-blur-content h3{
+  font-family: ' Cormorant Garamond', serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.qid-project-blur-content p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 0;
+}
+
+/* small accent line */
+.qid-project-blur-content::before{
+  content: "";
+  display: block;
+  width: 44px;
+  height: 1px;
+  background: rgba(255,255,255,0.55);
+  margin-bottom: 18px;
+}
+
+@media (max-width: 768px){
+  .qid-project-blur-section{
+    padding: 80px 0;
+  }
+
+  .qid-project-blur-card{
+    height: 300px;
+  }
+
+  .qid-project-blur-content{
+    padding: 24px 20px 22px;
+  }
+
+  .qid-project-blur-content h3{
+    font-size: 17px;
+  }
+
+  .qid-project-blur-content p{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+
+/* ==========================
+   Navbar Logo Image
+========================== */
+
+.qid-logo img{
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+/* mobile scaling */
+@media (max-width: 768px){
+  .qid-logo img{
+    height: 36px;
+  }
+}
+
+
+
+
+
+
+/* =====================================
+   Professional Clickable Project Cards
+===================================== */
+
+.qid-project-staff.qid-project-trigger{
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.05);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+/* image smoother */
+.qid-project-staff.qid-project-trigger .img{
+  transition: transform .55s ease, filter .45s ease;
+}
+
+/* subtle overlay */
+.qid-project-staff.qid-project-trigger .img::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 10, 6, 0.18),
+    rgba(20, 10, 6, 0.00)
+  );
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+/* content area */
+.qid-project-staff.qid-project-trigger .text{
+  position: relative;
+  transition: transform .35s ease;
+}
+
+/* elegant top-right arrow */
+.qid-project-staff.qid-project-trigger::after{
+  content: "↗";
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(153,109,84,0.22);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #996D54;
+  background: rgba(255,255,255,0.88);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: all .35s ease;
+  z-index: 3;
+}
+
+/* title styling */
+.qid-project-staff.qid-project-trigger h3{
+  position: relative;
+  transition: color .35s ease;
+}
+
+/* underline reveal under title */
+.qid-project-staff.qid-project-trigger h3::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: rgba(153,109,84,0.6);
+  margin-top: 10px;
+  transition: width .35s ease;
+}
+
+/* hover */
+.qid-project-staff.qid-project-trigger:hover{
+  transform: translateY(-8px);
+  border-color: rgba(153,109,84,0.28);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.10);
+}
+
+.qid-project-staff.qid-project-trigger:hover .img{
+  transform: scale(1.05);
+  filter: saturate(1.02) brightness(0.96);
+}
+
+.qid-project-staff.qid-project-trigger:hover .img::after{
+  opacity: 1;
+}
+
+.qid-project-staff.qid-project-trigger:hover .text{
+  transform: translateY(-4px);
+}
+
+.qid-project-staff.qid-project-trigger:hover h3{
+  color: #8b5e3c;
+}
+
+.qid-project-staff.qid-project-trigger:hover h3::after{
+  width: 44px;
+}
+
+.qid-project-staff.qid-project-trigger:hover::after{
+  background: #996D54;
+  color: #ffffff;
+  border-color: #996D54;
+  transform: translateY(-2px);
+}
+
+/* active press */
+.qid-project-staff.qid-project-trigger:active{
+  transform: translateY(-3px);
+}
+
+/* mobile refinement */
+@media (max-width: 768px){
+  .qid-project-staff.qid-project-trigger::after{
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+
+
+/* ==================================
+   QID About Section spacing
+================================== */
+
+
+
+
+
+
+/* responsive */
+@media (max-width: 768px){
+  .qid-about-wrap{
+    padding-right: 0;
+  }
+
+  .qid-about-image{
+    margin-left: 0;
+    margin-top: 20px;
+    min-height: 300px;
+  }
+}
+
+
+
