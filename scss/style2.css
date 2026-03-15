@@ -2,6 +2,37 @@
    Mission Statement - Brand Luxury
 ================================ */
 
+@font-face {
+  font-family: "Broadacre";
+  src: url("../fonts1/Broadacre-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Broadacre";
+  src: url("../fonts1/Broadacre-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Broadacre";
+  src: url("../fonts1/Broadacre-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Broadacre";
+  src: url("../fonts1/Broadacre-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
 .mission-section{
   background: #916349;
   padding: 140px 0;
@@ -22,7 +53,6 @@
 
 /* Subtitle */
 .mission-subtitle{
-  font-family:'Cormorant Garamond', serif;
   font-size:14px;
   letter-spacing:6px;
   text-transform:uppercase;
@@ -39,18 +69,9 @@
 
 
 
-  letter-spacing:3px;
-  text-transform:uppercase;
   color:#ffffff;
-  margin-bottom:40px;
-  font-weight:500;
-  position:relative;
 
 
-  font-family: ' Cormorant Garamond', serif;
-font-weight: 500;
-letter-spacing: 6px;
-text-transform: uppercase;
 }
 
 /* decorative underline */
@@ -167,27 +188,7 @@ text-transform: uppercase;
    - Main video: contain (no crop)
 ================================ */
 
-.video-hero{
-  position: relative;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  background: #ffffff;
-  isolation: isolate;
-}
 
-/* Background blurred video (fills the screen) */
-.hero-video-bg{
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  filter: blur(18px) brightness(0.65) saturate(1.1);
-  transform: scale(1.15); /* prevents blur edges */
-  z-index: 0;
-}
 
 /* Main video (shows the whole frame) */
 .hero-video{
@@ -596,16 +597,11 @@ text-transform: uppercase;
 }
 
 .qid-title{
-  font-family: ' Cormorant Garamond', serif;
-  font-size: 40px;
+  font-family: "Broadacre", serif;
+  font-weight: 100 !important;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #996D54;
-  font-weight: 500;
-  line-height: 1.25;
-  margin-bottom: 0;
 }
-
 /* Card */
 .qid-card{
   width: 100%;
@@ -1489,6 +1485,12 @@ text-transform: uppercase;
   margin-bottom: 12px;
   line-height: 1.4;
 }
+.qid-project-staff h3{
+  font-family: "Broadacre", serif;
+  font-weight: 500 !important;
+    color: #996D54;
+
+}
 
 .qid-project-staff p{
   font-family: 'Roboto', sans-serif;
@@ -1515,10 +1517,7 @@ text-transform: uppercase;
   position: relative;
   padding: 140px 0;
 
-  background-image: url("../images/miss1.jpg"); /* your uploaded image */
-background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+background-color: #7d5232d7;
 
   overflow: hidden;
 }
@@ -1561,10 +1560,7 @@ background-size: contain;
 
 /* title */
 .mission-title{
-  font-family:' Cormorant Garamond', serif;
   font-size:46px;
-  letter-spacing:4px;
-  text-transform:uppercase;
   color:#ffffff;
   margin-bottom:10px;
 }
@@ -1728,7 +1724,6 @@ background-size: contain;
 }
 
 .qid-project-blur-card:hover{
-  transform: translateY(-8px);
   box-shadow: 0 35px 70px rgba(0,0,0,0.16);
 }
 
@@ -1738,14 +1733,13 @@ background-size: contain;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(7px) brightness(0.72);
+  filter: blur(1px) brightness(0.72);
   transform: scale(1.12);
   transition: transform .45s ease, filter .45s ease;
 }
 
 .qid-project-blur-card:hover .qid-project-blur-image{
-  filter: blur(2px) brightness(0.82);
-  transform: scale(1.06);
+  filter: blur(0px) brightness(0.82);
 }
 
 .qid-project-blur-overlay{
@@ -1997,3 +1991,505 @@ background-size: contain;
 
 
 
+.qid-title{
+  font-family: "Broadacre", serif;
+}
+
+.qid-project-staff h3{
+  font-family: "Broadacre", serif;
+}
+
+.mission-title{
+  font-family: "Broadacre", serif;
+  font-weight:200;
+
+}
+
+.qid-title{
+  font-family: "Broadacre", serif;
+}
+
+
+
+
+/* =========================================
+   QID Story - Classic Split Layout Version
+   (matches the second sample structure)
+========================================= */
+
+.qid-story-classic{
+  background: #f5f3ef;
+}
+
+.qid-story-classic .qid-story-classic-wrap{
+  background: #f5f3ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qid-story-classic .qid-story-classic-image{
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* soften template line */
+.qid-story-classic .qid-heading-line.heading-section-with-line:before,
+.qid-story-classic .qid-heading-line.heading-section-with-line:after{
+  background: rgba(153,109,84,0.25) !important;
+}
+
+/* subtitle */
+.qid-story-classic-subtitle{
+  font-family: "Broadacre", serif;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #996D54;
+}
+
+/* title */
+.qid-story-classic-title{
+  font-family: "Broadacre", serif;
+  font-weight: 100;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #996D54;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+/* body text */
+.qid-story-classic-text p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.95;
+  color: rgba(60,40,25,0.82);
+  margin-bottom: 22px;
+}
+
+/* highlighted years / strong text */
+.qid-story-classic-text p strong{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  color: #996D54;
+  letter-spacing: 0.4px;
+}
+
+/* a little spacing balance */
+.qid-story-classic .heading-section{
+  margin-bottom: 38px !important;
+}
+
+/* responsive */
+@media (max-width: 768px){
+  .qid-story-classic .qid-story-classic-image{
+    min-height: 300px;
+  }
+
+  .qid-story-classic-title{
+    font-size: 30px;
+  }
+
+  .qid-story-classic-subtitle{
+    font-size: 13px;
+    letter-spacing: 3px;
+  }
+
+  .qid-story-classic-text p{
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+
+
+
+/* =========================================
+   Testimonials Section
+========================================= */
+
+.qid-testimonials-section{
+  background: #f5f3ef;
+  padding: 110px 0;
+}
+
+.qid-testimonials-intro{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(60,40,25,0.76);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.qid-testimonial-card{
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(139,94,60,0.12);
+  padding: 42px 30px 34px;
+  box-shadow: 0 25px 55px rgba(0,0,0,0.04);
+  transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  height: 100%;
+}
+
+.qid-testimonial-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 35px 70px rgba(0,0,0,0.08);
+  border-color: rgba(139,94,60,0.22);
+}
+
+.qid-testimonial-quote{
+  font-family: "Broadacre", serif;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1;
+  color: rgba(153,109,84,0.25);
+  margin-bottom: 12px;
+}
+
+.qid-testimonial-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.5px;
+  line-height: 1.95;
+  color: rgba(60,40,25,0.78);
+  margin-bottom: 26px;
+}
+
+.qid-testimonial-meta h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #996D54;
+  margin-bottom: 4px;
+}
+
+.qid-testimonial-meta span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(60,40,25,0.55);
+}
+
+/* =========================================
+   Contact Section
+========================================= */
+
+.qid-contact-section{
+  background: #EBE2DD;
+  padding: 110px 0;
+}
+
+.qid-contact-wrap{
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.qid-contact-info{
+  background: #916349;
+  color: #ffffff;
+  padding: 60px 42px;
+  height: 100%;
+  position: relative;
+}
+
+.qid-contact-info::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,0.10), transparent 40%);
+  pointer-events: none;
+}
+
+.qid-contact-info > *{
+  position: relative;
+  z-index: 1;
+}
+
+.qid-contact-info .qid-subtitle{
+  color: rgba(255,255,255,0.82);
+}
+
+.qid-contact-info .qid-title{
+  color: #ffffff;
+}
+
+.qid-contact-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.5px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 34px;
+}
+
+.qid-contact-details{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.qid-contact-item h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.qid-contact-item p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.88);
+  margin-bottom: 0;
+}
+
+.qid-contact-form-wrap{
+  padding: 60px 42px;
+  background: #ffffff;
+  height: 100%;
+}
+
+.qid-contact-form .form-group{
+  margin-bottom: 20px;
+}
+
+.qid-form-control{
+  height: 56px;
+  border: 1px solid rgba(139,94,60,0.18);
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: rgba(60,40,25,0.82);
+  padding: 0 18px;
+  background: #fcfbf9;
+  transition: border-color .3s ease, background .3s ease;
+}
+
+.qid-form-control:focus{
+  border-color: #996D54;
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.qid-textarea{
+  height: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  resize: vertical;
+}
+
+.qid-contact-form .btn-mission{
+  min-width: 220px;
+}
+
+@media (max-width: 991px){
+  .qid-contact-info,
+  .qid-contact-form-wrap{
+    padding: 42px 28px;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-testimonials-section,
+  .qid-contact-section{
+    padding: 80px 0;
+  }
+
+  .qid-testimonial-card{
+    padding: 34px 22px 28px;
+  }
+
+  .qid-contact-info,
+  .qid-contact-form-wrap{
+    padding: 34px 22px;
+  }
+}
+
+
+
+
+
+
+
+/* =====================================
+   Project Modal Slider
+===================================== */
+
+.qid-slider-modal{
+  max-width: 1100px;
+  background: #f5f3ef;
+  padding: 32px 32px 24px;
+}
+
+.qid-slider{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.qid-slider-main{
+  width: 100%;
+  max-width: 900px;
+  height: 560px;
+  position: relative;
+  overflow: hidden;
+  background: #e9e3dd;
+}
+
+.qid-slider-image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+
+.qid-slider-image.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.qid-slider-btn{
+  border: none;
+  background: rgba(255,255,255,0.92);
+  color: #996D54;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all .3s ease;
+  z-index: 2;
+}
+
+.qid-slider-prev{
+  margin-right: 16px;
+}
+
+.qid-slider-next{
+  margin-left: 16px;
+}
+
+.qid-slider-btn:hover{
+  background: #996D54;
+  color: #ffffff;
+}
+
+.qid-slider-thumbs{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qid-thumb{
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.55;
+  border: 2px solid transparent;
+  transition: all .3s ease;
+  background: #ddd;
+}
+
+.qid-thumb.active{
+  opacity: 1;
+  border-color: #996D54;
+}
+
+.qid-thumb:hover{
+  opacity: 1;
+}
+
+@media (max-width: 991px){
+  .qid-slider-main{
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-slider-modal{
+    padding: 24px 16px 20px;
+  }
+
+  .qid-slider{
+    gap: 8px;
+  }
+
+  .qid-slider-main{
+    height: 260px;
+  }
+
+  .qid-slider-btn{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .qid-slider-prev{
+    margin-right: 8px;
+  }
+
+  .qid-slider-next{
+    margin-left: 8px;
+  }
+
+  .qid-thumb{
+    width: 64px;
+    height: 52px;
+  }
+}
+
+
+
+.qid-title,
+.qid-subtitle,
+.mission-title,
+.qid-project-staff h3,
+.qid-story-classic-title,
+.qid-story-classic-subtitle{
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #7d5232;
+}
+
+
+.mission-title{
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #ffffff;
+}
+.nav-link{
+    font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #7d5232;
+  font-size: 15px;
+}
+.mission-quote{
+    font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #ffffff;
+}
