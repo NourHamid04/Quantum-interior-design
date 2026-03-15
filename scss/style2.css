@@ -2493,3 +2493,34 @@ background-color: #7d5232d7;
   font-weight: 200 !important;
   color: #ffffff;
 }
+
+
+
+
+
+/* =====================================
+   Mobile Navbar White Background
+===================================== */
+
+@media (max-width: 991.98px){
+  #ftco-navbar{
+    background: #ffffff !important;
+  }
+
+  #ftco-navbar .navbar-collapse{
+    background: #ffffff !important;
+  }
+
+  #ftco-navbar .nav-link{
+    color: #996D54 !important;
+  }
+
+  #ftco-navbar .navbar-toggler{
+    color: #996D54 !important;
+    border-color: rgba(153,109,84,0.25) !important;
+  }
+
+  #ftco-navbar .navbar-toggler .oi{
+    color: #996D54 !important;
+  }
+}
