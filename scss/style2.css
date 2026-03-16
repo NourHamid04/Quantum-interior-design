@@ -34,7 +34,7 @@
 
 
 .mission-section{
-  background: #916349;
+  background-color: #916349;
   padding: 140px 0;
   position: relative;
   overflow: hidden;
@@ -1517,7 +1517,7 @@
   position: relative;
   padding: 140px 0;
 
-background-color: #7d5232d7;
+background-color: #916349;
 
   overflow: hidden;
 }
@@ -1538,17 +1538,7 @@ background-color: #7d5232d7;
 }
 
 /* dark overlay for readability */
-.mission-section::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: linear-gradient(
-    to bottom,
-    rgba(40,18,8,0.65),
-    rgba(60,25,10,0.75)
-  );
-  z-index:1;
-}
+
 
 /* keep content above blur */
 .mission-section .container{
@@ -2523,4 +2513,37 @@ background-color: #7d5232d7;
   #ftco-navbar .navbar-toggler .oi{
     color: #996D54 !important;
   }
+}
+
+.btn-mission{
+   font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+}
+
+.qid-about-subheading{
+    font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #7d5232;
+}
+.qid-project-blur-content h3{
+     font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+}
+.qid-contact-item h4{
+       font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+}
+
+.mission-section{
+  background-color: #916349;
+}
+
+.qid-project-staff h3{
+         font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+}
+
+.qid-modal-title{
+           font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
 }
