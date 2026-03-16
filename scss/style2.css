@@ -2105,7 +2105,6 @@ background-color: #916349;
 
 .qid-testimonials-section{
   background: #f5f3ef;
-  padding: 110px 0;
 }
 
 .qid-testimonials-intro{
@@ -2550,4 +2549,151 @@ background-color: #916349;
 .qid-testimonial-meta h4{
              font-family: "Broadacre", serif !important;
   font-weight: 200 !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   QID Single Case Study Feature Section
+========================================= */
+
+.qid-case-feature-section{
+  background: #f5f3ef;
+}
+
+.qid-case-feature-wrap{
+  background: #ffffff;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* image side */
+.qid-case-feature-image{
+  height: 100%;
+  max-height: 740px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.qid-case-feature-overlay{
+  position: absolute;
+  inset: 0;
+
+}
+
+/* text side */
+.qid-case-feature-content{
+  height: 100%;
+  padding: 70px 52px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qid-case-label{
+  display: inline-block;
+  color: #996D54;
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.qid-case-feature-title{
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #7d5232;
+  font-size: 34px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.qid-case-feature-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.8px;
+  line-height: 1.95;
+  color: rgba(60,40,25,0.78);
+  margin-bottom: 18px;
+}
+
+/* details block */
+.qid-case-feature-details{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 14px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(153,109,84,0.18);
+}
+
+.qid-case-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.qid-case-detail-label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(60,40,25,0.48);
+}
+
+.qid-case-detail strong{
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+  color: #996D54;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* responsive */
+@media (max-width: 991px){
+  .qid-case-feature-image{
+    min-height: 420px;
+  }
+
+  .qid-case-feature-content{
+    padding: 48px 34px;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-case-feature-section{
+    padding: 80px 0;
+  }
+
+  .qid-case-feature-image{
+    min-height: 300px;
+  }
+
+  .qid-case-feature-content{
+    padding: 34px 22px;
+  }
+
+  .qid-case-feature-title{
+    font-size: 26px;
+  }
+
+  .qid-case-feature-text{
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .qid-case-detail strong{
+    font-size: 14px;
+  }
 }
