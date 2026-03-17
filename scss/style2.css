@@ -1723,13 +1723,13 @@ background-color: #916349;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(1px) brightness(0.72);
+  filter: blur(0.8px) brightness(0.99);
   transform: scale(1.12);
   transition: transform .45s ease, filter .45s ease;
 }
 
 .qid-project-blur-card:hover .qid-project-blur-image{
-  filter: blur(0px) brightness(0.82);
+  filter: blur(0px) brightness(1.2);
 }
 
 .qid-project-blur-overlay{
@@ -2696,4 +2696,67 @@ background-color: #916349;
   .qid-case-detail strong{
     font-size: 14px;
   }
+}
+
+
+
+
+/* Navbar always white from the start */
+#ftco-navbar.qid-navbar-solid {
+  background: #fff !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Keep links dark */
+#ftco-navbar.qid-navbar-solid .navbar-nav .nav-link {
+  color:#996D54 !important;
+}
+
+/* Optional: darker active/hover */
+#ftco-navbar.qid-navbar-solid .navbar-nav .nav-link:hover,
+#ftco-navbar.qid-navbar-solid .nav-item.active .nav-link {
+  color:#996D54 !important;
+}
+
+/* If logo area needs alignment */
+#ftco-navbar.qid-navbar-solid .navbar-brand img {
+  max-height: 60px;
+  width: auto;
+}
+
+/* Mobile toggle text/icon */
+#ftco-navbar.qid-navbar-solid .navbar-toggler {
+  color:#996D54 !important;
+  border-color: rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#ftco-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  margin: 0 !important;
+  background: #fff !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* remove template states that may shift it */
+#ftco-navbar.scrolled,
+#ftco-navbar.awake,
+#ftco-navbar.sleep {
+  top: 0 !important;
+  margin-top: 0 !important;
+  background: #fff !important;
 }
