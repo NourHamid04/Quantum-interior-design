@@ -143,11 +143,11 @@
 @media(max-width:768px){
 
   .mission-title{
-    font-size:34px;
+    font-size:20px;
   }
 
   .mission-quote{
-    font-size:18px;
+    font-size:14px;
     line-height:1.7;
   }
 
@@ -156,6 +156,17 @@
     display:none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1837,7 +1848,6 @@ background-color: #916349;
   cursor: pointer;
   overflow: hidden;
   background: #ffffff;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.05);
   transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
 
@@ -1851,11 +1861,7 @@ background-color: #916349;
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(20, 10, 6, 0.18),
-    rgba(20, 10, 6, 0.00)
-  );
+
   opacity: 0;
   transition: opacity .35s ease;
 }
@@ -1874,17 +1880,13 @@ background-color: #916349;
   right: 16px;
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(153,109,84,0.22);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   color: #996D54;
-  background: rgba(255,255,255,0.88);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-  transition: all .35s ease;
   z-index: 3;
+  background-color: transparent;
 }
 
 /* title styling */
@@ -1905,11 +1907,11 @@ background-color: #916349;
 }
 
 /* hover */
-.qid-project-staff.qid-project-trigger:hover{
+/* .qid-project-staff.qid-project-trigger:hover{
   transform: translateY(-8px);
   border-color: rgba(153,109,84,0.28);
   box-shadow: 0 28px 60px rgba(0,0,0,0.10);
-}
+} */
 
 .qid-project-staff.qid-project-trigger:hover .img{
   transform: scale(1.05);
@@ -2930,4 +2932,167 @@ body {
 .qid-hero-subtitle{
     font-family: "Broadacre", serif !important;
   font-weight: 200 !important;
+}
+
+
+.qid-hero-video {
+  position: relative;
+}
+
+.qid-hero-video-location {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+  z-index: 3;
+  font-family: "Broadacre", serif !important;
+  font-weight: 200 !important;
+}
+@media (max-width: 768px) {
+  .qid-hero-video-location {
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* Responsive */
+@media(max-width:900px){
+
+  .mission-title{
+    font-size:28px;
+  }
+
+  .mission-quote{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .mission-quote::before,
+  .mission-quote::after{
+    display:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   QID Specialties Section - Modern Solid Cards
+========================================= */
+
+.qid-project-blur-section{
+  background: #EBE2DD;
+  padding: 110px 0;
+}
+
+.qid-project-blur-section .row:last-child > div{
+  margin-bottom: 30px;
+}
+
+.qid-project-blur-card{
+  position: relative;
+  min-height: 230px;
+  border-radius: 0;
+  overflow: hidden;
+  background: #916349;
+  border: 1px solid rgba(125, 82, 50, 0.14);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qid-project-blur-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.10);
+  background: #9c6c50;
+}
+
+.qid-project-blur-image{
+  display: none;
+}
+
+.qid-project-blur-overlay{
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,0.07), transparent 38%),
+    linear-gradient(135deg, rgba(255,255,255,0.03), rgba(0,0,0,0.05));
+  z-index: 1;
+}
+
+.qid-project-blur-content{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 230px;
+}
+
+.qid-project-blur-content::before{
+  display: none;
+}
+
+.qid-project-blur-content h3{
+  margin: 0;
+  color: #ffffff;
+  font-family: "Broadacre", serif !important;
+  font-weight: 400 !important;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 991px){
+  .qid-project-blur-card,
+  .qid-project-blur-content{
+    min-height: 200px;
+  }
+
+  .qid-project-blur-content h3{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-project-blur-section{
+    padding: 80px 0;
+  }
+
+  .qid-project-blur-card,
+  .qid-project-blur-content{
+    min-height: 170px;
+  }
+
+  .qid-project-blur-content{
+    padding: 22px 16px;
+  }
+
+  .qid-project-blur-content h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
 }
