@@ -3392,3 +3392,29 @@ section + #qid-story{
   background-color: #6d3f2461; /* ONLY color, not background */
   transform: translateY(-2px) scale(1.05);
 }
+
+
+
+@media (max-width: 768px){
+  .qid-project-team-style{
+    padding: 80px 0 65px;
+  }
+
+  .qid-project-staff.qid-project-trigger .text{
+    padding-top: 14px !important;
+  }
+
+  .qid-project-staff.qid-project-trigger h3{
+    font-size: 17.5px;
+    letter-spacing: 1px;
+    line-height: 1.35;
+  }
+
+  .qid-project-staff.qid-project-trigger::after{
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    top: 12px;
+    right: 12px;
+  }
+}
