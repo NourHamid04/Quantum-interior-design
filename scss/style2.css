@@ -3213,6 +3213,10 @@ body {
   text-transform: uppercase;
   color: #9a6d50;
   min-height: 68px; /* keeps titles aligned */
+
+
+   text-shadow: 0.5px 0 currentColor,
+               -0.5px 0 currentColor;
 }
 
 /* nice bottom line that belongs to the title */
