@@ -3318,7 +3318,7 @@ section + #qid-story{
 
 /* Reduce space between "Projects" title and cards */
 .qid-project-header{
-  margin-bottom: 30px !important;
+  margin-bottom: 50px !important;
   padding-bottom: 0 !important;
 }
 
