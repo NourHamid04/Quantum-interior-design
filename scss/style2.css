@@ -3326,10 +3326,6 @@ section + #qid-story{
   margin-bottom: 10px !important;
 }
 
-/* Remove extra margin from title itself */
-#projects .qid-title{
-  margin-bottom: 10px !important;
-}
 
 /* Optional: tighten section top padding slightly */
 #projects.qid-project-team-style{
@@ -3338,5 +3334,5 @@ section + #qid-story{
 
 
 .qid-project-header{
-  margin-bottom: 60px !important;
+  margin-bottom: 50px !important;
 }
