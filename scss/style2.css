@@ -354,20 +354,7 @@
 /* Create the gap between the two columns safely */
 
 
-/* Image block */
-.services-img{
-  position: relative;
-  width: 100%;
-  min-height: 520px;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
-  overflow: hidden;
-}
-/* Optional overlay for luxury depth */
+Optional overlay for luxury depth */
 
 
 /* Content block */
@@ -2564,13 +2551,8 @@ background-color: #916349;
    QID Single Case Study Feature Section
 ========================================= */
 
-.qid-case-feature-section{
-  background: #f5f3ef;
-}
 
 .qid-case-feature-wrap{
-  background: #ffffff;
-  box-shadow: 0 30px 70px rgba(0,0,0,0.06);
   overflow: hidden;
 }
 
@@ -3065,6 +3047,10 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+.qid-hero-title {
+    font-family: "Broadacre", serif !important;
+  font-weight: 400 !important;
+}
 
 @media (max-width: 991px){
   .qid-project-blur-card,
@@ -3095,4 +3081,255 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
   }
+}
+.qid-crafted{
+  font-size: 24px;
+      font-family: "Broadacre", serif !important;
+
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PROJECTS SECTION - spacing + cleaner titles
+========================================= */
+
+/* more breathing room for the whole projects section */
+.qid-project-team-style{
+  background: #f5f3ef;
+  padding: 110px 0 90px;
+}
+
+/* create real spacing between every project card */
+.qid-project-team-style .row{
+  row-gap: 38px;
+}
+
+.qid-project-team-style .col-md-6.col-lg-3{
+  margin-bottom: 0 !important;
+}
+
+/* card */
+.qid-project-staff.qid-project-trigger{
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  overflow: visible;
+  transform: none;
+}
+
+/* image area */
+.qid-project-staff.qid-project-trigger .img{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: transform .45s ease, filter .35s ease;
+}
+
+/* subtle luxury overlay on image */
+.qid-project-staff.qid-project-trigger .img::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.10), rgba(0,0,0,0.02));
+  opacity: 1;
+  transition: opacity .35s ease;
+}
+
+/* title block under image */
+.qid-project-staff.qid-project-trigger .text{
+  padding: 18px 4px 0 !important;
+  text-align: left;
+  transform: none !important;
+}
+
+/* project name */
+.qid-project-staff.qid-project-trigger h3{
+  margin: 0;
+  font-family: "Broadacre", serif !important;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #9a6d50;
+  min-height: 68px; /* keeps titles aligned */
+}
+
+/* nice bottom line that belongs to the title */
+.qid-project-staff.qid-project-trigger h3::after{
+  content: "";
+  display: block;
+  width: 54px;
+  height: 1px;
+  background: rgba(154,109,80,0.45);
+  margin-top: 14px;
+  transition: width .35s ease, background .35s ease;
+}
+
+/* arrow refinement */
+.qid-project-staff.qid-project-trigger::after{
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  color: #9a6d50;
+  background: rgba(255,255,255,0.86);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all .35s ease;
+}
+
+/* hover */
+.qid-project-staff.qid-project-trigger:hover .img{
+  transform: translateY(-4px);
+  filter: saturate(1.02) brightness(0.98);
+}
+
+.qid-project-staff.qid-project-trigger:hover .img::before{
+  opacity: 0.6;
+}
+
+.qid-project-staff.qid-project-trigger:hover h3{
+  color: #7d5232;
+}
+
+.qid-project-staff.qid-project-trigger:hover h3::after{
+  width: 78px;
+  background: #996D54;
+}
+
+.qid-project-staff.qid-project-trigger:hover::after{
+  background: #996D54;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* remove old press movement if you want it cleaner */
+.qid-project-staff.qid-project-trigger:active{
+  transform: none;
+}
+
+/* section title spacing */
+#projects .heading-section{
+  margin-bottom: 55px !important;
+}
+
+/* mobile */
+@media (max-width: 991px){
+  .qid-project-team-style .row{
+    row-gap: 30px;
+  }
+
+  .qid-project-staff.qid-project-trigger h3{
+    font-size: 15px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px){
+  .qid-project-team-style{
+    padding: 80px 0 65px;
+  }
+
+  .qid-project-staff.qid-project-trigger .text{
+    padding-top: 14px !important;
+  }
+
+  .qid-project-staff.qid-project-trigger h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.35;
+  }
+
+  .qid-project-staff.qid-project-trigger::after{
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+.qid-services-image{
+  min-height: 520px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f3ef;
+}
+
+
+
+
+
+
+#qid-story{
+  padding-top: 60px !important;
+}
+
+
+
+section + #qid-story{
+  margin-top: -40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reduce space between "Projects" title and cards */
+.qid-project-header{
+  margin-bottom: 30px !important;
+  padding-bottom: 0 !important;
+}
+
+/* Reduce extra spacing from heading */
+#projects .heading-section{
+  margin-bottom: 10px !important;
+}
+
+/* Remove extra margin from title itself */
+#projects .qid-title{
+  margin-bottom: 10px !important;
+}
+
+/* Optional: tighten section top padding slightly */
+#projects.qid-project-team-style{
+  padding-top: 80px;
 }
