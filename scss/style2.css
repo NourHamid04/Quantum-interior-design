@@ -2801,7 +2801,6 @@ html, body {
 }
 
 .qid-hero-title {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 58px;
   line-height: 1.05;
   font-weight: 600;
@@ -3049,7 +3048,11 @@ body {
 }
 .qid-hero-title {
     font-family: "Broadacre", serif !important;
-  font-weight: 400 !important;
+  font-weight: 200 !important;
+  font-size: 60px;
+    text-shadow: 0.5px 0 currentColor,
+               -0.5px 0 currentColor;
+
 }
 
 @media (max-width: 991px){
@@ -3083,10 +3086,10 @@ body {
   }
 }
 .qid-crafted{
-  font-size: 24px;
+  font-size: 26px;
       font-family: "Broadacre", serif !important;
 
-  font-weight: 300;
+  font-weight: 200 !important;
 }
 
 
