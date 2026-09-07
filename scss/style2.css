@@ -10657,3 +10657,416 @@ span:last-child{
   }
 
 }
+
+
+
+
+/* =========================================================
+   QUANTUM 404 PAGE
+========================================================= */
+
+.qid-404-page-main{
+  background: #f7f5f2;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.qid-404{
+  position: relative;
+
+  min-height: 720px;
+
+  padding-top: 82px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(145,99,73,.09),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f5f2 0%,
+      #eee7e1 100%
+    );
+}
+
+
+/* architectural circle */
+.qid-404::before{
+  content: "";
+
+  position: absolute;
+
+  width: 440px;
+  height: 440px;
+
+  right: -220px;
+  bottom: -220px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(145,99,73,.08);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.qid-404-wrap{
+  position: relative;
+
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  padding: 110px 30px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   HUGE 404
+========================================================= */
+
+.qid-404-big{
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate(-50%,-54%);
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    rgba(145,99,73,.055);
+
+  font-size:
+    clamp(210px,26vw,390px);
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    .8;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.qid-404-label{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 27px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size:
+    9px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    3px;
+
+  text-transform:
+    uppercase;
+}
+
+
+.qid-404-label span{
+  width: 40px;
+  height: 1px;
+
+  background:
+    #916349;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.qid-404 h1{
+  position: relative;
+  z-index: 2;
+
+  margin: 0;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size:
+    clamp(52px,6vw,78px);
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.05;
+
+  letter-spacing:
+    .3px;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.qid-404 p{
+  position: relative;
+  z-index: 2;
+
+  max-width: 520px;
+
+  margin:
+    28px
+    auto
+    0;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(60,40,25,.62);
+
+  font-size:
+    14px;
+
+  font-weight:
+    300 !important;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.qid-404-home{
+  position: relative;
+  z-index: 2;
+
+  min-width: 215px;
+  min-height: 62px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 40px;
+
+  padding:
+    0
+    22px;
+
+  background:
+    #916349;
+
+  border:
+    1px solid #916349;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #ffffff;
+
+  font-size:
+    9px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    2px;
+
+  text-transform:
+    uppercase;
+
+  box-shadow:
+    0 12px 25px rgba(70,45,30,.12);
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+
+/* arrow */
+.qid-404-arrow{
+  font-size: 17px;
+
+  transition:
+    transform .35s ease;
+}
+
+
+/* hover */
+.qid-404-home:hover{
+  background:
+    #ffffff;
+
+  color:
+    #916349;
+
+  text-decoration:
+    none;
+
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 20px 35px rgba(70,45,30,.16);
+}
+
+
+.qid-404-home:hover
+.qid-404-arrow{
+  transform:
+    translateX(-5px);
+}
+
+
+/* =========================================================
+   SMALL BRAND DETAIL
+========================================================= */
+
+.qid-404-detail{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 43px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(125,82,50,.38);
+
+  font-size:
+    8px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    2px;
+
+  text-transform:
+    uppercase;
+}
+
+
+.qid-404-detail span{
+  width: 32px;
+  height: 1px;
+
+  background:
+    rgba(145,99,73,.35);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767.98px){
+
+  .qid-404{
+    min-height: 650px;
+
+    padding-top: 70px;
+  }
+
+
+  .qid-404-wrap{
+    padding:
+      90px
+      20px;
+  }
+
+
+  .qid-404-big{
+    font-size:
+      180px;
+  }
+
+
+  .qid-404 h1{
+    font-size:
+      47px;
+  }
+
+
+  .qid-404 p{
+    font-size:
+      13px;
+  }
+
+
+  .qid-404-home{
+    min-width:
+      200px;
+  }
+
+}
