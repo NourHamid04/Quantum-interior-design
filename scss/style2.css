@@ -11070,3 +11070,117 @@ span:last-child{
   }
 
 }
+
+
+
+
+/* =========================================================
+   SERVICES NAVIGATION — RESPONSIVE
+========================================================= */
+
+
+/* TABLET */
+@media(max-width: 991.98px){
+
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 88px;
+
+    grid-template-columns: 30px 1fr 32px;
+
+    padding: 16px 18px;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    max-width: none;
+
+    font-size: 15px;
+  }
+
+
+  /* remove wrong borders */
+  .qid-service-page-main
+  .qsp-top-service-item:nth-child(2n){
+    border-right: 0;
+  }
+
+
+  .qid-service-page-main
+  .qsp-top-service-item:nth-child(-n+2){
+    border-bottom:
+      1px solid rgba(255,255,255,.17);
+  }
+
+}
+
+
+
+/* MOBILE */
+@media(max-width: 767.98px){
+
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 72px;
+
+    grid-template-columns:
+      30px
+      1fr
+      32px;
+
+    gap: 12px;
+
+    padding:
+      14px
+      18px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.18);
+  }
+
+
+  .qid-service-page-main
+  .qsp-top-service-item:last-child{
+    border-bottom: 0;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    max-width: none;
+
+    font-size: 14px;
+
+    line-height: 1.25;
+  }
+
+
+  .qid-service-page-main .qsp-top-number{
+    font-size: 8px;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width: 29px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+
+
+  /* reduce the lift on mobile */
+  .qid-service-page-main
+  .qsp-top-service-item:hover{
+    transform: translateY(-2px);
+  }
+
+}
