@@ -131,7 +131,7 @@ edit
 	        	<li class="nav-item active"><a href="#hero-video" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="#mission" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-	        	<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+	        	<li class="nav-item"><a href="quantum-service-page.html" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -471,7 +471,7 @@ edit
             <li><span class="services-bullet"></span> Project Management Solutions</li>
           </ul>
 
-          <a href="#projects" class="btn btn-mission mt-3">View Projects</a>
+          <a href="quantum-service-page.html" class="btn btn-mission mt-3">Explore our Services</a>
         </div>
       </div>
 
@@ -1395,6 +1395,18 @@ outcome speaks for itself.          </p>
   </div>
 </footer>
 
+<button
+  class="qid-back-to-top"
+  id="qidBackToTop"
+  type="button"
+  aria-label="Back to top"
+>
+
+  <span class="qid-back-to-top-arrow">
+    ↑
+  </span>
+
+</button>
 
   <!-- loader -->
   <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
@@ -1519,6 +1531,40 @@ document.querySelectorAll('a.nav-link[href^="#"]').forEach(link => {
     }
   });
 });
+</script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const backToTop =
+    document.getElementById("qidBackToTop");
+
+  if (!backToTop) return;
+
+
+  window.addEventListener("scroll", function () {
+
+    backToTop.classList.toggle(
+      "qid-show",
+      window.scrollY > 450
+    );
+
+  });
+
+
+  backToTop.addEventListener("click", function () {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+  });
+
+});
+
 </script>
   </body>
 </html>

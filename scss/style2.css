@@ -3422,3 +3422,7238 @@ section + #qid-story{
     right: 12px;
   }
 }
+
+
+/* ===========================================================================================================================
+   QUANTUM INTERIOR DESIGN
+   SERVICES PAGE
+   ---------------------------------------------------------
+   ADD THIS ENTIRE BLOCK AT THE BOTTOM OF style2.css
+
+   IMPORTANT:
+   - Does NOT affect navbar
+   - Does NOT affect footer
+   - Broadacre Thin ONLY for headings
+   - Roboto for all readable/body text
+========================================================= */
+
+
+/* =========================================================
+   01. SERVICE PAGE BASE
+========================================================= */
+
+.qid-service-page-main{
+  --qsp-brown: #916349;
+  --qsp-brown-dark: #7d5232;
+  --qsp-brown-light: #aa8069;
+
+  --qsp-bg: #f7f5f2;
+  --qsp-soft: #ebe2dd;
+  --qsp-white: #ffffff;
+  --qsp-dark: #25201d;
+
+  --qsp-text: rgba(60,40,25,.72);
+  --qsp-text-light: rgba(60,40,25,.55);
+
+  --qsp-line: rgba(145,99,73,.20);
+
+  overflow: hidden;
+  background: var(--qsp-bg);
+}
+
+
+/* =========================================================
+   02. TYPOGRAPHY
+
+   Broadacre Thin = HEADINGS ONLY
+   Roboto = everything else
+========================================================= */
+
+
+/* HEADINGS ONLY */
+.qid-service-page-main h1,
+.qid-service-page-main h2,
+.qid-service-page-main h3,
+.qid-service-page-main h4{
+  font-family: "Broadacre", serif !important;
+  font-weight: 100 !important;
+}
+
+
+/* BODY TEXT */
+.qid-service-page-main p,
+.qid-service-page-main li{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300 !important;
+}
+
+
+/* ALL SMALL TEXT / LABELS / LINKS */
+.qid-service-page-main a,
+.qid-service-page-main span,
+.qid-service-page-main .qsp-label,
+.qid-service-page-main .qsp-side-label,
+.qid-service-page-main .qsp-small-title,
+.qid-service-page-main .qsp-nav-number,
+.qid-service-page-main .qsp-nav-title,
+.qid-service-page-main .qsp-nav-arrow,
+.qid-service-page-main .qsp-hero-image-text,
+.qid-service-page-main .qsp-service-points > div,
+.qid-service-page-main .qsp-cta a{
+  font-family: 'Roboto', sans-serif !important;
+}
+
+
+/* DEFAULT PARAGRAPH */
+.qid-service-page-main p{
+  color: var(--qsp-text);
+
+  font-size: 15px;
+  line-height: 1.9;
+
+}
+
+
+/* =========================================================
+   03. HERO
+========================================================= */
+
+.qid-service-page-main .qsp-hero{
+  padding-top: 82px;
+
+  background: #ffffff;
+}
+
+
+/* LEFT SIDE */
+.qid-service-page-main .qsp-hero-content{
+  min-height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    90px
+    9vw
+    80px
+    max(30px, calc((100vw - 1140px) / 2));
+}
+
+
+/* SMALL "OUR SERVICES" LABEL */
+.qid-service-page-main .qsp-label{
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 34px;
+
+  color: var(--qsp-brown);
+
+  font-size: 39px;
+  font-weight: 300 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+  font-family: "Broadacre", serif !important;
+
+}
+
+
+
+
+
+.qid-service-page-main .qsp-label > span{
+  display: block;
+
+  width: 42px;
+  height: 1px;
+
+  background: var(--qsp-brown);
+}
+
+
+/* MAIN HERO TITLE */
+.qid-service-page-main .qsp-hero h2{
+  margin: 0;
+
+
+  color: var(--qsp-brown-dark);
+
+  font-size: 25px;
+
+  line-height: 1.13;
+
+  letter-spacing: .5px;
+
+  font-family: "Broadacre", serif !important;
+  font-weight: 100 !important;
+}
+
+
+/* HERO BODY COPY */
+.qid-service-page-main .qsp-hero-content p{
+  max-width: 560px;
+
+  margin: 32px 0 0;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qsp-text);
+
+  font-size: 16px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.9;
+}
+
+
+/* EXPLORE SERVICES LINK */
+.qid-service-page-main .qsp-text-link{
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 40px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid var(--qsp-brown);
+
+  color: var(--qsp-brown-dark);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition: color .3s ease;
+}
+
+
+.qid-service-page-main .qsp-text-link:hover{
+  color: var(--qsp-brown);
+
+  text-decoration: none;
+}
+
+
+.qid-service-page-main .qsp-text-link span{
+  font-family: 'Roboto', sans-serif !important;
+
+  transition: transform .3s ease;
+}
+
+
+.qid-service-page-main .qsp-text-link:hover span{
+  transform: translateY(4px);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.qid-service-page-main .qsp-hero-image{
+  position: relative;
+
+  min-height: 650px;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+
+.qid-service-page-main .qsp-hero-image::after{
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(20,12,8,.20),
+      transparent 35%
+    );
+}
+
+
+/* SUBTLE INNER FRAME */
+.qid-service-page-main .qsp-image-frame{
+  position: absolute;
+
+  z-index: 2;
+
+  top: 28px;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+
+  border: 1px solid rgba(255,255,255,.40);
+
+  pointer-events: none;
+}
+
+
+/* IMAGE SMALL TEXT */
+.qid-service-page-main .qsp-hero-image-text{
+  position: absolute;
+
+  z-index: 3;
+
+  left: 38px;
+  right: 38px;
+  bottom: 32px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: rgba(255,255,255,.84);
+
+  font-size: 9px;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   04. SERVICE NAVIGATION
+========================================================= */
+/* =========================================
+   SERVICES NAVIGATION
+   3 SERVICES - CENTERED + INTERACTIVE
+========================================= */
+
+.qid-service-page-main .qsp-service-nav{
+  background: #7d5232;
+
+  border-top: 1px solid rgba(255,255,255,.12);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+
+  overflow: hidden;
+}
+
+
+/* 3 equal services filling the full row */
+.qid-service-page-main .qsp-service-nav-grid{
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+}
+
+
+/* EACH SERVICE */
+.qid-service-page-main .qsp-service-nav-grid a{
+  min-height: 170px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 28px 30px;
+
+  border-right: 1px solid rgba(255,255,255,.14);
+
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  overflow: hidden;
+
+  transition:
+    background .35s ease,
+    transform .35s ease,
+    color .35s ease;
+}
+
+
+/* remove last divider */
+.qid-service-page-main .qsp-service-nav-grid a:last-child{
+  border-right: 0;
+}
+
+
+/* subtle line that appears on hover */
+.qid-service-page-main .qsp-service-nav-grid a::before{
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: rgba(255,255,255,.75);
+
+  transform: translateX(-50%);
+
+  transition: width .35s ease;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.qid-service-page-main .qsp-nav-number{
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--qsp-brown);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+  font-weight: 400 !important;
+
+  letter-spacing: 2px;
+
+  transition:
+    color .3s ease,
+    transform .3s ease;
+}
+
+
+/* =========================================
+   SERVICE NAME
+========================================= */
+
+.qid-service-page-main .qsp-nav-title{
+  max-width: 210px;
+
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 13px;
+  font-weight: 400 !important;
+
+  line-height: 1.55;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+
+  transition: transform .3s ease;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.qid-service-page-main .qsp-nav-arrow{
+  position: absolute;
+
+  right: 24px;
+  bottom: 22px;
+
+  color: rgba(255,255,255,.85);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 17px;
+  font-weight: 300 !important;
+
+  transition:
+    transform .35s ease,
+    color .35s ease;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.qid-service-page-main .qsp-service-nav-grid a:hover{
+  background: var(--qsp-brown);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transform: translateY(-2px);
+}
+
+
+/* line grows */
+.qid-service-page-main .qsp-service-nav-grid a:hover::before{
+  width: 100%;
+}
+
+
+/* number becomes lighter and moves slightly */
+.qid-service-page-main
+.qsp-service-nav-grid
+a:hover
+.qsp-nav-number{
+
+  color: rgba(255,255,255,.60);
+
+  transform: translateY(-3px);
+}
+
+
+/* title moves slightly */
+.qid-service-page-main
+.qsp-service-nav-grid
+a:hover
+.qsp-nav-title{
+
+  transform: translateY(-2px);
+}
+
+
+/* arrow moves diagonally */
+.qid-service-page-main
+.qsp-service-nav-grid
+a:hover
+.qsp-nav-arrow{
+
+  color: #ffffff;
+
+  transform: translate(5px,-5px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width: 991.98px){
+
+  .qid-service-page-main .qsp-service-nav-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  .qid-service-page-main .qsp-service-nav-grid a{
+    min-height: 155px;
+
+    padding: 25px 18px;
+  }
+
+
+  .qid-service-page-main .qsp-nav-title{
+    font-size: 11px;
+
+    letter-spacing: 1px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 767.98px){
+
+  .qid-service-page-main .qsp-service-nav-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-service-nav-grid a{
+    min-height: 125px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.14);
+  }
+
+
+  .qid-service-page-main .qsp-service-nav-grid a:last-child{
+    border-bottom: 0;
+  }
+
+
+  .qid-service-page-main .qsp-nav-title{
+    max-width: 250px;
+  }
+
+
+  .qid-service-page-main .qsp-nav-arrow{
+    right: 22px;
+    bottom: 20px;
+  }
+
+}
+
+/* =========================================================
+   05. INTRO SECTION
+========================================================= */
+
+.qid-service-page-main .qsp-intro{
+  padding: 115px 0;
+
+  background: var(--qsp-bg);
+}
+
+
+/* SMALL SIDE LABEL */
+.qid-service-page-main .qsp-side-label{
+  color: var(--qsp-brown);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-service-page-main .qsp-side-label::before{
+  content: "";
+
+  display: block;
+
+  width: 52px;
+  height: 1px;
+
+  margin-bottom: 17px;
+
+  background: var(--qsp-brown);
+}
+
+
+/* INTRO TITLE */
+.qid-service-page-main .qsp-intro h2{
+  margin: 0;
+
+  color: var(--qsp-brown-dark);
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 40px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.15;
+
+  letter-spacing: .4px;
+}
+
+
+/* INTRO PARAGRAPH */
+.qid-service-page-main .qsp-intro p{
+  max-width: 650px;
+
+  margin: 34px 0 0;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 15px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   06. SERVICE ROWS
+========================================================= */
+
+.qid-service-page-main .qsp-service-row{
+  padding: 120px 0;
+
+  background: #ffffff;
+
+  scroll-margin-top: 80px;
+}
+
+
+.qid-service-page-main .qsp-service-row-alt{
+  background: var(--qsp-bg);
+}
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.qid-service-page-main .qsp-service-image{
+  position: relative;
+
+  height: 570px;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+
+.qid-service-page-main .qsp-service-image img{
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform .75s cubic-bezier(.2,.7,.2,1),
+    filter .75s ease;
+}
+
+
+.qid-service-page-main .qsp-service-image:hover img{
+  transform: scale(1.035);
+
+  filter: saturate(.96);
+}
+
+
+/* SMALL ARCHITECTURAL IMAGE CORNERS */
+.qid-service-page-main .qsp-photo-line{
+  position: absolute;
+
+  z-index: 2;
+
+  width: 42px;
+  height: 42px;
+
+  pointer-events: none;
+}
+
+
+.qid-service-page-main .qsp-photo-line-top{
+  top: 20px;
+  left: 20px;
+
+  border-top:
+    1px solid rgba(255,255,255,.75);
+
+  border-left:
+    1px solid rgba(255,255,255,.75);
+}
+
+
+.qid-service-page-main .qsp-photo-line-bottom{
+  right: 20px;
+  bottom: 20px;
+
+  border-right:
+    1px solid rgba(255,255,255,.75);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.75);
+}
+
+
+/* =========================================================
+   SERVICE CONTENT
+========================================================= */
+
+.qid-service-page-main .qsp-service-content{
+  position: relative;
+}
+
+
+/* LARGE DECORATIVE NUMBER
+   ROBOTO — NOT BROADACRE
+*/
+.qid-service-page-main .qsp-big-number{
+  position: absolute;
+
+  top: -85px;
+  right: 0;
+
+  color: rgba(145,99,73,.065);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 110px;
+
+  font-weight: 300 !important;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* SMALL LABEL */
+.qid-service-page-main .qsp-small-title{
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 20px;
+
+  color: var(--qsp-brown);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* SERVICE TITLE */
+.qid-service-page-main .qsp-service-content h2{
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0 0 27px;
+
+  color: var(--qsp-brown-dark);
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: clamp(38px, 4vw, 53px);
+
+  font-weight: 100 !important;
+
+  line-height: 1.16;
+
+  letter-spacing: .3px;
+}
+
+
+/* SHORT EMPHASIS TEXT */
+.qid-service-page-main .qsp-service-lead{
+  max-width: 500px;
+
+  margin-bottom: 20px !important;
+
+  color: #755440 !important;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 17px !important;
+
+  font-weight: 300 !important;
+
+  line-height: 1.65 !important;
+}
+
+
+/* MAIN DESCRIPTION */
+.qid-service-page-main
+.qsp-service-content
+> p:not(.qsp-service-lead){
+
+  max-width: 520px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 14px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   SERVICE POINTS
+========================================================= */
+
+.qid-service-page-main .qsp-service-points{
+  margin-top: 38px;
+
+  border-top: 1px solid var(--qsp-line);
+}
+
+
+.qid-service-page-main .qsp-service-points > div{
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  align-items: center;
+
+  padding: 14px 0;
+
+  border-bottom:
+    1px solid rgba(145,99,73,.12);
+
+  color: rgba(60,40,25,.70);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 13px;
+
+  font-weight: 300 !important;
+
+  letter-spacing: .2px;
+}
+
+
+.qid-service-page-main
+.qsp-service-points
+> div
+> span{
+
+  color: var(--qsp-brown);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   07. PROCESS SECTION
+========================================================= */
+
+.qid-service-page-main .qsp-process{
+  position: relative;
+
+  padding: 115px 0;
+
+  background: var(--qsp-dark);
+
+  overflow: hidden;
+}
+
+
+/* SUBTLE LARGE Q */
+.qid-service-page-main .qsp-process::after{
+  content: "Q";
+
+  position: absolute;
+
+  right: -20px;
+
+  bottom: -125px;
+
+  color: rgba(255,255,255,.025);
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 360px;
+
+  font-weight: 100 !important;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* LIGHT LABEL */
+.qid-service-page-main .qsp-side-label-light{
+  color: rgba(255,255,255,.56);
+}
+
+
+.qid-service-page-main .qsp-side-label-light::before{
+  background: rgba(255,255,255,.35);
+}
+
+
+/* PROCESS TITLE */
+.qid-service-page-main .qsp-process h2{
+  margin: 0;
+
+  color: #755440;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 40px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.15;
+}
+
+
+/* PROCESS GRID */
+.qid-service-page-main .qsp-process-grid{
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  margin-top: 70px;
+
+  border-top:
+    1px solid rgba(255,255,255,.15);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.15);
+}
+
+
+.qid-service-page-main .qsp-process-item{
+  min-height: 225px;
+
+  padding: 30px 28px;
+
+  border-right:
+    1px solid rgba(255,255,255,.15);
+
+  transition: background .3s ease;
+}
+
+
+.qid-service-page-main .qsp-process-item:last-child{
+  border-right: 0;
+}
+
+
+.qid-service-page-main .qsp-process-item:hover{
+  background:
+    rgba(255,255,255,.035);
+}
+
+
+/* PROCESS NUMBER */
+.qid-service-page-main .qsp-process-item > span{
+  display: block;
+
+  margin-bottom: 43px;
+
+  color: #bd8d73;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 2px;
+}
+
+
+/* PROCESS ITEM TITLE */
+.qid-service-page-main .qsp-process-item h3{
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 22px;
+
+  font-weight: 100 !important;
+}
+
+
+/* PROCESS TEXT */
+.qid-service-page-main .qsp-process-item p{
+  max-width: 270px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.55);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 13px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   08. FINAL CTA
+========================================================= */
+
+.qid-service-page-main .qsp-cta{
+  padding: 75px 0;
+
+  background: var(--qsp-brown);
+}
+
+
+.qid-service-page-main .qsp-cta-wrap{
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 50px;
+}
+
+
+/* CTA SMALL LABEL */
+.qid-service-page-main
+.qsp-cta-wrap
+> div
+> span{
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: rgba(255,255,255,.62);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* CTA TITLE */
+.qid-service-page-main .qsp-cta h2{
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 37px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.15;
+}
+
+
+/* CTA LINK */
+.qid-service-page-main .qsp-cta a{
+  min-width: 260px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 16px 0;
+
+  border-top:
+    1px solid rgba(255,255,255,.50);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.50);
+
+  color: #ffffff;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 10px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-service-page-main .qsp-cta a:hover{
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+
+.qid-service-page-main .qsp-cta-arrow{
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 18px;
+
+  font-weight: 300 !important;
+
+  transition: transform .3s ease;
+}
+
+
+.qid-service-page-main
+.qsp-cta
+a:hover
+.qsp-cta-arrow{
+
+  transform: translate(4px,-4px);
+}
+
+
+/* =========================================================
+   09. TABLET
+========================================================= */
+
+@media(max-width:991.98px){
+
+  .qid-service-page-main .qsp-hero{
+    padding-top: 75px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-content{
+    min-height: 530px;
+
+    padding:
+      90px
+      45px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-image{
+    min-height: 520px;
+  }
+
+
+  /* SERVICE NAV */
+  .qid-service-page-main .qsp-service-nav-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-nav-grid
+  a:nth-child(2){
+
+    border-right: 0;
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-nav-grid
+  a:nth-child(-n+2){
+
+    border-bottom:
+      1px solid var(--qsp-line);
+  }
+
+
+  /* INTRO */
+  .qid-service-page-main .qsp-side-label{
+    margin-bottom: 40px;
+  }
+
+
+  /* SERVICES */
+  .qid-service-page-main .qsp-service-row{
+    padding: 90px 0;
+  }
+
+
+  .qid-service-page-main .qsp-service-image{
+    height: 500px;
+
+    margin-bottom: 55px;
+  }
+
+
+  .qid-service-page-main .qsp-big-number{
+    top: -65px;
+
+    font-size: 90px;
+  }
+
+
+  /* PROCESS */
+  .qid-service-page-main .qsp-process-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-process-item{
+    min-height: 0;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.15);
+  }
+
+
+  .qid-service-page-main .qsp-process-item:last-child{
+    border-bottom: 0;
+  }
+
+}
+
+
+/* =========================================================
+   10. MOBILE
+========================================================= */
+
+@media(max-width:767.98px){
+
+  /* HERO */
+  .qid-service-page-main .qsp-hero{
+    padding-top: 70px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-content{
+    min-height: auto;
+
+    padding:
+      75px
+      24px
+      65px;
+  }
+
+
+  .qid-service-page-main .qsp-label{
+    margin-bottom: 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .qid-service-page-main .qsp-label > span{
+    width: 30px;
+  }
+
+
+  .qid-service-page-main .qsp-hero h1{
+    font-size: 40px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-content p{
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+
+  .qid-service-page-main .qsp-hero-image{
+    min-height: 430px;
+  }
+
+
+  .qid-service-page-main .qsp-image-frame{
+    top: 18px;
+    right: 18px;
+    bottom: 18px;
+    left: 18px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-image-text{
+    left: 25px;
+    right: 25px;
+    bottom: 24px;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+
+  /* SERVICE NAV */
+  .qid-service-page-main .qsp-service-nav-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-service-nav-grid a{
+    min-height: 100px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid var(--qsp-line);
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-nav-grid
+  a:last-child{
+
+    border-bottom: 0;
+  }
+
+
+  /* INTRO */
+  .qid-service-page-main .qsp-intro{
+    padding: 75px 0;
+  }
+
+
+  .qid-service-page-main .qsp-intro h2{
+    font-size: 34px;
+  }
+
+
+  .qid-service-page-main .qsp-intro p{
+    font-size: 14px;
+  }
+
+
+  /* SERVICES */
+  .qid-service-page-main .qsp-service-row{
+    padding: 75px 0;
+  }
+
+
+  .qid-service-page-main .qsp-service-image{
+    height: 390px;
+
+    margin-bottom: 48px;
+  }
+
+
+  .qid-service-page-main .qsp-big-number{
+    top: -35px;
+
+    font-size: 65px;
+  }
+
+
+  .qid-service-page-main .qsp-service-content h2{
+    font-size: 34px;
+  }
+
+
+  .qid-service-page-main .qsp-service-lead{
+    font-size: 15px !important;
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-content
+  > p:not(.qsp-service-lead){
+
+    font-size: 13px;
+  }
+
+
+  /* PROCESS */
+  .qid-service-page-main .qsp-process{
+    padding: 75px 0;
+  }
+
+
+  .qid-service-page-main .qsp-process h2{
+    font-size: 33px;
+  }
+
+
+  .qid-service-page-main .qsp-process-grid{
+    margin-top: 45px;
+  }
+
+
+  .qid-service-page-main .qsp-process-item{
+    padding: 26px 20px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-process-item
+  > span{
+
+    margin-bottom: 25px;
+  }
+
+
+  /* CTA */
+  .qid-service-page-main .qsp-cta{
+    padding: 60px 0;
+  }
+
+
+  .qid-service-page-main .qsp-cta-wrap{
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 35px;
+  }
+
+
+  .qid-service-page-main .qsp-cta h2{
+    font-size: 30px;
+  }
+
+
+  .qid-service-page-main .qsp-cta a{
+    min-width: 0;
+
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   11. SMALL MOBILE
+========================================================= */
+
+@media(max-width:480px){
+
+  .qid-service-page-main .qsp-hero h1{
+    font-size: 35px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-image{
+    min-height: 360px;
+  }
+
+
+  .qid-service-page-main .qsp-service-image{
+    height: 330px;
+  }
+
+
+  .qid-service-page-main .qsp-intro h2,
+  .qid-service-page-main .qsp-service-content h2,
+  .qid-service-page-main .qsp-process h2{
+    font-size: 30px;
+  }
+
+}
+
+
+/* =========================================
+   SMOOTH SCROLL
+========================================= */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* Prevent fixed navbar from covering the section title */
+.qid-service-page-main .qsp-service-row{
+  scroll-margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   BUBBLE / SOFT 3D SERVICE SELECTOR
+   Replace the old qsp-3d-services CSS with this
+========================================================= */
+
+.qid-service-page-main .qsp-3d-services{
+  position: relative;
+  padding: 110px 0 125px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 12% 18%, rgba(145,99,73,.08), transparent 24%),
+    radial-gradient(circle at 88% 14%, rgba(145,99,73,.06), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(145,99,73,.05), transparent 26%),
+    linear-gradient(135deg, #f8f5f1 0%, #eee8e1 100%);
+}
+
+/* soft background bubbles */
+.qid-service-page-main .qsp-3d-services::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .95;
+
+  background:
+    radial-gradient(circle at 8% 22%, rgba(255,255,255,.55) 0 58px, transparent 59px),
+    radial-gradient(circle at 26% 78%, rgba(255,255,255,.38) 0 40px, transparent 41px),
+    radial-gradient(circle at 52% 12%, rgba(255,255,255,.30) 0 48px, transparent 49px),
+    radial-gradient(circle at 74% 86%, rgba(255,255,255,.32) 0 56px, transparent 57px),
+    radial-gradient(circle at 92% 26%, rgba(255,255,255,.28) 0 36px, transparent 37px);
+}
+
+.qid-service-page-main .qsp-3d-services .container{
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.qid-service-page-main .qsp-3d-heading{
+  max-width: 760px;
+  margin: 0 auto 78px;
+  text-align: center;
+}
+
+.qid-service-page-main .qsp-3d-label{
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 10px;
+  font-weight: 500 !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #916349;
+}
+
+.qid-service-page-main .qsp-3d-label::before{
+  content: "";
+  display: block;
+  width: 46px;
+  height: 1px;
+  margin: 0 auto 16px;
+  background: #916349;
+}
+
+.qid-service-page-main .qsp-3d-heading h2{
+  margin: 0;
+
+  font-family: "Broadacre", serif !important;
+  font-size: 46px;
+  font-weight: 100 !important;
+  line-height: 1.14;
+  letter-spacing: .4px;
+
+  color: #7d5232;
+}
+
+.qid-service-page-main .qsp-3d-heading p{
+  max-width: 580px;
+  margin: 22px auto 0;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 14px;
+  font-weight: 300 !important;
+  line-height: 1.8;
+
+  color: rgba(60,40,25,.62);
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.qid-service-page-main .qsp-3d-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+  perspective: 1600px;
+  align-items: stretch;
+}
+
+
+/* =========================================
+   CARD WRAPPER
+========================================= */
+
+.qid-service-page-main .qsp-3d-card{
+  position: relative;
+  display: block;
+  min-height: 410px;
+  color: inherit;
+  text-decoration: none;
+  transform-style: preserve-3d;
+
+  transition: transform .55s cubic-bezier(.18,.8,.25,1);
+}
+
+/* small balanced angle only */
+.qid-service-page-main .qsp-3d-card-1{
+  transform: rotateY(3deg) rotateX(1deg);
+}
+
+.qid-service-page-main .qsp-3d-card-2{
+  transform: rotateX(1deg);
+}
+
+.qid-service-page-main .qsp-3d-card-3{
+  transform: rotateY(-3deg) rotateX(1deg);
+}
+
+
+/* =========================================
+   DEPTH LAYER
+   unified shadow / aligned together
+========================================= */
+
+.qid-service-page-main .qsp-3d-depth{
+  position: absolute;
+  inset: 18px -10px -14px 10px;
+
+  border-radius: 34px;
+
+  background: linear-gradient(145deg, #9b6d52 0%, #7d5232 100%);
+
+  transform: translateZ(-24px);
+
+  box-shadow:
+    0 26px 45px rgba(72,46,30,.16),
+    0 12px 18px rgba(72,46,30,.09);
+
+  transition:
+    transform .55s cubic-bezier(.18,.8,.25,1),
+    box-shadow .45s ease,
+    background .45s ease;
+}
+
+
+/* =========================================
+   FRONT FACE
+========================================= */
+
+.qid-service-page-main .qsp-3d-face{
+  position: relative;
+  min-height: 410px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 34px 30px 28px;
+
+  border-radius: 30px;
+  border: 1px solid rgba(145,99,73,.11);
+
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.94), rgba(250,247,243,.96));
+
+  overflow: hidden;
+
+  transform: translateZ(20px);
+
+  box-shadow:
+    0 14px 32px rgba(70,45,30,.05),
+    inset 0 1px 0 rgba(255,255,255,.55);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition:
+    transform .55s cubic-bezier(.18,.8,.25,1),
+    box-shadow .45s ease,
+    border-color .45s ease,
+    background .45s ease;
+}
+
+/* inner soft bubbles */
+.qid-service-page-main .qsp-3d-face::before{
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: -55px;
+  top: -50px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, rgba(255,255,255,.85) 0%, rgba(255,255,255,.08) 62%, transparent 70%);
+  filter: blur(2px);
+
+  transition: transform .6s ease, opacity .6s ease;
+}
+
+.qid-service-page-main .qsp-3d-face::after{
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: -90px;
+  bottom: -110px;
+  border-radius: 50%;
+
+  background: radial-gradient(circle, rgba(145,99,73,.08) 0%, rgba(145,99,73,.03) 58%, transparent 72%);
+  transition: transform .6s ease, opacity .6s ease;
+}
+
+
+/* =========================================
+   GHOST NUMBER
+========================================= */
+
+.qid-service-page-main .qsp-3d-ghost-number{
+  position: absolute;
+  right: 16px;
+  bottom: -18px;
+
+  font-family: "Broadacre", serif !important;
+  font-size: 142px;
+  font-weight: 100 !important;
+  line-height: 1;
+
+  color: rgba(145,99,73,.045);
+
+  pointer-events: none;
+
+  transition: transform .55s ease, color .45s ease;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.qid-service-page-main .qsp-3d-top{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 56px;
+}
+
+.qid-service-page-main .qsp-3d-number{
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 10px;
+  font-weight: 500 !important;
+  letter-spacing: 2px;
+  color: #916349;
+
+  transition: color .35s ease, transform .35s ease;
+}
+
+
+/* =========================================
+   ARROW BUTTON
+========================================= */
+
+.qid-service-page-main .qsp-3d-arrow{
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(145,99,73,.15);
+
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.82), rgba(245,239,233,.88));
+
+  color: #916349;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 17px;
+
+  box-shadow:
+    0 12px 24px rgba(70,45,30,.08),
+    inset 0 1px 0 rgba(255,255,255,.85);
+
+  transition:
+    transform .4s ease,
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    box-shadow .4s ease;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.qid-service-page-main .qsp-3d-content{
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+.qid-service-page-main .qsp-3d-small{
+  display: block;
+  margin-bottom: 16px;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 9px;
+  font-weight: 500 !important;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+
+  color: #aa8069;
+
+  transition: color .35s ease;
+}
+
+.qid-service-page-main .qsp-3d-content h3{
+  max-width: 270px;
+  margin: 0 0 18px;
+
+  font-family: "Broadacre", serif !important;
+  font-size: 29px;
+  font-weight: 100 !important;
+  line-height: 1.2;
+
+  color: #7d5232;
+
+  transition: color .4s ease, transform .4s ease;
+}
+
+.qid-service-page-main .qsp-3d-content p{
+  max-width: 280px;
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 13px;
+  font-weight: 300 !important;
+  line-height: 1.8;
+
+  color: rgba(60,40,25,.60);
+
+  transition: color .4s ease, transform .4s ease;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.qid-service-page-main .qsp-3d-footer{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-top: 34px;
+
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 9px;
+  font-weight: 500 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #916349;
+
+  transition: color .35s ease;
+}
+
+.qid-service-page-main .qsp-3d-footer-line{
+  flex: 1;
+  height: 1px;
+
+  background: rgba(145,99,73,.18);
+
+  transform-origin: left;
+
+  transition: transform .45s ease, background .35s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.qid-service-page-main .qsp-3d-card:hover{
+  transform: translateY(-14px) rotateX(0deg) rotateY(0deg) scale(1.02);
+  text-decoration: none;
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-depth{
+  transform: translate(6px,8px) translateZ(-12px);
+
+  box-shadow:
+    0 36px 55px rgba(72,46,30,.18),
+    0 16px 22px rgba(72,46,30,.10);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-face{
+  transform: translateZ(36px);
+
+  border-color: rgba(145,99,73,.18);
+
+  box-shadow:
+    0 28px 54px rgba(70,45,30,.10),
+    inset 0 1px 0 rgba(255,255,255,.85);
+}
+
+/* bubble motion */
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-face::before{
+  transform: translate(-16px,14px) scale(1.08);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-face::after{
+  transform: translate(18px,-12px) scale(1.05);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-ghost-number{
+  transform: translateY(-8px);
+  color: rgba(145,99,73,.07);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-number{
+  transform: translateY(-2px);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-small{
+  color: #916349;
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-content h3{
+  transform: translateY(-3px);
+  color: #916349;
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-content p{
+  transform: translateY(-2px);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-arrow{
+  background: linear-gradient(145deg, #916349, #7d5232);
+  color: #ffffff;
+  border-color: #916349;
+
+  transform: translate(4px,-4px) scale(1.04);
+
+  box-shadow:
+    0 16px 30px rgba(70,45,30,.18),
+    inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.qid-service-page-main .qsp-3d-card:hover .qsp-3d-footer-line{
+  transform: scaleX(.78);
+  background: rgba(145,99,73,.42);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:991.98px){
+
+  .qid-service-page-main .qsp-3d-services{
+    padding: 90px 0 100px;
+  }
+
+  .qid-service-page-main .qsp-3d-heading{
+    margin-bottom: 60px;
+  }
+
+  .qid-service-page-main .qsp-3d-grid{
+    gap: 20px;
+  }
+
+  .qid-service-page-main .qsp-3d-card,
+  .qid-service-page-main .qsp-3d-face{
+    min-height: 370px;
+  }
+
+  .qid-service-page-main .qsp-3d-face{
+    padding: 28px 22px 24px;
+  }
+
+  .qid-service-page-main .qsp-3d-content h3{
+    font-size: 25px;
+  }
+
+  .qid-service-page-main .qsp-3d-content p{
+    font-size: 12px;
+  }
+
+  .qid-service-page-main .qsp-3d-ghost-number{
+    font-size: 118px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:767.98px){
+
+  .qid-service-page-main .qsp-3d-services{
+    padding: 70px 0 82px;
+  }
+
+  .qid-service-page-main .qsp-3d-heading{
+    margin-bottom: 48px;
+  }
+
+  .qid-service-page-main .qsp-3d-heading h2{
+    font-size: 34px;
+  }
+
+  .qid-service-page-main .qsp-3d-heading p{
+    font-size: 13px;
+  }
+
+  .qid-service-page-main .qsp-3d-grid{
+    grid-template-columns: 1fr;
+    gap: 28px;
+    perspective: none;
+  }
+
+  .qid-service-page-main .qsp-3d-card-1,
+  .qid-service-page-main .qsp-3d-card-2,
+  .qid-service-page-main .qsp-3d-card-3{
+    transform: none;
+  }
+
+  .qid-service-page-main .qsp-3d-card,
+  .qid-service-page-main .qsp-3d-face{
+    min-height: 330px;
+  }
+
+  .qid-service-page-main .qsp-3d-top{
+    margin-bottom: 38px;
+  }
+
+  .qid-service-page-main .qsp-3d-content h3{
+    font-size: 27px;
+  }
+
+  .qid-service-page-main .qsp-3d-ghost-number{
+    font-size: 110px;
+    right: 12px;
+    bottom: -14px;
+  }
+
+  .qid-service-page-main .qsp-3d-card:hover{
+    transform: translateY(-7px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   QUANTUM SERVICES HERO
+   TOP SERVICE DOCK CONCEPT
+========================================================= */
+
+
+/* =========================================================
+   HERO WRAPPER
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav{
+  position: relative;
+
+  padding-top: 82px;
+
+  background: #f7f5f2;
+
+  overflow: hidden;
+}
+
+
+
+/* =========================================================
+   TOP SERVICE NAVIGATION
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-nav{
+  position: relative;
+
+  z-index: 20;
+
+  background:
+    rgba(250,248,245,.97);
+
+  border-top:
+    1px solid rgba(145,99,73,.10);
+
+  border-bottom:
+    1px solid rgba(145,99,73,.16);
+
+  box-shadow:
+    0 8px 28px rgba(55,35,24,.055);
+
+  backdrop-filter:
+    blur(12px);
+
+  -webkit-backdrop-filter:
+    blur(12px);
+}
+
+
+
+/* =========================================================
+   SMALL NAV HEADING
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-heading{
+  min-height: 56px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom:
+    1px solid rgba(145,99,73,.12);
+}
+
+
+.qid-service-page-main .qsp-top-service-label{
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size:
+    9px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    3px;
+
+  text-transform:
+    uppercase;
+}
+
+
+.qid-service-page-main .qsp-top-service-label::before{
+  content: "";
+
+  display:
+    inline-block;
+
+  width:
+    34px;
+
+  height:
+    1px;
+
+  margin-right:
+    13px;
+
+  vertical-align:
+    middle;
+
+  background:
+    #916349;
+}
+
+
+.qid-service-page-main .qsp-top-service-hint{
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(60,40,25,.42);
+
+  font-size:
+    9px;
+
+  font-weight:
+    400 !important;
+
+  letter-spacing:
+    1.5px;
+
+  text-transform:
+    uppercase;
+}
+
+
+
+/* =========================================================
+   NAVIGATION GRID
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-grid{
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+}
+
+
+
+/* =========================================================
+   SERVICE ITEM
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item{
+  position:
+    relative;
+
+  min-height:
+    100px;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    38px 1fr 34px;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  padding:
+    20px 24px;
+
+  border-right:
+    1px solid rgba(145,99,73,.13);
+
+  color:
+    #7d5232;
+
+  overflow:
+    hidden;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+.qid-service-page-main .qsp-top-service-item:last-child{
+  border-right:
+    0;
+}
+
+
+
+/* subtle bottom accent */
+.qid-service-page-main .qsp-top-service-item::before{
+  content: "";
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  bottom:
+    0;
+
+  width:
+    0;
+
+  height:
+    3px;
+
+  background:
+    #916349;
+
+  transition:
+    width .4s cubic-bezier(.2,.8,.2,1);
+}
+
+
+
+/* soft highlight */
+.qid-service-page-main .qsp-top-service-item::after{
+  content: "";
+
+  position:
+    absolute;
+
+  width:
+    120px;
+
+  height:
+    120px;
+
+  right:
+    -70px;
+
+  top:
+    -70px;
+
+  border-radius:
+    50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.16),
+      transparent 70%
+    );
+
+  opacity:
+    0;
+
+  transition:
+    opacity .35s ease,
+    transform .45s ease;
+}
+
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.qid-service-page-main .qsp-top-number{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #aa8069;
+
+  font-size:
+    9px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    1.5px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+
+/* =========================================================
+   SERVICE TITLE
+========================================================= */
+
+.qid-service-page-main .qsp-top-name{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    220px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size:
+    17px;
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.25;
+
+  letter-spacing:
+    .15px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.qid-service-page-main .qsp-top-arrow{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  width:
+    31px;
+
+  height:
+    31px;
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  border:
+    1px solid rgba(145,99,73,.22);
+
+  border-radius:
+    50%;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size:
+    13px;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .35s ease;
+}
+
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item:hover{
+  background:
+    #916349;
+
+  color:
+    #ffffff;
+
+  text-decoration:
+    none;
+}
+
+
+/* bottom accent */
+.qid-service-page-main .qsp-top-service-item:hover::before{
+  width:
+    100%;
+
+  background:
+    #ffffff;
+}
+
+
+/* glow */
+.qid-service-page-main .qsp-top-service-item:hover::after{
+  opacity:
+    1;
+
+  transform:
+    translate(-20px,20px)
+    scale(1.2);
+}
+
+
+/* number */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-number{
+  color:
+    rgba(255,255,255,.56);
+
+  transform:
+    translateX(3px);
+}
+
+
+/* title */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-name{
+  color:
+    #ffffff;
+
+  transform:
+    translateX(4px);
+}
+
+
+/* arrow */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-arrow{
+  background:
+    #ffffff;
+
+  color:
+    #916349;
+
+  border-color:
+    #ffffff;
+
+  transform:
+    translate(4px,-4px);
+}
+
+
+
+/* =========================================================
+   LEFT HERO CONTENT
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-content{
+  min-height:
+    580px;
+
+  position:
+    relative;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    center;
+
+  padding:
+    80px
+    7vw
+    80px
+    max(35px,calc((100vw - 1140px) / 2));
+}
+
+
+
+/* subtle background element */
+.qid-service-page-main .qsp-hero-topnav-content::after{
+  content:
+    "01";
+
+  position:
+    absolute;
+
+  right:
+    18px;
+
+  bottom:
+    -20px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    rgba(145,99,73,.025);
+
+  font-size:
+    180px;
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    1;
+
+  pointer-events:
+    none;
+}
+
+
+
+/* =========================================================
+   HERO LABEL
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-content .qsp-label{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  margin-bottom:
+    27px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size:
+    10px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    3px;
+
+  text-transform:
+    uppercase;
+}
+
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-content h2{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    650px;
+
+  margin:
+    0;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size:22px;
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.13;
+
+  letter-spacing:
+    .25px;
+}
+
+
+
+/* =========================================================
+   HERO PARAGRAPH
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-content p{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    560px;
+
+  margin:
+    30px 0 0;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(60,40,25,.67);
+
+  font-size:
+    15px;
+
+  font-weight:
+    300 !important;
+
+  line-height:
+    1.9;
+}
+
+
+
+/* =========================================================
+   SMALL SIGNATURE DETAIL
+========================================================= */
+
+.qid-service-page-main .qsp-hero-signature{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    14px;
+
+  margin-top:
+    37px;
+}
+
+
+.qid-service-page-main .qsp-hero-signature-line{
+  width:
+    46px;
+
+  height:
+    1px;
+
+  background:
+    rgba(145,99,73,.45);
+}
+
+
+.qid-service-page-main
+.qsp-hero-signature
+span:last-child{
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(125,82,50,.45);
+
+  font-size:
+    8px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    2px;
+
+  text-transform:
+    uppercase;
+}
+
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-image{
+  position:
+    relative;
+
+  min-height:
+    580px;
+
+  height:
+    100%;
+
+  background-size:
+    cover;
+
+  background-position:
+    center;
+
+  overflow:
+    hidden;
+}
+
+
+.qid-service-page-main .qsp-hero-topnav-image::after{
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(20,12,8,.20),
+      transparent 38%
+    );
+}
+
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-image .qsp-image-frame{
+  position:
+    absolute;
+
+  z-index:
+    2;
+
+  inset:
+    25px;
+
+  border:
+    1px solid rgba(255,255,255,.40);
+
+  pointer-events:
+    none;
+}
+
+
+
+/* =========================================================
+   IMAGE TEXT
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-image .qsp-hero-image-text{
+  position:
+    absolute;
+
+  z-index:
+    3;
+
+  left:
+    38px;
+
+  right:
+    38px;
+
+  bottom:
+    32px;
+
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  gap:
+    20px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(255,255,255,.80);
+
+  font-size:
+    9px;
+
+  font-weight:
+    400 !important;
+
+  letter-spacing:
+    2px;
+
+  text-transform:
+    uppercase;
+}
+
+
+
+/* little corner label */
+.qid-service-page-main .qsp-image-service-mark{
+  position:
+    absolute;
+
+  z-index:
+    3;
+
+  right:
+    39px;
+
+  top:
+    38px;
+
+  padding:
+    8px 10px;
+
+  border:
+    1px solid rgba(255,255,255,.32);
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(255,255,255,.75);
+
+  font-size:
+    8px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    1.8px;
+}
+
+
+
+/* =========================================================
+   SMOOTH SCROLL
+========================================================= */
+
+html{
+  scroll-behavior:
+    smooth;
+}
+
+
+.qid-service-page-main .qsp-service-row{
+  scroll-margin-top:
+    90px;
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991.98px){
+
+  .qid-service-page-main .qsp-hero-topnav{
+    padding-top:
+      75px;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    grid-template-columns:
+      28px 1fr 30px;
+
+    padding:
+      18px 14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    font-size:
+      14px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-topnav-content{
+    min-height:
+      auto;
+
+    padding:
+      80px
+      50px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-topnav-image{
+    min-height:
+      520px;
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767.98px){
+
+  .qid-service-page-main .qsp-hero-topnav{
+    padding-top:
+      70px;
+  }
+
+
+  /* small heading */
+  .qid-service-page-main .qsp-top-service-heading{
+    min-height:
+      45px;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-hint{
+    display:
+      none;
+  }
+
+
+  /* stack service navigation */
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height:
+      72px;
+
+    grid-template-columns:
+      30px 1fr 32px;
+
+    padding:
+      14px 10px;
+
+    border-right:
+      0;
+
+    border-bottom:
+      1px solid rgba(145,99,73,.12);
+  }
+
+
+  .qid-service-page-main
+  .qsp-top-service-item:last-child{
+    border-bottom:
+      0;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    max-width:
+      none;
+
+    font-size:
+      14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width:
+      29px;
+
+    height:
+      29px;
+  }
+
+
+  /* hero */
+  .qid-service-page-main .qsp-hero-topnav-content{
+    padding:
+      65px
+      24px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-topnav-content h2{
+    font-size:
+      23px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-topnav-content p{
+    font-size:
+      14px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-topnav-image{
+    min-height:
+      420px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-hero-topnav-image
+  .qsp-image-frame{
+    inset:
+      18px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-hero-topnav-image
+  .qsp-hero-image-text{
+    left:
+      25px;
+
+    right:
+      25px;
+
+    bottom:
+      24px;
+
+    flex-direction:
+      column;
+
+    gap:
+      5px;
+  }
+
+
+  .qid-service-page-main .qsp-image-service-mark{
+    right:
+      25px;
+
+    top:
+      25px;
+  }
+
+}
+
+/* =========================================================
+   TOP SERVICE NAVIGATION
+   DEFAULT = QUANTUM BROWN
+   HOVER = WHITE
+========================================================= */
+
+
+/* =========================================
+   NAV WRAPPER
+========================================= */
+
+.qid-service-page-main .qsp-top-service-nav{
+  position: relative;
+
+  z-index: 20;
+
+  background: #f7f5f2;
+  border-top:
+    1px solid rgba(145,99,73,.10);
+
+  border-bottom:
+    1px solid rgba(145,99,73,.16);
+
+  box-shadow:
+    0 8px 28px rgba(55,35,24,.055);
+}
+
+
+/* =========================================
+   SMALL HEADING ABOVE SERVICES
+========================================= */
+
+.qid-service-page-main .qsp-top-service-heading{
+  min-height: 56px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom:
+    1px solid rgba(145,99,73,.12);
+}
+
+
+.qid-service-page-main .qsp-top-service-label{
+  color: #916349;
+  font-family: "Broadacre", serif !important;
+
+  font-size: 33px;
+  font-weight: 300 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-service-page-main .qsp-top-service-label::before{
+  content: "";
+
+  display: inline-block;
+
+  width: 34px;
+  height: 1px;
+
+  margin-right: 13px;
+
+  vertical-align: middle;
+
+  background: #916349;
+}
+
+
+.qid-service-page-main .qsp-top-service-hint{
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(60,40,25,.42);
+
+  font-size: 9px;
+  font-weight: 400 !important;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.qid-service-page-main .qsp-top-service-grid{
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+/* =========================================
+   SERVICE ITEM
+   DEFAULT = BROWN
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item{
+  position: relative;
+
+  min-height: 100px;
+
+  display: grid;
+
+  grid-template-columns: 38px 1fr 34px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 20px 24px;
+
+  background: #916349;
+
+  border-right:
+    1px solid rgba(255,255,255,.18);
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+
+.qid-service-page-main .qsp-top-service-item:last-child{
+  border-right: 0;
+}
+
+
+/* =========================================
+   BOTTOM ANIMATED LINE
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item::before{
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: #ffffff;
+
+  transition:
+    width .4s cubic-bezier(.2,.8,.2,1),
+    background .35s ease;
+}
+
+
+/* =========================================
+   SOFT DECORATIVE GLOW
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item::after{
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: -70px;
+  top: -70px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.14),
+      transparent 70%
+    );
+
+  opacity: .6;
+
+  transition:
+    opacity .35s ease,
+    transform .45s ease;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.qid-service-page-main .qsp-top-number{
+  position: relative;
+
+  z-index: 2;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================
+   SERVICE NAME
+========================================= */
+
+.qid-service-page-main .qsp-top-name{
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 220px;
+
+  font-family: "Broadacre", serif !important;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.25;
+
+  letter-spacing: .15px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.qid-service-page-main .qsp-top-arrow{
+  position: relative;
+
+  z-index: 2;
+
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border:
+    1px solid rgba(255,255,255,.42);
+
+  border-radius: 50%;
+
+  background:
+    rgba(255,255,255,.07);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   WHITE BACKGROUND
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item:hover{
+  background: #ffffff;
+
+  color: #7d5232;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 30px rgba(70,45,30,.12);
+}
+
+
+/* bottom brown line */
+.qid-service-page-main .qsp-top-service-item:hover::before{
+  width: 100%;
+
+  background: #916349;
+}
+
+
+/* glow changes */
+.qid-service-page-main .qsp-top-service-item:hover::after{
+  opacity: 1;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(145,99,73,.07),
+      transparent 70%
+    );
+
+  transform:
+    translate(-20px,20px)
+    scale(1.2);
+}
+
+
+/* number */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-number{
+  color: #916349;
+
+  transform: translateX(3px);
+}
+
+
+/* title */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-name{
+  color: #7d5232;
+
+  transform: translateX(4px);
+}
+
+
+/* arrow */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-arrow{
+  background: #916349;
+
+  color: #ffffff;
+
+  border-color: #916349;
+
+  transform:
+    translate(4px,-4px);
+}
+
+
+/* =========================================================
+   FOCUS
+   Good for keyboard users too
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item:focus{
+  outline: none;
+
+  background: #ffffff;
+
+  color: #7d5232;
+
+  box-shadow:
+    inset 0 0 0 2px rgba(145,99,73,.35);
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item:focus
+.qsp-top-name{
+  color: #7d5232;
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item:focus
+.qsp-top-number{
+  color: #916349;
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item:focus
+.qsp-top-arrow{
+  background: #916349;
+
+  border-color: #916349;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SMOOTH SCROLL
+========================================================= */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.qid-service-page-main .qsp-service-row{
+  scroll-margin-top: 90px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width: 991.98px){
+
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 95px;
+
+    grid-template-columns:
+      28px 1fr 30px;
+
+    gap: 8px;
+
+    padding:
+      18px
+      14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    font-size: 14px;
+
+    line-height: 1.3;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width: 29px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 767.98px){
+
+  /* heading */
+  .qid-service-page-main .qsp-top-service-heading{
+    min-height: 46px;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-hint{
+    display: none;
+  }
+
+
+  /* services stack */
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 74px;
+
+    grid-template-columns:
+      30px 1fr 32px;
+
+    padding:
+      14px
+      12px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.17);
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item:last-child{
+    border-bottom: 0;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    max-width: none;
+
+    font-size: 14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width: 29px;
+    height: 29px;
+  }
+
+}
+
+/* =========================================================
+   TOP SERVICES NAVIGATION
+   SAME ORIGINAL SIZE + FULL WIDTH
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-nav{
+  position: relative;
+  z-index: 20;
+
+  /* same background as hero below */
+  background: #f7f5f2;
+
+  border-top: 1px solid rgba(145,99,73,.08);
+  border-bottom: 0;
+
+  box-shadow: none;
+}
+
+
+/* =========================================
+   OUR SERVICES HEADING
+========================================= */
+
+.qid-service-page-main .qsp-top-service-heading{
+  min-height: 78px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f7f5f2;
+
+  border-bottom: 0;
+}
+
+
+
+
+
+.qid-service-page-main .qsp-top-service-label::before{
+  content: "";
+
+  display: inline-block;
+
+  width: 34px;
+  height: 1px;
+
+  margin-right: 13px;
+
+  vertical-align: middle;
+
+  background: #916349;
+}
+
+
+.qid-service-page-main .qsp-top-service-hint{
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(60,40,25,.42);
+
+  font-size: 9px;
+  font-weight: 400 !important;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   FULL WIDTH NAVIGATION
+========================================= */
+
+.qid-service-page-main .qsp-top-service-grid{
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  /* removes left/right gaps */
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================
+   SERVICE ITEM
+   RESTORED ORIGINAL SIZE
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item{
+  position: relative;
+
+  /* ORIGINAL HEIGHT */
+  min-height: 100px;
+
+  display: grid;
+
+  /* ORIGINAL PROPORTIONS */
+  grid-template-columns: 38px 1fr 34px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  /* ORIGINAL PADDING */
+  padding: 20px 24px;
+
+  background: #916349;
+
+  border-right: 1px solid rgba(255,255,255,.18);
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    box-shadow .35s ease;
+}
+
+
+.qid-service-page-main .qsp-top-service-item:last-child{
+  border-right: 0;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.qid-service-page-main .qsp-top-number{
+  position: relative;
+  z-index: 2;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(255,255,255,.55);
+
+  /* ORIGINAL SIZE */
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================
+   SERVICE NAME
+   ORIGINAL FONT SIZE
+========================================= */
+
+.qid-service-page-main .qsp-top-name{
+  position: relative;
+  z-index: 2;
+
+  max-width: 220px;
+
+  font-family: "Broadacre", serif !important;
+
+  color: #ffffff;
+
+  /* BACK TO ORIGINAL */
+  font-size: 17px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.25;
+
+  letter-spacing: .15px;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================
+   ARROW
+   ORIGINAL SIZE
+========================================= */
+
+.qid-service-page-main .qsp-top-arrow{
+  position: relative;
+  z-index: 2;
+
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(255,255,255,.42);
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.07);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================
+   BOTTOM ANIMATED LINE
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item::before{
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background: #916349;
+
+  transition:
+    width .4s cubic-bezier(.2,.8,.2,1);
+}
+
+
+/* =========================================
+   DECORATIVE GLOW
+========================================= */
+
+.qid-service-page-main .qsp-top-service-item::after{
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: -70px;
+  top: -70px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.14),
+      transparent 70%
+    );
+
+  opacity: .6;
+
+  transition:
+    opacity .35s ease,
+    transform .45s ease;
+}
+
+
+/* =========================================================
+   HOVER
+   BROWN -> WHITE
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item:hover{
+  background: #ffffff;
+
+  color: #7d5232;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 10px 25px rgba(70,45,30,.10);
+}
+
+
+/* bottom line */
+.qid-service-page-main .qsp-top-service-item:hover::before{
+  width: 100%;
+}
+
+
+/* glow */
+.qid-service-page-main .qsp-top-service-item:hover::after{
+  background:
+    radial-gradient(
+      circle,
+      rgba(145,99,73,.07),
+      transparent 70%
+    );
+
+  transform:
+    translate(-20px,20px)
+    scale(1.2);
+}
+
+
+/* number */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-number{
+  color: #916349;
+
+  transform: translateX(3px);
+}
+
+
+/* title */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-name{
+  color: #7d5232;
+
+  transform: translateX(4px);
+}
+
+
+/* arrow */
+.qid-service-page-main
+.qsp-top-service-item:hover
+.qsp-top-arrow{
+  background: #916349;
+
+  color: #ffffff;
+
+  border-color: #916349;
+
+  transform: translate(4px,-4px);
+}
+
+
+/* =========================================
+   SMOOTH SCROLL
+========================================= */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.qid-service-page-main .qsp-service-row{
+  scroll-margin-top: 90px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width: 991.98px){
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 95px;
+
+    grid-template-columns:
+      28px 1fr 30px;
+
+    gap: 8px;
+
+    padding: 18px 14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    font-size: 14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width: 29px;
+    height: 29px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 767.98px){
+
+  .qid-service-page-main .qsp-top-service-heading{
+    min-height: 55px;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-hint{
+    display: none;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item{
+    min-height: 74px;
+
+    grid-template-columns:
+      30px 1fr 32px;
+
+    padding: 14px 12px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.17);
+  }
+
+
+  .qid-service-page-main .qsp-top-service-item:last-child{
+    border-bottom: 0;
+  }
+
+
+  .qid-service-page-main .qsp-top-name{
+    max-width: none;
+
+    font-size: 14px;
+  }
+
+
+  .qid-service-page-main .qsp-top-arrow{
+    width: 29px;
+    height: 29px;
+  }
+
+}
+/* =========================================================
+   HERO LEFT CONTENT
+   PREMIUM EDITORIAL DESIGN
+========================================================= */
+
+.qid-service-page-main .qsp-hero-topnav-content{
+  position: relative;
+
+  min-height: 580px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    72px
+    6vw
+    68px
+    max(35px, calc((100vw - 1140px) / 2));
+
+  background: #f7f5f2;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LARGE SUBTLE BACKGROUND DETAIL
+========================================================= */
+
+.qid-service-page-main .qsp-hero-editorial::before{
+  content: "Q";
+
+  position: absolute;
+
+  right: -35px;
+  bottom: -115px;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: 330px;
+  font-weight: 100 !important;
+
+  line-height: 1;
+
+  color: rgba(145,99,73,.025);
+
+  pointer-events: none;
+}
+
+
+/* soft circular architectural detail */
+.qid-service-page-main .qsp-hero-editorial::after{
+  content: "";
+
+  position: absolute;
+
+  width: 240px;
+  height: 240px;
+
+  left: -135px;
+  top: 120px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(145,99,73,.06);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.qid-service-page-main .qsp-hero-eyebrow{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #916349;
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2.8px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-service-page-main .qsp-hero-eyebrow-line{
+  display: block;
+
+  width: 45px;
+  height: 1px;
+
+  background: #916349;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.qid-service-page-main .qsp-hero-editorial h2{
+  position: relative;
+  z-index: 2;
+
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family: "Broadacre", serif !important;
+
+  color: #7d5232;
+
+  font-size: 60px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.08;
+
+  letter-spacing: .2px;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH
+========================================================= */
+
+.qid-service-page-main .qsp-hero-intro{
+  position: relative;
+  z-index: 2;
+
+  max-width: 570px;
+
+  margin: 27px 0 0;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(60,40,25,.66);
+
+  font-size: 16px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   INTERACTIVE PRINCIPLES
+========================================================= */
+
+.qid-service-page-main .qsp-hero-principles{
+  position: relative;
+  z-index: 3;
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  margin-top: 39px;
+
+  border-top:
+    1px solid rgba(145,99,73,.16);
+
+  border-bottom:
+    1px solid rgba(145,99,73,.16);
+}
+
+
+/* individual principle */
+.qid-service-page-main .qsp-hero-principle{
+  position: relative;
+
+  min-height: 112px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 19px 17px;
+
+  border-right:
+    1px solid rgba(145,99,73,.14);
+
+  overflow: hidden;
+
+  cursor: default;
+
+  transition:
+    background .4s ease,
+    transform .4s cubic-bezier(.2,.8,.2,1),
+    box-shadow .4s ease;
+}
+
+
+.qid-service-page-main .qsp-hero-principle:last-child{
+  border-right: 0;
+}
+
+
+/* subtle hover glow */
+.qid-service-page-main .qsp-hero-principle::before{
+  content: "";
+
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  right: -65px;
+  top: -65px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.18),
+      transparent 70%
+    );
+
+  opacity: 0;
+
+  transition:
+    opacity .4s ease,
+    transform .45s ease;
+}
+
+
+/* =========================================================
+   PRINCIPLE NUMBER
+========================================================= */
+
+.qid-service-page-main .qsp-principle-number{
+  position: absolute;
+
+  top: 14px;
+  left: 17px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(145,99,73,.48);
+
+  font-size: 8px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    color .35s ease;
+}
+
+
+/* =========================================================
+   PRINCIPLE TEXT
+========================================================= */
+
+.qid-service-page-main .qsp-principle-text{
+  margin-top: 17px;
+}
+
+
+.qid-service-page-main .qsp-principle-title{
+  display: block;
+
+  font-family: "Broadacre", serif !important;
+
+  color: #7d5232;
+
+  font-size: 17px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.2;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+.qid-service-page-main .qsp-principle-detail{
+  display: block;
+
+  max-height: 0;
+
+  margin-top: 0;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(255,255,255,.67);
+
+  font-size: 9px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.5;
+
+  transform: translateY(5px);
+
+  transition:
+    max-height .4s ease,
+    margin .4s ease,
+    opacity .35s ease,
+    transform .4s ease;
+}
+
+
+/* =========================================================
+   PLUS SYMBOL
+========================================================= */
+
+.qid-service-page-main .qsp-principle-mark{
+  position: absolute;
+
+  right: 15px;
+  bottom: 14px;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(145,99,73,.20);
+
+  border-radius: 50%;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #916349;
+
+  font-size: 12px;
+
+  font-weight: 300 !important;
+
+  transition:
+    transform .4s ease,
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease;
+}
+
+
+/* =========================================================
+   PRINCIPLE HOVER
+========================================================= */
+
+.qid-service-page-main .qsp-hero-principle:hover{
+  background: #916349;
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 28px rgba(70,45,30,.13);
+}
+
+
+/* glow */
+.qid-service-page-main
+.qsp-hero-principle:hover::before{
+  opacity: 1;
+
+  transform:
+    translate(-15px,15px)
+    scale(1.2);
+}
+
+
+/* number */
+.qid-service-page-main
+.qsp-hero-principle:hover
+.qsp-principle-number{
+  color: rgba(255,255,255,.50);
+}
+
+
+/* title */
+.qid-service-page-main
+.qsp-hero-principle:hover
+.qsp-principle-title{
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* reveal description */
+.qid-service-page-main
+.qsp-hero-principle:hover
+.qsp-principle-detail{
+  max-height: 40px;
+
+  margin-top: 7px;
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* plus turns */
+.qid-service-page-main
+.qsp-hero-principle:hover
+.qsp-principle-mark{
+  background: #ffffff;
+
+  color: #916349;
+
+  border-color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   FOOTER DETAIL
+========================================================= */
+
+.qid-service-page-main .qsp-hero-editorial-footer{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+
+.qid-service-page-main .qsp-editorial-footer-line{
+  width: 38px;
+  height: 1px;
+
+  background: rgba(145,99,73,.38);
+}
+
+
+.qid-service-page-main
+.qsp-hero-editorial-footer
+span:last-child{
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(125,82,50,.46);
+
+  font-size: 10px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width: 991.98px){
+
+  .qid-service-page-main .qsp-hero-topnav-content{
+    min-height: auto;
+
+    padding:
+      75px
+      50px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-editorial h2{
+    font-size: 52px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-principle{
+    padding:
+      18px
+      13px;
+  }
+
+
+  .qid-service-page-main .qsp-principle-title{
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 767.98px){
+
+  .qid-service-page-main .qsp-hero-topnav-content{
+    padding:
+      60px
+      24px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-editorial h2{
+    font-size: 30px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-intro{
+    font-size: 13px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-principles{
+    grid-template-columns: 1fr;
+
+    margin-top: 32px;
+  }
+
+
+  .qid-service-page-main .qsp-hero-principle{
+    min-height: 82px;
+
+    border-right: 0;
+
+    border-bottom:
+      1px solid rgba(145,99,73,.14);
+  }
+
+
+  .qid-service-page-main .qsp-hero-principle:last-child{
+    border-bottom: 0;
+  }
+
+
+  .qid-service-page-main .qsp-principle-detail{
+    max-height: 40px;
+
+    margin-top: 6px;
+
+    opacity: .65;
+
+    color: rgba(60,40,25,.55);
+
+    transform: none;
+  }
+
+
+  .qid-service-page-main
+  .qsp-hero-principle:hover
+  .qsp-principle-detail{
+    color: rgba(255,255,255,.70);
+  }
+
+}
+
+
+/* =========================================================
+   BACK TO TOP BUTTON
+========================================================= */
+
+.qid-back-to-top{
+  position: fixed;
+
+  right: 28px;
+  bottom: 30px;
+
+  z-index: 9999;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #916349;
+
+  border-radius: 50%;
+
+  background: #916349;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 25px rgba(70,45,30,.16);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translateY(15px)
+    scale(.92);
+
+  transition:
+    opacity .35s ease,
+    visibility .35s ease,
+    transform .35s cubic-bezier(.2,.8,.2,1),
+    background .3s ease,
+    color .3s ease,
+    box-shadow .3s ease;
+}
+
+
+/* visible after scrolling */
+.qid-back-to-top.qid-show{
+  opacity: 1;
+
+  visibility: visible;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+
+/* arrow */
+.qid-back-to-top-arrow{
+  display: block;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  font-size: 20px;
+
+  font-weight: 300 !important;
+
+  line-height: 1;
+
+  transition:
+    transform .3s ease;
+}
+
+
+/* hover */
+.qid-back-to-top:hover{
+  background: #ffffff;
+
+  color: #916349;
+
+  box-shadow:
+    0 14px 32px rgba(70,45,30,.18);
+
+  transform:
+    translateY(-4px);
+}
+
+
+/* arrow moves upward */
+.qid-back-to-top:hover .qid-back-to-top-arrow{
+  transform:
+    translateY(-3px);
+}
+
+
+/* click */
+.qid-back-to-top:active{
+  transform:
+    translateY(-1px)
+    scale(.96);
+}
+
+
+/* keyboard accessibility */
+.qid-back-to-top:focus{
+  outline: none;
+
+  box-shadow:
+    0 0 0 4px rgba(145,99,73,.16),
+    0 12px 28px rgba(70,45,30,.16);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 767.98px){
+
+  .qid-back-to-top{
+    right: 18px;
+    bottom: 20px;
+
+    width: 44px;
+    height: 44px;
+  }
+
+
+  .qid-back-to-top-arrow{
+    font-size: 18px;
+  }
+
+}
+
+
+
+/* =========================================
+   4 SERVICES NAVIGATION
+========================================= */
+
+.qid-service-page-main .qsp-top-service-grid{
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* slightly tighter spacing now that there are 4 */
+.qid-service-page-main .qsp-top-service-item{
+  min-height: 100px;
+
+  grid-template-columns: 30px 1fr 32px;
+
+  gap: 9px;
+
+  padding: 18px 20px;
+}
+
+
+/* service titles */
+.qid-service-page-main .qsp-top-name{
+  max-width: 190px;
+
+  font-size: 16px;
+
+  line-height: 1.25;
+}
+
+
+/* arrow */
+.qid-service-page-main .qsp-top-arrow{
+  width: 30px;
+  height: 30px;
+
+  font-size: 12px;
+}
+
+
+
+
+/* =========================================================
+   INDIVIDUAL SERVICE PAGES
+   SHARED BY ALL 4 SERVICE PAGES
+========================================================= */
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.qid-service-page-main.qsp-service-detail-page{
+  background: #f7f5f2;
+}
+
+
+/* compensate for existing fixed navbar */
+.qid-service-page-main.qsp-service-detail-page
+.qsp-top-service-nav{
+  padding-top: 82px;
+}
+
+
+/* =========================================
+   BACK TO ALL SERVICES — TOP
+========================================= */
+
+.qid-service-page-main .qsp-services-back-top{
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 7px 0;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #916349;
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    color .3s ease,
+    transform .3s ease;
+}
+
+
+.qid-service-page-main .qsp-services-back-top:hover{
+  color: #7d5232;
+
+  text-decoration: none;
+
+  transform: translateX(-4px);
+}
+
+
+/* =========================================
+   CURRENT SERVICE IN NAVIGATION
+========================================= */
+
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current{
+  background: #ffffff;
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current
+.qsp-top-number{
+  color: #916349;
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current
+.qsp-top-name{
+  color: #7d5232;
+}
+
+
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current
+.qsp-top-arrow{
+  background: #916349;
+
+  border-color: #916349;
+
+  color: #ffffff;
+}
+
+
+/* brown line under active service */
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current::before{
+  width: 100%;
+
+  background: #916349;
+}
+
+
+/* =========================================
+   DETAIL HERO
+========================================= */
+
+.qid-service-page-main .qsp-service-detail-hero{
+  position: relative;
+
+  padding:
+    95px
+    0
+    115px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f7f5f2 0%,
+      #ffffff 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* subtle architectural background */
+.qid-service-page-main
+.qsp-service-detail-hero::before{
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -210px;
+  bottom: -210px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(145,99,73,.055);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.qid-service-page-main .qsp-detail-breadcrumb{
+  position: relative;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 50px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  font-size: 9px;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  color:
+    rgba(125,82,50,.43);
+}
+
+
+.qid-service-page-main
+.qsp-detail-breadcrumb a{
+  color: #916349;
+
+  font-weight: 500 !important;
+
+  transition:
+    color .3s ease;
+}
+
+
+.qid-service-page-main
+.qsp-detail-breadcrumb a:hover{
+  color: #7d5232;
+
+  text-decoration: none;
+}
+
+
+.qid-service-page-main
+.qsp-detail-breadcrumb span:nth-child(2){
+  color:
+    rgba(145,99,73,.30);
+}
+
+
+/* =========================================
+   DETAIL IMAGE
+========================================= */
+
+.qid-service-page-main .qsp-detail-image{
+  position: relative;
+
+  height: 620px;
+
+  box-shadow:
+    0 24px 55px rgba(65,42,28,.09);
+}
+
+
+.qid-service-page-main
+.qsp-detail-image img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* large service number over image */
+.qid-service-page-main
+.qsp-detail-image-number{
+  position: absolute;
+
+  z-index: 3;
+
+  right: 27px;
+  bottom: 13px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    rgba(255,255,255,.18);
+
+  font-size:
+    105px;
+
+  font-weight:
+    100 !important;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.qid-service-page-main .qsp-detail-content{
+  position: relative;
+}
+
+
+/* title */
+.qid-service-page-main
+.qsp-detail-content h1{
+  margin:
+    0
+    0
+    27px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color: #7d5232;
+
+  font-size:
+    clamp(42px,4vw,58px);
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.12;
+
+  letter-spacing:
+    .2px;
+}
+
+
+/* =========================================
+   BACK BUTTON AT END
+========================================= */
+
+.qid-service-page-main .qsp-detail-back{
+  width: max-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 38px;
+
+  padding:
+    13px
+    0
+    10px;
+
+  border-bottom:
+    1px solid #916349;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color: #916349;
+
+  font-size: 9px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    2px;
+
+  text-transform:
+    uppercase;
+
+  transition:
+    color .3s ease,
+    gap .3s ease,
+    border-color .3s ease;
+}
+
+
+.qid-service-page-main .qsp-detail-back:hover{
+  gap: 18px;
+
+  color: #7d5232;
+
+  border-color: #7d5232;
+
+  text-decoration: none;
+}
+
+
+/* arrow movement */
+.qid-service-page-main
+.qsp-detail-back span{
+  transition:
+    transform .3s ease;
+}
+
+
+.qid-service-page-main
+.qsp-detail-back:hover span{
+  transform:
+    translateX(-4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:991.98px){
+
+  .qid-service-page-main.qsp-service-detail-page
+  .qsp-top-service-nav{
+    padding-top: 75px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-detail-hero{
+    padding:
+      75px
+      0
+      90px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-image{
+    height: 520px;
+
+    margin-bottom: 55px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-content h1{
+    font-size: 47px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:767.98px){
+
+  .qid-service-page-main.qsp-service-detail-page
+  .qsp-top-service-nav{
+    padding-top: 70px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-service-detail-hero{
+    padding:
+      55px
+      0
+      70px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-breadcrumb{
+    margin-bottom: 35px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.1px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-image{
+    height: 420px;
+
+    margin-bottom: 45px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-image-number{
+    right: 18px;
+    bottom: 10px;
+
+    font-size: 75px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-content h1{
+    font-size: 38px;
+  }
+
+
+  .qid-service-page-main
+  .qsp-detail-back{
+    margin-top: 30px;
+  }
+
+}
+
+.qid-service-page-main .qsp-hero-topnav-content h2{
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    650px;
+
+  margin:
+    0;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size:32px;
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.13;
+
+  letter-spacing:
+    .25px;
+}
+/* =========================================================
+   SIMPLE 3D / SHADOW EFFECT FOR SERVICE NAV
+   Add after your existing navigation CSS
+========================================================= */
+
+.qid-service-page-main .qsp-top-service-item{
+  box-shadow:
+    0 8px 18px rgba(70,45,30,.10),
+    inset 0 1px 0 rgba(255,255,255,.10);
+
+  transform: translateY(0);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .35s ease,
+    color .35s ease;
+}
+
+
+/* subtle depth layer */
+.qid-service-page-main .qsp-top-service-item::after{
+  content: "";
+
+  position: absolute;
+
+  left: 8px;
+  right: 8px;
+  bottom: -7px;
+
+  height: 10px;
+
+  background: rgba(90,55,35,.14);
+
+  border-radius: 0 0 8px 8px;
+
+  z-index: -1;
+
+  filter: blur(2px);
+
+  transition:
+    transform .3s ease,
+    opacity .3s ease;
+}
+
+
+/* hover = card lifts */
+.qid-service-page-main .qsp-top-service-item:hover{
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 30px rgba(70,45,30,.18),
+    0 6px 12px rgba(70,45,30,.10),
+    inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+
+/* depth shifts downward slightly */
+.qid-service-page-main .qsp-top-service-item:hover::after{
+  transform: translateY(4px);
+
+  opacity: .75;
+}
+
+
+/* arrow feels more clickable */
+.qid-service-page-main .qsp-top-service-item:hover .qsp-top-arrow{
+  transform:
+    translate(4px,-4px)
+    scale(1.06);
+}
+
+
+/* active page still looks selected */
+.qid-service-page-main
+.qsp-top-service-item.qsp-service-current{
+  box-shadow:
+    0 14px 28px rgba(70,45,30,.14),
+    inset 0 0 0 1px rgba(145,99,73,.15);
+}
+
+
+
+
+
+/* =========================================================
+   QUANTUM ABOUT PAGE
+========================================================= */
+
+.qid-about-page-main{
+  --qab-brown: #916349;
+  --qab-dark-brown: #7d5232;
+  --qab-light-brown: #aa8069;
+
+  --qab-bg: #f7f5f2;
+  --qab-white: #ffffff;
+  --qab-dark: #25201d;
+
+  --qab-text: rgba(60,40,25,.67);
+  --qab-line: rgba(145,99,73,.16);
+
+  background: var(--qab-bg);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.qid-about-page-main h1,
+.qid-about-page-main h2,
+.qid-about-page-main h3{
+  font-family: "Broadacre", serif !important;
+
+  font-weight: 100 !important;
+}
+
+
+.qid-about-page-main p{
+  font-family: 'Roboto', sans-serif !important;
+
+  font-weight: 300 !important;
+}
+
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.qid-about-page-main .qab-hero{
+  padding-top: 82px;
+
+  background: #f7f5f2;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.qid-about-page-main .qab-hero-content{
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    90px
+    7vw
+    90px
+    max(35px, calc((100vw - 1140px) / 2));
+}
+
+
+/* subtle Q background */
+.qid-about-page-main .qab-hero-content::after{
+  content: "Q";
+
+  position: absolute;
+
+  right: -20px;
+  bottom: -95px;
+
+  font-family: "Broadacre", serif !important;
+
+  color: rgba(145,99,73,.025);
+
+  font-size: 310px;
+
+  font-weight: 100 !important;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+========================================================= */
+
+.qid-about-page-main .qab-eyebrow{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 27px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qab-brown);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-eyebrow > span{
+  width: 43px;
+  height: 1px;
+
+  display: block;
+
+  background: var(--qab-brown);
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.qid-about-page-main .qab-hero h1{
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--qab-dark-brown);
+
+  font-size: 50px;
+
+  line-height: 1.08;
+
+  letter-spacing: .3px;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.qid-about-page-main .qab-hero-content p{
+  position: relative;
+  z-index: 2;
+
+  max-width: 560px;
+
+  margin: 30px 0 0;
+
+  color: var(--qab-text);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   HERO LINK
+========================================================= */
+
+.qid-about-page-main .qab-hero-link{
+  position: relative;
+  z-index: 2;
+
+  width: max-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+  margin-top: 37px;
+
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid var(--qab-brown);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qab-dark-brown);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    gap .3s ease,
+    color .3s ease;
+}
+
+
+.qid-about-page-main .qab-hero-link span{
+  transition: transform .3s ease;
+}
+
+
+.qid-about-page-main .qab-hero-link:hover{
+  gap: 31px;
+
+  color: var(--qab-brown);
+
+  text-decoration: none;
+}
+
+
+.qid-about-page-main
+.qab-hero-link:hover span{
+  transform: translateY(4px);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.qid-about-page-main .qab-hero-image{
+  position: relative;
+
+  min-height: 650px;
+  height: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+
+/* subtle overlay */
+.qid-about-page-main .qab-hero-image::after{
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(22,13,8,.21),
+      transparent 40%
+    );
+
+  pointer-events: none;
+}
+
+
+/* image frame */
+.qid-about-page-main .qab-image-frame{
+  position: absolute;
+
+  z-index: 2;
+
+  inset: 27px;
+
+  border: 1px solid rgba(255,255,255,.42);
+
+  pointer-events: none;
+}
+
+
+/* image bottom text */
+.qid-about-page-main .qab-image-caption{
+  position: absolute;
+
+  z-index: 3;
+
+  left: 40px;
+  right: 40px;
+  bottom: 34px;
+
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(255,255,255,.82);
+
+  font-size: 9px;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.qid-about-page-main .qab-story{
+  padding: 115px 0;
+
+  background: #ffffff;
+}
+
+
+/* side label */
+.qid-about-page-main .qab-section-label{
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qab-brown);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-section-label::before{
+  content: "";
+
+  display: block;
+
+  width: 48px;
+  height: 1px;
+
+  margin-bottom: 17px;
+
+  background: var(--qab-brown);
+}
+
+
+/* story heading */
+.qid-about-page-main .qab-story-content h2{
+  max-width: 720px;
+
+  margin: 0;
+
+  color: var(--qab-dark-brown);
+
+  font-size: clamp(39px, 4vw, 55px);
+
+  line-height: 1.15;
+}
+
+
+/* story paragraphs */
+.qid-about-page-main .qab-story-text{
+  display: grid;
+
+  grid-template-columns: repeat(2,1fr);
+
+  gap: 34px;
+
+  margin-top: 37px;
+
+  padding-top: 31px;
+
+  border-top: 1px solid var(--qab-line);
+}
+
+
+.qid-about-page-main .qab-story-text p{
+  margin: 0;
+
+  color: var(--qab-text);
+
+  font-size: 14px;
+
+  line-height: 1.85;
+}
+
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.qid-about-page-main .qab-approach{
+  position: relative;
+
+  padding: 105px 0 115px;
+
+  background: var(--qab-bg);
+
+  overflow: hidden;
+}
+
+
+/* subtle architectural circle */
+.qid-about-page-main .qab-approach::after{
+  content: "";
+
+  position: absolute;
+
+  width: 370px;
+  height: 370px;
+
+  right: -185px;
+  bottom: -180px;
+
+  border: 1px solid rgba(145,99,73,.055);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* heading */
+.qid-about-page-main .qab-approach-heading{
+  max-width: 650px;
+
+  margin-bottom: 60px;
+}
+
+
+.qid-about-page-main .qab-approach-label{
+  display: block;
+
+  margin-bottom: 17px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qab-brown);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-approach-heading h2{
+  margin: 0;
+
+  color: var(--qab-dark-brown);
+
+  font-size: clamp(38px,4vw,52px);
+
+  line-height: 1.15;
+}
+
+
+/* =========================================================
+   APPROACH GRID
+========================================================= */
+
+.qid-about-page-main .qab-approach-grid{
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  border-top: 1px solid var(--qab-line);
+
+  border-bottom: 1px solid var(--qab-line);
+}
+
+
+/* card */
+.qid-about-page-main .qab-approach-item{
+  position: relative;
+
+  min-height: 255px;
+
+  padding: 34px 28px;
+
+  border-right: 1px solid var(--qab-line);
+
+  overflow: hidden;
+
+  transition:
+    background .4s ease,
+    transform .4s ease,
+    box-shadow .4s ease;
+}
+
+
+.qid-about-page-main
+.qab-approach-item:last-child{
+  border-right: 0;
+}
+
+
+/* number */
+.qid-about-page-main .qab-approach-number{
+  display: block;
+
+  margin-bottom: 46px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(145,99,73,.45);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  transition: color .35s ease;
+}
+
+
+/* little + */
+.qid-about-page-main .qab-approach-icon{
+  position: absolute;
+
+  top: 28px;
+  right: 27px;
+
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(145,99,73,.20);
+
+  border-radius: 50%;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: var(--qab-brown);
+
+  font-size: 13px;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .4s ease;
+}
+
+
+/* title */
+.qid-about-page-main .qab-approach-item h3{
+  margin: 0 0 16px;
+
+  color: var(--qab-dark-brown);
+
+  font-size: 28px;
+
+  line-height: 1.2;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* paragraph */
+.qid-about-page-main .qab-approach-item p{
+  max-width: 280px;
+
+  margin: 0;
+
+  color: var(--qab-text);
+
+  font-size: 13px;
+
+  line-height: 1.75;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* =========================================================
+   APPROACH HOVER
+========================================================= */
+
+.qid-about-page-main .qab-approach-item:hover{
+  background: var(--qab-brown);
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 38px rgba(70,45,30,.13);
+}
+
+
+.qid-about-page-main
+.qab-approach-item:hover
+.qab-approach-number{
+  color: rgba(255,255,255,.55);
+}
+
+
+.qid-about-page-main
+.qab-approach-item:hover h3{
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+.qid-about-page-main
+.qab-approach-item:hover p{
+  color: rgba(255,255,255,.73);
+
+  transform: translateY(-2px);
+}
+
+
+.qid-about-page-main
+.qab-approach-item:hover
+.qab-approach-icon{
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  color: var(--qab-brown);
+
+  transform: rotate(45deg);
+}
+
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.qid-about-page-main .qab-cta{
+  padding: 85px 0;
+
+  background: var(--qab-dark);
+}
+
+
+.qid-about-page-main .qab-cta-wrap{
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+.qid-about-page-main .qab-cta-content > span{
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: rgba(255,255,255,.48);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2.5px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-cta-content h2{
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(37px,4vw,51px);
+
+  line-height: 1.1;
+}
+
+
+.qid-about-page-main .qab-cta-content p{
+  max-width: 560px;
+
+  margin: 17px 0 0;
+
+  color: rgba(255,255,255,.60);
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+
+/* CTA BUTTON */
+.qid-about-page-main .qab-cta-button{
+  min-width: 230px;
+
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 0 24px;
+
+  border: 1px solid rgba(255,255,255,.25);
+
+  font-family: 'Roboto', sans-serif !important;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  transition:
+    background .35s ease,
+    color .35s ease,
+    border-color .35s ease,
+    transform .35s ease;
+}
+
+
+.qid-about-page-main .qab-cta-arrow{
+  font-size: 18px;
+
+  transition: transform .35s ease;
+}
+
+
+.qid-about-page-main .qab-cta-button:hover{
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  color: var(--qab-dark-brown);
+
+  transform: translateY(-4px);
+
+  text-decoration: none;
+}
+
+
+.qid-about-page-main
+.qab-cta-button:hover
+.qab-cta-arrow{
+  transform: translate(4px,-4px);
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991.98px){
+
+  .qid-about-page-main .qab-hero{
+    padding-top: 75px;
+  }
+
+
+  .qid-about-page-main .qab-hero-content{
+    min-height: auto;
+
+    padding: 85px 50px;
+  }
+
+
+  .qid-about-page-main .qab-hero-image{
+    min-height: 550px;
+  }
+
+
+  .qid-about-page-main .qab-story{
+    padding: 90px 0;
+  }
+
+
+  .qid-about-page-main .qab-section-label{
+    margin-bottom: 35px;
+  }
+
+
+  .qid-about-page-main .qab-approach-grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+
+  .qid-about-page-main .qab-approach-item{
+    padding: 28px 20px;
+  }
+
+
+  .qid-about-page-main .qab-approach-item h3{
+    font-size: 24px;
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767.98px){
+
+  .qid-about-page-main .qab-hero{
+    padding-top: 70px;
+  }
+
+
+  .qid-about-page-main .qab-hero-content{
+    padding: 65px 24px;
+  }
+
+
+  .qid-about-page-main .qab-hero h1{
+    font-size: 43px;
+  }
+
+
+  .qid-about-page-main .qab-hero-content p{
+    font-size: 14px;
+  }
+
+
+  .qid-about-page-main .qab-hero-image{
+    min-height: 430px;
+  }
+
+
+  .qid-about-page-main .qab-image-frame{
+    inset: 18px;
+  }
+
+
+  .qid-about-page-main .qab-image-caption{
+    left: 25px;
+    right: 25px;
+    bottom: 24px;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+
+  /* story */
+  .qid-about-page-main .qab-story{
+    padding: 70px 0;
+  }
+
+
+  .qid-about-page-main .qab-story-content h2{
+    font-size: 36px;
+  }
+
+
+  .qid-about-page-main .qab-story-text{
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+
+    margin-top: 30px;
+  }
+
+
+  /* approach */
+  .qid-about-page-main .qab-approach{
+    padding: 70px 0;
+  }
+
+
+  .qid-about-page-main .qab-approach-heading{
+    margin-bottom: 42px;
+  }
+
+
+  .qid-about-page-main .qab-approach-heading h2{
+    font-size: 35px;
+  }
+
+
+  .qid-about-page-main .qab-approach-grid{
+    grid-template-columns: 1fr;
+  }
+
+
+  .qid-about-page-main .qab-approach-item{
+    min-height: 210px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid var(--qab-line);
+  }
+
+
+  .qid-about-page-main
+  .qab-approach-item:last-child{
+    border-bottom: 0;
+  }
+
+
+  /* CTA */
+  .qid-about-page-main .qab-cta{
+    padding: 65px 0;
+  }
+
+
+  .qid-about-page-main .qab-cta-wrap{
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+  }
+
+
+  .qid-about-page-main .qab-cta-content h2{
+    font-size: 37px;
+  }
+
+
+  .qid-about-page-main .qab-cta-button{
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+/* =========================================================
+   WHO WE ARE
+   COLORED EDITORIAL SECTION
+========================================================= */
+
+.qid-about-page-main .qab-identity{
+  position: relative;
+
+  padding: 110px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eee6df 0%,
+      #f7f5f2 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* subtle background circle */
+.qid-about-page-main .qab-identity::before{
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  left: -210px;
+  bottom: -220px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(145,99,73,.07);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TWO-PART LAYOUT
+========================================================= */
+
+.qid-about-page-main .qab-identity-wrap{
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    1.08fr
+    .92fr;
+
+  align-items: stretch;
+
+  min-height: 560px;
+
+  box-shadow:
+    0 30px 70px rgba(70,45,30,.13);
+}
+
+
+
+/* =========================================================
+   LEFT BROWN SIDE
+========================================================= */
+
+.qid-about-page-main .qab-identity-main{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    75px
+    70px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #7d5232 0%,
+      #916349 58%,
+      #a8775c 100%
+    );
+
+  overflow: hidden;
+}
+
+
+/* soft glow */
+.qid-about-page-main .qab-identity-main::after{
+  content: "";
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  right: -150px;
+  top: -150px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.12),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* giant decorative Q */
+.qid-about-page-main .qab-identity-ghost{
+  position: absolute;
+
+  right: -28px;
+  bottom: -100px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    rgba(255,255,255,.045);
+
+  font-size: 330px;
+
+  font-weight: 100 !important;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.qid-about-page-main .qab-identity-label{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 29px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(255,255,255,.62);
+
+  font-size: 9px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-identity-label > span{
+  width: 42px;
+  height: 1px;
+
+  background:
+    rgba(255,255,255,.48);
+}
+
+
+
+/* =========================================================
+   MAIN STATEMENT
+========================================================= */
+
+.qid-about-page-main .qab-identity-main h2{
+  position: relative;
+  z-index: 2;
+
+  max-width: 620px;
+
+  margin: 0;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(43px,4.2vw,60px);
+
+  font-weight:
+    100 !important;
+
+  line-height:
+    1.1;
+
+  letter-spacing:
+    .3px;
+}
+
+
+.qid-about-page-main .qab-identity-main > p{
+  position: relative;
+  z-index: 2;
+
+  max-width: 530px;
+
+  margin:
+    30px
+    0
+    0;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(255,255,255,.72);
+
+  font-size: 14px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.85;
+}
+
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.qid-about-page-main .qab-identity-signature{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 42px;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(255,255,255,.50);
+
+  font-size: 8px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main .qab-identity-signature-line{
+  display: block;
+
+  width: 38px;
+  height: 1px;
+
+  background:
+    rgba(255,255,255,.42);
+}
+
+
+
+/* =========================================================
+   RIGHT LIGHT PANEL
+========================================================= */
+
+.qid-about-page-main .qab-identity-panel{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding:
+    55px
+    52px;
+
+  background:
+    #f8f5f1;
+
+  border:
+    1px solid rgba(145,99,73,.08);
+}
+
+
+/* top bar */
+.qid-about-page-main .qab-identity-panel-head{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 18px;
+
+  border-bottom:
+    1px solid rgba(145,99,73,.16);
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size: 8px;
+
+  font-weight: 500 !important;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.qid-about-page-main
+.qab-identity-panel-head
+span:last-child{
+  color:
+    rgba(145,99,73,.38);
+}
+
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.qid-about-page-main .qab-identity-lead{
+  max-width: 460px;
+
+  margin:
+    31px
+    0
+    34px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size: 25px;
+
+  font-weight: 100 !important;
+
+  line-height: 1.4;
+}
+
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.qid-about-page-main .qab-identity-values{
+  margin-top: auto;
+
+  border-top:
+    1px solid rgba(145,99,73,.14);
+}
+
+
+.qid-about-page-main .qab-identity-value{
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    34px
+    1fr
+    30px;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 92px;
+
+  padding:
+    17px
+    4px;
+
+  border-bottom:
+    1px solid rgba(145,99,73,.13);
+
+  transition:
+    padding .35s ease,
+    background .35s ease,
+    box-shadow .35s ease;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.qid-about-page-main .qab-identity-value-num{
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(145,99,73,.45);
+
+  font-size: 8px;
+
+  font-weight:
+    500 !important;
+
+  letter-spacing:
+    1.5px;
+
+  transition:
+    color .35s ease;
+}
+
+
+
+/* =========================================================
+   VALUE TITLE
+========================================================= */
+
+.qid-about-page-main .qab-identity-value h3{
+  margin:
+    0
+    0
+    4px;
+
+  font-family:
+    "Broadacre",
+    serif !important;
+
+  color:
+    #7d5232;
+
+  font-size: 20px;
+
+  font-weight:
+    100 !important;
+
+  line-height: 1.15;
+
+  transition:
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+/* description */
+.qid-about-page-main .qab-identity-value p{
+  max-width: 330px;
+
+  margin: 0;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    rgba(60,40,25,.57);
+
+  font-size: 11px;
+
+  font-weight:
+    300 !important;
+
+  line-height: 1.55;
+
+  transition:
+    color .35s ease;
+}
+
+
+
+/* =========================================================
+   SMALL ARROW
+========================================================= */
+
+.qid-about-page-main .qab-identity-value-arrow{
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(145,99,73,.19);
+
+  border-radius: 50%;
+
+  font-family:
+    'Roboto',
+    sans-serif !important;
+
+  color:
+    #916349;
+
+  font-size: 11px;
+
+  transition:
+    background .35s ease,
+    border-color .35s ease,
+    color .35s ease,
+    transform .35s ease;
+}
+
+
+
+/* =========================================================
+   VALUE HOVER
+========================================================= */
+
+.qid-about-page-main .qab-identity-value:hover{
+  padding-left: 14px;
+  padding-right: 12px;
+
+  background:
+    #916349;
+
+  box-shadow:
+    0 12px 26px rgba(70,45,30,.10);
+}
+
+
+.qid-about-page-main
+.qab-identity-value:hover
+.qab-identity-value-num{
+  color:
+    rgba(255,255,255,.50);
+}
+
+
+.qid-about-page-main
+.qab-identity-value:hover h3{
+  color:
+    #ffffff;
+
+  transform:
+    translateX(3px);
+}
+
+
+.qid-about-page-main
+.qab-identity-value:hover p{
+  color:
+    rgba(255,255,255,.68);
+}
+
+
+.qid-about-page-main
+.qab-identity-value:hover
+.qab-identity-value-arrow{
+  background:
+    #ffffff;
+
+  border-color:
+    #ffffff;
+
+  color:
+    #916349;
+
+  transform:
+    translate(3px,-3px);
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:991.98px){
+
+  .qid-about-page-main .qab-identity{
+    padding:
+      85px
+      0;
+  }
+
+
+  .qid-about-page-main .qab-identity-wrap{
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .qid-about-page-main .qab-identity-main{
+    min-height:
+      480px;
+
+    padding:
+      65px
+      55px;
+  }
+
+
+  .qid-about-page-main .qab-identity-panel{
+    padding:
+      50px
+      55px;
+  }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:767.98px){
+
+  .qid-about-page-main .qab-identity{
+    padding:
+      65px
+      0;
+  }
+
+
+  .qid-about-page-main .qab-identity-main{
+    min-height:
+      auto;
+
+    padding:
+      55px
+      28px;
+  }
+
+
+  .qid-about-page-main .qab-identity-main h2{
+    font-size:
+      39px;
+  }
+
+
+  .qid-about-page-main .qab-identity-main > p{
+    font-size:
+      13px;
+  }
+
+
+  .qid-about-page-main .qab-identity-ghost{
+    font-size:
+      230px;
+
+    bottom:
+      -70px;
+  }
+
+
+  .qid-about-page-main .qab-identity-panel{
+    padding:
+      40px
+      26px;
+  }
+
+
+  .qid-about-page-main .qab-identity-lead{
+    font-size:
+      22px;
+  }
+
+
+  .qid-about-page-main .qab-identity-value{
+    grid-template-columns:
+      27px
+      1fr
+      28px;
+  }
+
+
+  .qid-about-page-main .qab-identity-value h3{
+    font-size:
+      18px;
+  }
+
+}
