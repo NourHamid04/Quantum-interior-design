@@ -51,75 +51,75 @@
     $.Scrollax();
   }
 
-  // 7) Carousel (guarded)
-  var carousel = function () {
-    if ($.fn.owlCarousel) {
-      $(".home-slider").owlCarousel({
-		touchDrag: false,
-		mouseDrag: false,
-		pullDrag: false,
-		freeDrag: false,
+  // // 7) Carousel (guarded)
+  // var carousel = function () {
+  //   if ($.fn.owlCarousel) {
+  //     $(".home-slider").owlCarousel({
+	// 	touchDrag: false,
+	// 	mouseDrag: false,
+	// 	pullDrag: false,
+	// 	freeDrag: false,
 
-        loop: true,
-        autoplay: true,
-        margin: 0,
-        animateOut: "fadeOut",
-        animateIn: "fadeIn",
-        nav: false,
-        autoplayHoverPause: false,
-        items: 1,
-        navText: [
-          "<span class='ion-md-arrow-back'></span>",
-          "<span class='ion-chevron-right'></span>",
-        ],
-        responsive: {
-          0: { items: 1 },
-          600: { items: 1 },
-          1000: { items: 1 },
-        },
-      });
+  //       loop: true,
+  //       autoplay: true,
+  //       margin: 0,
+  //       animateOut: "fadeOut",
+  //       animateIn: "fadeIn",
+  //       nav: false,
+  //       autoplayHoverPause: false,
+  //       items: 1,
+  //       navText: [
+  //         "<span class='ion-md-arrow-back'></span>",
+  //         "<span class='ion-chevron-right'></span>",
+  //       ],
+  //       responsive: {
+  //         0: { items: 1 },
+  //         600: { items: 1 },
+  //         1000: { items: 1 },
+  //       },
+  //     });
 
-      $(".carousel-testimony").owlCarousel({
-        center: true,
-        loop: false,
-        items: 1,
-        margin: 30,
-        stagePadding: 0,
-        nav: true,
-        navText: [
-          '<span class="ion-ios-arrow-back">',
-          '<span class="ion-ios-arrow-forward">',
-        ],
-        responsive: {
-          0: { items: 1 },
-          600: { items: 3 },
-          1000: { items: 3 },
-        },
-      });
+  //     $(".carousel-testimony").owlCarousel({
+  //       center: true,
+  //       loop: false,
+  //       items: 1,
+  //       margin: 30,
+  //       stagePadding: 0,
+  //       nav: true,
+  //       navText: [
+  //         '<span class="ion-ios-arrow-back">',
+  //         '<span class="ion-ios-arrow-forward">',
+  //       ],
+  //       responsive: {
+  //         0: { items: 1 },
+  //         600: { items: 3 },
+  //         1000: { items: 3 },
+  //       },
+  //     });
 
-      $(".single-slider").owlCarousel({
-        animateOut: "fadeOut",
-        animateIn: "fadeIn",
-        autoplay: true,
-        loop: true,
-        items: 1,
-        margin: 0,
-        stagePadding: 0,
-        nav: true,
-        dots: true,
-        navText: [
-          '<span class="ion-ios-arrow-back">',
-          '<span class="ion-ios-arrow-forward">',
-        ],
-        responsive: {
-          0: { items: 1 },
-          600: { items: 1 },
-          1000: { items: 1 },
-        },
-      });
-    }
-  };
-  carousel();
+  //     $(".single-slider").owlCarousel({
+  //       animateOut: "fadeOut",
+  //       animateIn: "fadeIn",
+  //       autoplay: true,
+  //       loop: true,
+  //       items: 1,
+  //       margin: 0,
+  //       stagePadding: 0,
+  //       nav: true,
+  //       dots: true,
+  //       navText: [
+  //         '<span class="ion-ios-arrow-back">',
+  //         '<span class="ion-ios-arrow-forward">',
+  //       ],
+  //       responsive: {
+  //         0: { items: 1 },
+  //         600: { items: 1 },
+  //         1000: { items: 1 },
+  //       },
+  //     });
+  //   }
+  // };
+  // carousel();
 
   // 8) Dropdown hover (safe)
   $("nav .dropdown").hover(
@@ -288,39 +288,39 @@
 
 
 
-$(".home-slider").owlCarousel({
-  loop: true,
-  items: 1,
+// $(".home-slider").owlCarousel({
+//   loop: true,
+//   items: 1,
 
-  // ✅ manual only
-  autoplay: false,
-  autoplayHoverPause: false,
+//   // ✅ manual only
+//   autoplay: false,
+//   autoplayHoverPause: false,
 
-  // ✅ show navigation buttons
-  nav: true,
-  dots: true,
+//   // ✅ show navigation buttons
+//   nav: true,
+//   dots: true,
 
-  // optional: keep your fade design
-  animateOut: "fadeOut",
-  animateIn: "fadeIn",
+//   // optional: keep your fade design
+//   animateOut: "fadeOut",
+//   animateIn: "fadeIn",
 
-  // optional: allow drag (or keep disabled)
-  touchDrag: true,
-  mouseDrag: true,
-  pullDrag: true,
-  freeDrag: false,
+//   // optional: allow drag (or keep disabled)
+//   touchDrag: true,
+//   mouseDrag: true,
+//   pullDrag: true,
+//   freeDrag: false,
 
-  navText: [
-    "<span class='ion-ios-arrow-back'></span>",
-    "<span class='ion-ios-arrow-forward'></span>",
-  ],
+//   navText: [
+//     "<span class='ion-ios-arrow-back'></span>",
+//     "<span class='ion-ios-arrow-forward'></span>",
+//   ],
 
-  responsive: {
-    0: { items: 1 },
-    600: { items: 1 },
-    1000: { items: 1 },
-  },
-});
+//   responsive: {
+//     0: { items: 1 },
+//     600: { items: 1 },
+//     1000: { items: 1 },
+//   },
+// });
 
 
 
