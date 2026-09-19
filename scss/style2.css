@@ -14557,3 +14557,839 @@ h3::after{
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================
+   QUANTUM INTERIOR DESIGN
+   ABOUT PAGE — SEO CONTENT ADDITIONS
+
+   ADD THIS ENTIRE BLOCK TO THE BOTTOM OF scss/style2.css
+
+   Original navbar, footer, identity and CTA styles remain intact.
+================================================================ */
+
+
+/* =========================================================
+   01. UPDATED HERO
+========================================================= */
+
+
+/* New editorial strapline underneath the H1 */
+
+.qid-about-page-main .qab-hero .qab-hero-strapline {
+
+  margin: 23px 0 0;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: clamp(23px, 2.6vw, 34px);
+
+  font-weight: 100 !important;
+
+  color: #7d5232;
+
+  line-height: 1.25;
+
+}
+
+
+/* Spacing between strapline and description */
+
+.qid-about-page-main .qab-hero .qab-hero-strapline + p {
+
+  margin-top: 20px;
+
+}
+
+
+/* Hero image as a real image element */
+
+.qid-about-page-main .qab-hero-image .qab-hero-photo {
+
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+}
+
+
+
+/* =========================================================
+   02. WHO WE ARE — CONTENT ADJUSTMENTS
+========================================================= */
+
+
+/* More text without changing original brown/light design */
+
+.qid-about-page-main .qab-identity-main > p + p {
+
+  margin-top: 15px;
+
+}
+
+
+/* Inline link for named clients */
+
+.qid-about-page-main .qab-identity-inline-link {
+
+  color: #ffffff;
+
+  text-decoration: underline;
+
+  text-decoration-color: rgba(255,255,255,.48);
+
+  text-underline-offset: 4px;
+
+}
+
+
+.qid-about-page-main .qab-identity-inline-link:hover,
+.qid-about-page-main .qab-identity-inline-link:focus-visible {
+
+  color: #ffffff;
+
+  text-decoration-color: #ffffff;
+
+}
+
+
+/* Keep number and text aligned */
+
+.qid-about-page-main .qab-identity-value {
+
+  grid-template-columns: 34px minmax(0,1fr);
+
+}
+
+
+
+/* =========================================================
+   03. OUR EXPERIENCE — NEW SECTION
+========================================================= */
+
+
+/* Main section */
+
+.qid-about-page-main .qab-experience {
+
+  padding: 112px 0;
+
+  background: #f7f5f2;
+
+}
+
+
+
+/* Two-column layout */
+
+.qid-about-page-main .qab-experience-grid {
+
+  display: grid;
+
+  grid-template-columns: .85fr 1.15fr;
+
+  align-items: stretch;
+
+  box-shadow: 0 26px 60px rgba(70,45,30,.08);
+
+}
+
+
+
+/* =========================================================
+   EXPERIENCE LEFT BROWN PANEL
+========================================================= */
+
+.qid-about-page-main .qab-experience-stat {
+
+  position: relative;
+
+  min-height: 470px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 60px;
+
+  background: #916349;
+
+  color: #ffffff;
+
+  overflow: hidden;
+
+}
+
+
+
+/* Large decorative Q */
+
+.qid-about-page-main .qab-experience-stat::after {
+
+  content: "Q";
+
+  position: absolute;
+
+  right: -22px;
+
+  bottom: -115px;
+
+  font-family: "Broadacre", serif;
+
+  font-size: 320px;
+
+  font-weight: 100;
+
+  line-height: 1;
+
+  color: rgba(255,255,255,.045);
+
+  pointer-events: none;
+
+}
+
+
+
+/* Small labels */
+
+.qid-about-page-main .qab-experience-kicker,
+.qid-about-page-main .qab-experience-stat-label,
+.qid-about-page-main .qab-experience-since,
+.qid-about-page-main .qab-experience-eyebrow,
+.qid-about-page-main .qab-faq-eyebrow {
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.qid-about-page-main .qab-experience-kicker {
+
+  color: rgba(255,255,255,.7);
+
+}
+
+
+
+/* Large 40+ number */
+
+.qid-about-page-main .qab-experience-number {
+
+  position: relative;
+
+  z-index: 1;
+
+  font-family: "Broadacre", serif;
+
+  font-size: clamp(108px, 11vw, 175px);
+
+  font-weight: 100;
+
+  line-height: 1;
+
+  letter-spacing: -4px;
+
+  margin: 25px 0 15px;
+
+}
+
+
+
+.qid-about-page-main .qab-experience-number span {
+
+  font-size: .45em;
+
+  vertical-align: top;
+
+}
+
+
+
+/* Project count description */
+
+.qid-about-page-main .qab-experience-stat-label {
+
+  max-width: 240px;
+
+  line-height: 1.8;
+
+}
+
+
+
+/* Since 2014 */
+
+.qid-about-page-main .qab-experience-since {
+
+  margin-top: 24px;
+
+  color: rgba(255,255,255,.65);
+
+}
+
+
+
+/* =========================================================
+   EXPERIENCE RIGHT CONTENT
+========================================================= */
+
+.qid-about-page-main .qab-experience-content {
+
+  padding: 62px 65px;
+
+  background: #ffffff;
+
+}
+
+
+
+/* Brown eyebrow */
+
+.qid-about-page-main .qab-experience-eyebrow,
+.qid-about-page-main .qab-faq-eyebrow {
+
+  color: #916349;
+
+}
+
+
+
+/* Title */
+
+.qid-about-page-main .qab-experience-content h2 {
+
+  margin: 20px 0 26px;
+
+  color: #7d5232;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: clamp(32px, 3.4vw, 49px);
+
+  font-weight: 100 !important;
+
+  line-height: 1.15;
+
+}
+
+
+
+/* Body paragraphs */
+
+.qid-about-page-main .qab-experience-content p {
+
+  margin-bottom: 16px;
+
+  font-family: "Roboto", sans-serif !important;
+
+  font-size: 15px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.9;
+
+  color: rgba(60,40,25,.76);
+
+}
+
+
+
+/* Internal content links */
+
+.qid-about-page-main .qab-experience-content p a {
+
+  color: #7d5232;
+
+  text-decoration: underline;
+
+  text-underline-offset: 3px;
+
+}
+
+
+
+/* =========================================================
+   EXPERIENCE CTA LINKS
+========================================================= */
+
+.qid-about-page-main .qab-experience-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 18px 34px;
+
+  margin-top: 28px;
+
+}
+
+
+
+.qid-about-page-main .qab-experience-links a {
+
+  min-width: 155px;
+
+  display: inline-flex;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  border-bottom: 1px solid #916349;
+
+  padding-bottom: 10px;
+
+  color: #7d5232;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+
+  transition: color .25s ease;
+
+}
+
+
+
+.qid-about-page-main .qab-experience-links a:hover {
+
+  color: #916349;
+
+  text-decoration: none;
+
+}
+
+
+
+/* =========================================================
+   04. FREQUENTLY ASKED QUESTIONS — NEW SECTION
+========================================================= */
+
+
+/* Main FAQ section */
+
+.qid-about-page-main .qab-faq {
+
+  padding: 110px 0;
+
+  background: #ebe2dd;
+
+}
+
+
+
+/* Two-column layout */
+
+.qid-about-page-main .qab-faq-layout {
+
+  display: grid;
+
+  grid-template-columns: .82fr 1.18fr;
+
+  gap: 65px;
+
+}
+
+
+
+/* =========================================================
+   FAQ INTRO
+========================================================= */
+
+.qid-about-page-main .qab-faq-intro h2 {
+
+  color: #7d5232;
+
+  font-family: "Broadacre", serif !important;
+
+  font-size: clamp(33px, 3.5vw, 48px);
+
+  font-weight: 100 !important;
+
+  line-height: 1.16;
+
+  margin: 22px 0;
+
+}
+
+
+
+.qid-about-page-main .qab-faq-intro p {
+
+  color: rgba(60,40,25,.72);
+
+  font-family: "Roboto", sans-serif !important;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+}
+
+
+
+/* =========================================================
+   FAQ ACCORDION
+========================================================= */
+
+
+/* Accordion container */
+
+.qid-about-page-main .qab-faq-items {
+
+  border-top: 1px solid rgba(145,99,73,.25);
+
+}
+
+
+
+/* Individual FAQ item */
+
+.qid-about-page-main .qab-faq-item {
+
+  border-bottom: 1px solid rgba(145,99,73,.25);
+
+  background: transparent;
+
+}
+
+
+
+/* Clickable question */
+
+.qid-about-page-main .qab-faq-item summary {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 22px;
+
+  padding: 26px 4px;
+
+  color: #7d5232;
+
+  font-family: "Broadacre", serif;
+
+  font-size: 23px;
+
+  font-weight: 100;
+
+  line-height: 1.35;
+
+  cursor: pointer;
+
+  list-style: none;
+
+}
+
+
+
+/* Hide native browser arrow */
+
+.qid-about-page-main .qab-faq-item summary::-webkit-details-marker {
+
+  display: none;
+
+}
+
+
+
+/* Keyboard focus */
+
+.qid-about-page-main .qab-faq-item summary:focus-visible {
+
+  outline: 2px solid #916349;
+
+  outline-offset: 3px;
+
+}
+
+
+
+/* =========================================================
+   FAQ PLUS / MINUS ICON
+========================================================= */
+
+.qid-about-page-main .qab-faq-plus {
+
+  flex: 0 0 28px;
+
+  height: 28px;
+
+  border: 1px solid rgba(145,99,73,.4);
+
+  border-radius: 50%;
+
+  position: relative;
+
+}
+
+
+
+/* Horizontal and vertical lines */
+
+.qid-about-page-main .qab-faq-plus::before,
+.qid-about-page-main .qab-faq-plus::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 13px;
+
+  left: 8px;
+
+  width: 10px;
+
+  height: 1px;
+
+  background: #916349;
+
+}
+
+
+
+/* Vertical line forms the plus */
+
+.qid-about-page-main .qab-faq-plus::after {
+
+  transform: rotate(90deg);
+
+  transition: transform .25s ease;
+
+}
+
+
+
+/* Open question: plus becomes minus */
+
+.qid-about-page-main .qab-faq-item[open] .qab-faq-plus::after {
+
+  transform: rotate(0);
+
+}
+
+
+
+/* =========================================================
+   FAQ ANSWER
+========================================================= */
+
+.qid-about-page-main .qab-faq-answer {
+
+  padding: 0 45px 24px 4px;
+
+}
+
+
+
+.qid-about-page-main .qab-faq-answer p {
+
+  margin: 0;
+
+  color: rgba(60,40,25,.72);
+
+  font-family: "Roboto", sans-serif !important;
+
+  font-size: 14px;
+
+  font-weight: 300 !important;
+
+  line-height: 1.85;
+
+}
+
+
+
+/* =========================================================
+   05. TABLET RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+
+  /* Stack experience panels */
+
+  .qid-about-page-main .qab-experience-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  /* Reduce left panel height */
+
+  .qid-about-page-main .qab-experience-stat {
+
+    min-height: 320px;
+
+  }
+
+
+  /* Stack FAQ columns */
+
+  .qid-about-page-main .qab-faq-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+  }
+
+}
+
+
+
+/* =========================================================
+   06. MOBILE RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+
+  /* Section spacing */
+
+  .qid-about-page-main .qab-experience,
+  .qid-about-page-main .qab-faq {
+
+    padding: 70px 0;
+
+  }
+
+
+
+  /* Experience left panel */
+
+  .qid-about-page-main .qab-experience-stat {
+
+    min-height: 260px;
+
+    padding: 35px 28px;
+
+  }
+
+
+
+  /* Experience number */
+
+  .qid-about-page-main .qab-experience-number {
+
+    font-size: 110px;
+
+  }
+
+
+
+  /* Experience right content */
+
+  .qid-about-page-main .qab-experience-content {
+
+    padding: 38px 26px;
+
+  }
+
+
+
+  /* Smaller body text */
+
+  .qid-about-page-main .qab-experience-content p {
+
+    font-size: 14px;
+
+  }
+
+
+
+  /* FAQ question */
+
+  .qid-about-page-main .qab-faq-item summary {
+
+    padding: 22px 2px;
+
+    font-size: 19px;
+
+  }
+
+
+
+  /* FAQ answer */
+
+  .qid-about-page-main .qab-faq-answer {
+
+    padding-right: 12px;
+
+  }
+
+
+
+  /* Identity layout */
+
+  .qid-about-page-main .qab-identity-value {
+
+    grid-template-columns: 27px minmax(0,1fr);
+
+  }
+
+}
+
+
+
+/* =========================================================
+   07. REDUCED MOTION ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qid-about-page-main .qab-experience-links a,
+  .qid-about-page-main .qab-faq-plus::after {
+
+    transition: none;
+
+  }
+
+}
