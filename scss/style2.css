@@ -17935,6 +17935,192 @@ h3::after{
 
 }
 
+/* ======================================================
+   QUANTUM CONTACT PAGE
+   RESPONSIVE BUTTON ARROWS — SERVICES PAGE STYLE
+====================================================== */
+
+
+/* 1. KEEP BUTTON TEXT LEFT AND ARROW RIGHT */
+
+.qid-contact-v3 .qcv-hero-button,
+.qid-contact-v3 .qcv-submit-button,
+.qid-contact-v3 .qcv-location-action,
+.qid-contact-v3 .qcv-final a {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 24px;
+
+  align-items: center;
+
+  column-gap: 20px;
+
+  text-align: left;
+
+}
+
+
+/* 2. FIX THE ARROW POSITION AND SIZE */
+
+.qid-contact-v3 .qcv-hero-button > span:last-child,
+.qid-contact-v3 .qcv-submit-button > span:last-child,
+.qid-contact-v3 .qcv-location-action > span:last-child,
+.qid-contact-v3 .qcv-final a > span:last-child {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 24px;
+
+  height: 24px;
+
+  min-width: 24px;
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 19px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  white-space: nowrap;
+
+  transform: none;
+
+  transition: transform .25s ease;
+
+}
+
+
+/* 3. SUBTLE HOVER EFFECT */
+
+@media (hover: hover) {
+
+  .qid-contact-v3 .qcv-hero-button:hover > span:last-child,
+  .qid-contact-v3 .qcv-submit-button:hover > span:last-child,
+  .qid-contact-v3 .qcv-location-action:hover > span:last-child,
+  .qid-contact-v3 .qcv-final a:hover > span:last-child {
+
+    transform: translate(3px, -3px);
+
+  }
+
+}
+
+
+/* ======================================================
+   MOBILE FIX
+====================================================== */
+
+@media (max-width: 767.98px) {
+
+
+  /* MAIN HERO BUTTON */
+
+  .qid-contact-v3 .qcv-hero-button {
+
+    width: 100%;
+
+    max-width: 340px;
+
+    min-width: 0;
+
+    min-height: 54px;
+
+    padding: 15px 18px;
+
+    column-gap: 12px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+  }
+
+
+
+  /* SEND ENQUIRY BUTTON */
+
+  .qid-contact-v3 .qcv-submit-button {
+
+    width: 100%;
+
+    min-width: 0;
+
+    min-height: 54px;
+
+    padding: 15px 18px;
+
+    column-gap: 12px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+  }
+
+
+
+  /* LOCATION AND FINAL CTA LINKS */
+
+  .qid-contact-v3 .qcv-location-action,
+  .qid-contact-v3 .qcv-final a {
+
+    width: 100%;
+
+    min-width: 0;
+
+    column-gap: 12px;
+
+  }
+
+
+
+  /* KEEP EVERY ARROW THE SAME SIZE */
+
+  .qid-contact-v3 .qcv-hero-button > span:last-child,
+  .qid-contact-v3 .qcv-submit-button > span:last-child,
+  .qid-contact-v3 .qcv-location-action > span:last-child,
+  .qid-contact-v3 .qcv-final a > span:last-child {
+
+    width: 22px;
+
+    height: 22px;
+
+    min-width: 22px;
+
+    font-size: 18px;
+
+  }
+
+}
+
+
+/* EXTRA SMALL SCREENS */
+
+@media (max-width: 400px) {
+
+  .qid-contact-v3 .qcv-hero-button,
+  .qid-contact-v3 .qcv-submit-button {
+
+    padding: 14px 15px;
+
+    letter-spacing: 1px;
+
+  }
+
+}
 
 
 
