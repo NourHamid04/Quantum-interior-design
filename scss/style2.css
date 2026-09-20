@@ -18260,3 +18260,256 @@ h3::after{
   }
 
 }
+
+
+
+
+/* ======================================================
+   OUR EXPERIENCE — FULL BROWN OVERRIDE
+   Add at the END of style2.css
+====================================================== */
+
+.qab-experience {
+  background: #8f654b !important;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+/* Main brown wrapper */
+
+.qab-experience .qab-experience-shell {
+  background: #8f654b !important;
+  border: none !important;
+  padding: 40px 35px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title at the top */
+
+.qab-experience .qab-experience-top {
+  background: transparent !important;
+  margin-bottom: 45px;
+}
+
+.qab-experience .qab-experience-eyebrow {
+  display: block;
+  color: rgba(255,255,255,0.8) !important;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.qab-experience .qab-experience-top h2 {
+  color: #ffffff !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Keep the two columns */
+
+.qab-experience .qab-experience-grid {
+  display: grid;
+  grid-template-columns: 40% minmax(0, 1fr);
+  gap: 55px;
+  align-items: center;
+
+  background: #8f654b !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Left: 40+ panel */
+
+.qab-experience .qab-experience-stat {
+  background: #8f654b !important;
+  color: #ffffff !important;
+
+  padding: 35px 20px 35px 0;
+  min-width: 0;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Keep the original elegant statistic */
+
+.qab-experience .qab-experience-number {
+  color: #ffffff !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(110px, 13vw, 180px);
+  line-height: 0.9;
+}
+
+.qab-experience .qab-experience-number span {
+  color: #ffffff !important;
+  font-size: 0.42em;
+  vertical-align: top;
+}
+
+.qab-experience .qab-experience-kicker,
+.qab-experience .qab-experience-stat-label,
+.qab-experience .qab-experience-since {
+  color: #ffffff !important;
+}
+
+/* =========================================
+   RIGHT TEXT PANEL — REMOVE WHITE BACKGROUND
+========================================= */
+
+.qab-experience .qab-experience-content {
+  background: #8f654b !important;
+  background-color: #8f654b !important;
+  background-image: none !important;
+
+  color: #ffffff !important;
+
+  padding: 35px 0 !important;
+
+  max-width: 100% !important;
+  min-width: 0;
+
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* All paragraphs white */
+
+.qab-experience .qab-experience-content p {
+  color: #ffffff !important;
+
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: 400;
+
+  margin-bottom: 24px;
+}
+
+/* All inline links white */
+
+.qab-experience .qab-experience-content p a {
+  color: #ffffff !important;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+
+  border: none !important;
+  background: transparent !important;
+}
+
+.qab-experience .qab-experience-content p a:hover {
+  color: #ffffff !important;
+  opacity: 0.75;
+}
+
+/* Buttons */
+
+.qab-experience .qab-experience-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+  background: transparent !important;
+}
+
+.qab-experience .qab-experience-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  color: #ffffff !important;
+  background: transparent !important;
+
+  border: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.65) !important;
+
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.qab-experience .qab-experience-links a span {
+  color: #ffffff !important;
+}
+
+.qab-experience .qab-experience-links a:hover {
+  color: #ffffff !important;
+  opacity: 0.7;
+  transform: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .qab-experience {
+    padding: 65px 0;
+  }
+
+  .qab-experience .qab-experience-shell {
+    padding: 30px 15px 40px;
+  }
+
+  .qab-experience .qab-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .qab-experience .qab-experience-stat {
+    padding: 15px 0 25px;
+  }
+
+  .qab-experience .qab-experience-content {
+    padding: 10px 0 !important;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .qab-experience {
+    padding: 50px 0;
+  }
+
+  .qab-experience .qab-experience-top {
+    margin-bottom: 25px;
+  }
+
+  .qab-experience .qab-experience-top h2 {
+    font-size: 48px;
+  }
+
+  .qab-experience .qab-experience-number {
+    font-size: 115px;
+  }
+
+  .qab-experience .qab-experience-content p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .qab-experience .qab-experience-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .qab-experience .qab-experience-links a {
+    width: 100%;
+  }
+
+}
