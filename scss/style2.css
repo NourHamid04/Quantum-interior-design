@@ -21961,3 +21961,384 @@ h3::after{
   }
 
 }
+
+
+
+
+/* ======================================================
+   ABOUT PAGE — OUR EXPERIENCE
+   COMPACT, ELEGANT BROWN DESIGN
+   ADD AT THE VERY END OF style2.css
+====================================================== */
+
+/* 01. Reduce the overall section height */
+
+.qid-about-page-main .qab-experience {
+  background: #8f654b !important;
+  padding: 48px 0 !important;
+  overflow: hidden;
+}
+
+/* Keep content aligned within the page */
+
+.qid-about-page-main .qab-experience .container {
+  max-width: 1440px !important;
+  width: 100%;
+}
+
+/* Remove excessive internal spacing */
+
+.qid-about-page-main .qab-experience-shell {
+  background: #8f654b !important;
+  padding: 12px 30px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* ======================================================
+   02. TOP HEADING
+====================================================== */
+
+.qid-about-page-main .qab-experience-top {
+  margin-bottom: 35px !important;
+  background: transparent !important;
+}
+
+/* Small label above the heading */
+
+.qid-about-page-main .qab-experience-eyebrow {
+  display: block;
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  margin-bottom: 10px !important;
+}
+
+/* Make the title a little smaller */
+
+.qid-about-page-main .qab-experience-top h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(52px, 5.2vw, 76px) !important;
+  font-weight: 300;
+  line-height: 1.05;
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+
+/* ======================================================
+   03. TWO-COLUMN LAYOUT
+====================================================== */
+
+.qid-about-page-main .qab-experience-grid {
+  display: grid !important;
+
+  /* More room for text, less empty space on the left */
+  grid-template-columns: minmax(0, 36%) minmax(0, 1fr) !important;
+
+  gap: 55px !important;
+  align-items: center !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+/* ======================================================
+   04. LEFT STATISTIC — LARGER 40+
+====================================================== */
+
+.qid-about-page-main .qab-experience-stat {
+  background: transparent !important;
+  color: #ffffff !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  min-width: 0;
+  min-height: 0 !important;
+
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Small MORE THAN label */
+
+.qid-about-page-main .qab-experience-kicker {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  color: #ffffff !important;
+
+  margin-bottom: 6px !important;
+}
+
+/* Larger number, but less space below it */
+
+.qid-about-page-main .qab-experience-number {
+  display: flex !important;
+  align-items: flex-start;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(155px, 15vw, 220px) !important;
+  font-weight: 300;
+
+  line-height: 0.9 !important;
+  letter-spacing: -0.055em;
+
+  color: #ffffff !important;
+
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+}
+
+/* Position + neatly beside the 40 */
+
+.qid-about-page-main .qab-experience-number span {
+  display: inline-block;
+
+  font-size: 0.32em !important;
+  line-height: 1;
+
+  color: #ffffff !important;
+
+  position: static !important;
+  vertical-align: baseline;
+
+  margin-top: 0.08em;
+  margin-left: 7px;
+
+  transform: none !important;
+}
+
+/* Description below number */
+
+.qid-about-page-main .qab-experience-stat-label {
+  display: block;
+
+  max-width: 270px;
+
+  font-size: 12px !important;
+  font-weight: 600;
+
+  line-height: 1.75 !important;
+  letter-spacing: 0.15em;
+
+  color: #ffffff !important;
+
+  margin-bottom: 14px !important;
+}
+
+/* Since 2014 */
+
+.qid-about-page-main .qab-experience-since {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.82) !important;
+
+  margin: 0 !important;
+}
+
+
+/* ======================================================
+   05. RIGHT TEXT — MORE COMPACT
+====================================================== */
+
+.qid-about-page-main .qab-experience-content {
+  background: transparent !important;
+  background-image: none !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  max-width: 100% !important;
+  min-width: 0;
+
+  color: #ffffff !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Better paragraph spacing */
+
+.qid-about-page-main .qab-experience-content p {
+  color: rgba(255, 255, 255, 0.94) !important;
+
+  font-size: 16px !important;
+  font-weight: 400;
+
+  line-height: 1.75 !important;
+
+  margin: 0 0 16px !important;
+}
+
+.qid-about-page-main .qab-experience-content p:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+/* All inline links remain white */
+
+.qid-about-page-main .qab-experience-content p a {
+  color: #ffffff !important;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+
+  border: none !important;
+  background: transparent !important;
+}
+
+
+/* ======================================================
+   06. BUTTONS — COMPACT AND ALIGNED
+====================================================== */
+
+.qid-about-page-main .qab-experience-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 28px !important;
+
+  margin-top: 24px !important;
+
+  background: transparent !important;
+}
+
+.qid-about-page-main .qab-experience-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding: 9px 0 !important;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+
+  color: #ffffff !important;
+  background: transparent !important;
+
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+
+  text-decoration: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.qid-about-page-main .qab-experience-links a:hover {
+  opacity: 0.75;
+}
+
+.qid-about-page-main .qab-experience-links a span {
+  color: #ffffff !important;
+}
+
+
+/* ======================================================
+   07. RESPONSIVE — TABLET
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .qid-about-page-main .qab-experience {
+    padding: 45px 0 !important;
+  }
+
+  .qid-about-page-main .qab-experience-shell {
+    padding: 10px 20px !important;
+  }
+
+  .qid-about-page-main .qab-experience-top {
+    margin-bottom: 28px !important;
+  }
+
+  .qid-about-page-main .qab-experience-grid {
+    grid-template-columns: minmax(0, 34%) minmax(0, 1fr) !important;
+    gap: 30px !important;
+  }
+
+  .qid-about-page-main .qab-experience-number {
+    font-size: clamp(135px, 17vw, 175px) !important;
+  }
+
+  .qid-about-page-main .qab-experience-content p {
+    font-size: 15px !important;
+  }
+
+}
+
+
+/* ======================================================
+   08. RESPONSIVE — MOBILE
+====================================================== */
+
+@media (max-width: 767px) {
+
+  .qid-about-page-main .qab-experience {
+    padding: 45px 0 !important;
+  }
+
+  .qid-about-page-main .qab-experience-shell {
+    padding: 0 10px !important;
+  }
+
+  .qid-about-page-main .qab-experience-top {
+    margin-bottom: 24px !important;
+  }
+
+  .qid-about-page-main .qab-experience-top h2 {
+    font-size: 50px !important;
+  }
+
+  /* Stack number and text */
+
+  .qid-about-page-main .qab-experience-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .qid-about-page-main .qab-experience-number {
+    font-size: clamp(145px, 28vw, 190px) !important;
+    margin-bottom: 8px !important;
+  }
+
+  .qid-about-page-main .qab-experience-stat-label {
+    max-width: 260px;
+    margin-bottom: 10px !important;
+  }
+
+  .qid-about-page-main .qab-experience-content p {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .qid-about-page-main .qab-experience-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px !important;
+  }
+
+  .qid-about-page-main .qab-experience-links a {
+    width: 100%;
+  }
+
+}
