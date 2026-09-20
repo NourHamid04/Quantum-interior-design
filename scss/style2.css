@@ -18513,3 +18513,3451 @@ h3::after{
   }
 
 }
+
+
+
+
+
+/* ============================================================
+   QUANTUM INTERIOR DESIGN
+   SERVICES PAGE - SEO CONTENT STYLING
+
+   Applies only to the main services page.
+   Keeps existing hero, navbar, process, and footer design.
+============================================================ */
+
+
+/* ======================================================
+   01. HERO SEO H1
+   Preserve original hero typography
+====================================================== */
+
+.qid-service-page-main
+.qsp-hero-topnav-content h1 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(48px, 5vw, 78px);
+
+  font-weight: 300;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+
+  color: #855d46;
+
+  margin: 0 0 26px;
+
+}
+
+
+/* Existing service navigation heading */
+
+.qid-service-page-main
+.qsp-top-service-heading {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 20px;
+
+}
+
+.qid-service-page-main
+.qsp-top-service-heading
+.qsp-top-service-label {
+
+  font-size: 12px;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+}
+
+.qid-service-page-main
+.qsp-top-service-hint {
+
+  font-size: 12px;
+
+  letter-spacing: 0.05em;
+
+}
+
+
+/* ======================================================
+   02. INTRO SECTION
+====================================================== */
+
+.qid-service-page-main .qsp-seo-intro {
+
+  background: #fcfaf8;
+
+  padding: 110px 0 115px;
+
+  position: relative;
+
+}
+
+.qid-service-page-main
+.qsp-seo-intro .qsp-side-label {
+
+  padding-top: 12px;
+
+}
+
+.qid-service-page-main
+.qsp-seo-intro-content {
+
+  max-width: 800px;
+
+}
+
+.qid-service-page-main
+.qsp-seo-intro-content h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(43px, 4.5vw, 67px);
+
+  font-weight: 300;
+
+  line-height: 1.12;
+
+  letter-spacing: -0.025em;
+
+  color: #805940;
+
+  margin: 0 0 34px;
+
+}
+
+.qid-service-page-main
+.qsp-seo-intro-content p {
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.95;
+
+  color: #635b56;
+
+  margin-bottom: 25px;
+
+}
+
+.qid-service-page-main
+.qsp-seo-intro-content p:last-child {
+
+  margin-bottom: 0;
+
+}
+
+
+/* ======================================================
+   03. INTERIOR DESIGN BY SECTOR
+====================================================== */
+
+.qid-service-page-main .qsp-sectors {
+
+  background: #ffffff;
+
+  padding: 115px 0 125px;
+
+}
+
+
+/* Heading */
+
+.qsp-sectors-heading {
+
+  max-width: 850px;
+
+  margin-bottom: 65px;
+
+}
+
+.qsp-sectors-eyebrow {
+
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.20em;
+
+  text-transform: uppercase;
+
+  color: #987157;
+
+  margin-bottom: 22px;
+
+}
+
+.qsp-sectors-heading h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(46px, 5vw, 74px);
+
+  font-weight: 300;
+
+  line-height: 1.07;
+
+  letter-spacing: -0.025em;
+
+  color: #805940;
+
+  margin: 0 0 25px;
+
+}
+
+.qsp-sectors-heading > p {
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #716861;
+
+  max-width: 680px;
+
+  margin: 0;
+
+}
+
+
+/* Four sector cards */
+
+.qsp-sectors-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+}
+
+
+/* Card design */
+
+.qsp-sector-card {
+
+  background: #f7f2ee;
+
+  border: 1px solid rgba(135, 94, 68, 0.10);
+
+  padding: 42px 43px 45px;
+
+  min-height: 310px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+.qsp-sector-card:hover {
+
+  background: #f1e9e2;
+
+  border-color: rgba(135, 94, 68, 0.22);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 16px 35px rgba(55, 34, 23, 0.055);
+
+}
+
+
+/* Number and divider */
+
+.qsp-sector-card-top {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 38px;
+
+}
+
+.qsp-sector-number {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 31px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  color: #9a6d52;
+
+}
+
+.qsp-sector-line {
+
+  display: block;
+
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(136, 96, 73, 0.25);
+
+}
+
+
+/* Card title */
+
+.qsp-sector-card h3 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(29px, 2.5vw, 38px);
+
+  font-weight: 400;
+
+  line-height: 1.18;
+
+  color: #805940;
+
+  margin: 0 0 22px;
+
+  max-width: 390px;
+
+}
+
+
+/* Card paragraph */
+
+.qsp-sector-card p {
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #685f59;
+
+  margin: 0;
+
+  max-width: 455px;
+
+}
+
+
+/* ======================================================
+   04. EXISTING HOW WE WORK SECTION
+
+   Preserve original brown layout.
+====================================================== */
+
+
+/* Ensure long updated paragraphs remain comfortable */
+
+.qid-service-page-main
+.qsp-process-item p {
+
+  line-height: 1.85;
+
+}
+
+
+/* ======================================================
+   05. FREQUENTLY ASKED QUESTIONS
+====================================================== */
+
+.qid-service-page-main .qsp-faq {
+
+  background: #fcfaf8;
+
+  padding: 115px 0 125px;
+
+}
+
+
+/* Two-column layout */
+
+.qsp-faq-layout {
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 95px;
+
+  align-items: start;
+
+}
+
+
+/* Left heading */
+
+.qsp-faq-intro {
+
+  position: relative;
+
+}
+
+.qsp-faq-eyebrow {
+
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.20em;
+
+  text-transform: uppercase;
+
+  color: #987157;
+
+  margin-bottom: 24px;
+
+}
+
+.qsp-faq-intro h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(47px, 4.5vw, 70px);
+
+  font-weight: 300;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.025em;
+
+  color: #805940;
+
+  margin: 0;
+
+}
+
+
+/* Right accordion */
+
+.qsp-faq-items {
+
+  border-top: 1px solid rgba(130, 91, 68, 0.24);
+
+}
+
+.qsp-faq-item {
+
+  border-bottom: 1px solid rgba(130, 91, 68, 0.24);
+
+  background: transparent;
+
+}
+
+
+/* Question row */
+
+.qsp-faq-item summary {
+
+  list-style: none;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  cursor: pointer;
+
+  padding: 29px 3px;
+
+  color: #75543e;
+
+  transition: color 0.25s ease;
+
+}
+
+.qsp-faq-item summary::-webkit-details-marker {
+
+  display: none;
+
+}
+
+.qsp-faq-question {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  line-height: 1.25;
+
+  color: inherit;
+
+  flex: 1;
+
+}
+
+.qsp-faq-item summary:hover {
+
+  color: #a77b5f;
+
+}
+
+
+/* Plus / minus indicator */
+
+.qsp-faq-plus {
+
+  display: block;
+
+  flex-shrink: 0;
+
+  width: 28px;
+
+  height: 28px;
+
+  position: relative;
+
+}
+
+.qsp-faq-plus::before,
+.qsp-faq-plus::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  background: #916349;
+
+  transform: translate(-50%, -50%);
+
+  transition: transform 0.25s ease;
+
+}
+
+.qsp-faq-plus::before {
+
+  width: 16px;
+
+  height: 1px;
+
+}
+
+.qsp-faq-plus::after {
+
+  width: 1px;
+
+  height: 16px;
+
+}
+
+.qsp-faq-item[open] .qsp-faq-plus::after {
+
+  transform: translate(-50%, -50%) rotate(90deg);
+
+}
+
+
+/* Answer */
+
+.qsp-faq-answer {
+
+  padding: 0 40px 29px 3px;
+
+}
+
+.qsp-faq-answer p {
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #726861;
+
+  margin: 0;
+
+  max-width: 650px;
+
+}
+
+
+/* ======================================================
+   06. CLOSING CONSULTATION CTA
+   Brown and white Quantum theme
+====================================================== */
+
+.qid-service-page-main .qsp-service-cta {
+
+  background: #8f654b;
+
+  padding: 85px 0;
+
+  overflow: hidden;
+
+}
+
+
+/* CTA layout */
+
+.qsp-service-cta-wrap {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 65px;
+
+  position: relative;
+
+}
+
+
+/* Content */
+
+.qsp-service-cta-content {
+
+  max-width: 760px;
+
+}
+
+.qsp-service-cta-eyebrow {
+
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.20em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.82);
+
+  margin-bottom: 20px;
+
+}
+
+.qsp-service-cta-content h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(48px, 5vw, 74px);
+
+  font-weight: 300;
+
+  line-height: 1.07;
+
+  letter-spacing: -0.025em;
+
+  color: #ffffff;
+
+  margin: 0 0 24px;
+
+}
+
+.qsp-service-cta-content p {
+
+  font-size: 17px;
+
+  line-height: 1.85;
+
+  color: rgba(255,255,255,0.9);
+
+  max-width: 650px;
+
+  margin: 0;
+
+}
+
+
+/* Consultation button */
+
+.qsp-service-cta-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 38px;
+
+  flex-shrink: 0;
+
+  padding: 19px 25px;
+
+  border: 1px solid rgba(255,255,255,0.7);
+
+  color: #ffffff;
+
+  background: transparent;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+.qsp-service-cta-button span {
+
+  color: inherit;
+
+}
+
+.qsp-service-cta-button:hover,
+.qsp-service-cta-button:focus-visible {
+
+  background: #ffffff;
+
+  color: #805940;
+
+  border-color: #ffffff;
+
+  text-decoration: none;
+
+}
+
+
+/* Simple arrow, not an emoji */
+
+.qsp-service-cta-arrow {
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  display: inline-block;
+
+  transition: transform 0.3s ease;
+
+}
+
+.qsp-service-cta-button:hover
+.qsp-service-cta-arrow {
+
+  transform: translate(3px, -3px);
+
+}
+
+
+/* ======================================================
+   RESPONSIVE: TABLETS
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .qid-service-page-main
+  .qsp-hero-topnav-content h1 {
+
+    font-size: 58px;
+
+  }
+
+
+  /* Introduction */
+
+  .qid-service-page-main .qsp-seo-intro {
+
+    padding: 80px 0;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro .qsp-side-label {
+
+    margin-bottom: 28px;
+
+  }
+
+
+  /* Sectors */
+
+  .qid-service-page-main .qsp-sectors {
+
+    padding: 85px 0;
+
+  }
+
+  .qsp-sectors-heading {
+
+    margin-bottom: 45px;
+
+  }
+
+  .qsp-sector-card {
+
+    padding: 32px;
+
+    min-height: 330px;
+
+  }
+
+
+  /* FAQ */
+
+  .qid-service-page-main .qsp-faq {
+
+    padding: 85px 0;
+
+  }
+
+  .qsp-faq-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+  }
+
+  .qsp-faq-intro {
+
+    max-width: 650px;
+
+  }
+
+
+  /* CTA */
+
+  .qid-service-page-main .qsp-service-cta {
+
+    padding: 75px 0;
+
+  }
+
+  .qsp-service-cta-wrap {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+
+  }
+
+}
+
+
+/* ======================================================
+   RESPONSIVE: SMALL DEVICES
+====================================================== */
+
+@media (max-width: 767px) {
+
+  /* Hero */
+
+  .qid-service-page-main
+  .qsp-hero-topnav-content h1 {
+
+    font-size: clamp(42px, 10vw, 58px);
+
+    line-height: 1.09;
+
+  }
+
+  .qid-service-page-main
+  .qsp-top-service-heading {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+
+  }
+
+
+  /* Introduction */
+
+  .qid-service-page-main .qsp-seo-intro {
+
+    padding: 65px 0 70px;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro-content h2 {
+
+    font-size: 46px;
+
+    margin-bottom: 25px;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro-content p {
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+  }
+
+
+  /* Sector grid */
+
+  .qid-service-page-main .qsp-sectors {
+
+    padding: 70px 0;
+
+  }
+
+  .qsp-sectors-heading {
+
+    margin-bottom: 35px;
+
+  }
+
+  .qsp-sectors-heading h2 {
+
+    font-size: 46px;
+
+  }
+
+  .qsp-sectors-heading > p {
+
+    font-size: 16px;
+
+  }
+
+  .qsp-sectors-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+  }
+
+  .qsp-sector-card {
+
+    min-height: auto;
+
+    padding: 30px 26px 34px;
+
+  }
+
+  .qsp-sector-card-top {
+
+    margin-bottom: 25px;
+
+  }
+
+  .qsp-sector-card h3 {
+
+    font-size: 34px;
+
+    margin-bottom: 16px;
+
+  }
+
+  .qsp-sector-card p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+  }
+
+
+  /* FAQ */
+
+  .qid-service-page-main .qsp-faq {
+
+    padding: 70px 0;
+
+  }
+
+  .qsp-faq-layout {
+
+    gap: 35px;
+
+  }
+
+  .qsp-faq-intro h2 {
+
+    font-size: 48px;
+
+  }
+
+  .qsp-faq-item summary {
+
+    padding: 24px 0;
+
+  }
+
+  .qsp-faq-question {
+
+    font-size: 25px;
+
+  }
+
+  .qsp-faq-answer {
+
+    padding: 0 15px 25px 0;
+
+  }
+
+  .qsp-faq-answer p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+  }
+
+
+  /* CTA */
+
+  .qid-service-page-main .qsp-service-cta {
+
+    padding: 65px 0;
+
+  }
+
+  .qsp-service-cta-content h2 {
+
+    font-size: 48px;
+
+  }
+
+  .qsp-service-cta-content p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+  }
+
+  .qsp-service-cta-button {
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 19px 22px;
+
+  }
+
+}
+
+
+/* ======================================================
+   VERY SMALL DEVICES
+====================================================== */
+
+@media (max-width: 400px) {
+
+  .qid-service-page-main
+  .qsp-hero-topnav-content h1 {
+
+    font-size: 40px;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro-content h2 {
+
+    font-size: 40px;
+
+  }
+
+  .qsp-sectors-heading h2 {
+
+    font-size: 40px;
+
+  }
+
+  .qsp-faq-intro h2 {
+
+    font-size: 42px;
+
+  }
+
+  .qsp-service-cta-content h2 {
+
+    font-size: 43px;
+
+  }
+
+}
+
+
+/* ======================================================
+   REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qsp-sector-card,
+  .qsp-service-cta-button,
+  .qsp-service-cta-arrow,
+  .qsp-faq-plus::after {
+
+    transition: none;
+
+  }
+
+  .qsp-sector-card:hover {
+
+    transform: none;
+
+  }
+
+}
+
+
+
+
+/* ==========================================================
+   QUANTUM — OUR APPROACH
+   FULL BROWN EDITORIAL REDESIGN
+========================================================== */
+
+
+/* Main section */
+
+.qid-service-page-main .qsp-seo-intro {
+
+  background: #8f654b !important;
+
+  padding: 105px 0 !important;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+/* Overall layout */
+
+.qsp-seo-intro .qsp-seo-intro-wrap {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+
+  gap: clamp(45px, 6vw, 105px);
+
+  align-items: stretch;
+
+  position: relative;
+
+}
+
+
+/* ======================================================
+   LEFT COLUMN
+====================================================== */
+
+.qsp-seo-intro .qsp-seo-intro-aside {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  min-width: 0;
+
+  position: relative;
+
+  border-right: 1px solid rgba(255,255,255,0.2);
+
+  padding: 12px 35px 5px 0;
+
+}
+
+
+/* Existing section label */
+
+.qsp-seo-intro .qsp-side-label {
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+}
+
+.qsp-seo-intro .qsp-side-label span {
+
+  display: inline-block;
+
+  color: #ffffff !important;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.24em;
+
+  text-transform: uppercase;
+
+}
+
+
+/* Decorative circle */
+
+.qsp-seo-intro-decor {
+
+  width: 100%;
+
+  min-height: 200px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  pointer-events: none;
+
+}
+
+.qsp-intro-decor-circle {
+
+  display: block;
+
+  position: absolute;
+
+  width: min(220px, 75%);
+
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+}
+
+.qsp-intro-decor-line {
+
+  position: absolute;
+
+  width: 110px;
+
+  height: 1px;
+
+  background: rgba(255,255,255,0.28);
+
+  transform: rotate(-45deg);
+
+}
+
+.qsp-intro-decor-mark {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 125px;
+
+  line-height: 1;
+
+  font-weight: 300;
+
+  font-style: italic;
+
+  color: rgba(255,255,255,0.12);
+
+}
+
+
+/* Small bottom details */
+
+.qsp-seo-intro-aside-footer {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+}
+
+.qsp-seo-intro-aside-footer span {
+
+  display: block;
+
+  font-size: 11px;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.65);
+
+}
+
+
+/* ======================================================
+   RIGHT COLUMN
+====================================================== */
+
+.qsp-seo-intro .qsp-seo-intro-content {
+
+  max-width: 790px !important;
+
+  min-width: 0;
+
+  padding: 0 !important;
+
+  background: transparent !important;
+
+}
+
+
+/* Small eyebrow */
+
+.qsp-seo-intro-eyebrow {
+
+  display: block;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.7);
+
+  margin-bottom: 19px;
+
+}
+
+
+/* Main title */
+
+.qid-service-page-main
+.qsp-seo-intro .qsp-seo-intro-content h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(43px, 4.2vw, 65px);
+
+  font-weight: 300;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.022em;
+
+  color: #ffffff !important;
+
+  margin: 0 0 28px !important;
+
+}
+
+
+/* Subtle horizontal divider */
+
+.qsp-seo-intro-divider {
+
+  display: block;
+
+  width: 65px;
+
+  height: 1px;
+
+  background: rgba(255,255,255,0.55);
+
+  margin-bottom: 31px;
+
+}
+
+
+/* All paragraphs white */
+
+.qid-service-page-main
+.qsp-seo-intro .qsp-seo-intro-content p {
+
+  color: rgba(255,255,255,0.87) !important;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.9;
+
+  margin: 0 0 24px !important;
+
+  max-width: 740px;
+
+}
+
+
+/* First paragraph: slightly brighter */
+
+.qid-service-page-main
+.qsp-seo-intro .qsp-seo-intro-content
+.qsp-seo-intro-lead {
+
+  color: #ffffff !important;
+
+}
+
+
+/* ======================================================
+   BOTTOM SIGNATURE
+====================================================== */
+
+.qsp-seo-intro-bottom {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  margin-top: 35px;
+
+}
+
+.qsp-seo-intro-bottom-line {
+
+  display: block;
+
+  width: 34px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: rgba(255,255,255,0.65);
+
+}
+
+.qsp-seo-intro-bottom span:last-child {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 22px;
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+
+}
+
+
+/* ======================================================
+   RESPONSIVE — TABLET
+====================================================== */
+
+@media (max-width: 991px) {
+
+  .qid-service-page-main .qsp-seo-intro {
+
+    padding: 80px 0 !important;
+
+  }
+
+  .qsp-seo-intro .qsp-seo-intro-wrap {
+
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+
+  }
+
+  .qsp-seo-intro .qsp-seo-intro-aside {
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+    padding: 0 0 25px;
+
+  }
+
+  .qsp-seo-intro-decor,
+  .qsp-seo-intro-aside-footer {
+
+    display: none;
+
+  }
+
+  .qsp-seo-intro .qsp-seo-intro-content {
+
+    max-width: 100% !important;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro .qsp-seo-intro-content h2 {
+
+    font-size: clamp(43px, 6vw, 60px);
+
+  }
+
+}
+
+
+/* ======================================================
+   RESPONSIVE — MOBILE
+====================================================== */
+
+@media (max-width: 767px) {
+
+  .qid-service-page-main .qsp-seo-intro {
+
+    padding: 65px 0 !important;
+
+  }
+
+  .qsp-seo-intro .qsp-seo-intro-wrap {
+
+    gap: 28px;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro .qsp-seo-intro-content h2 {
+
+    font-size: clamp(40px, 10vw, 49px);
+
+    line-height: 1.12;
+
+    margin-bottom: 25px !important;
+
+  }
+
+  .qsp-seo-intro-eyebrow {
+
+    font-size: 10px;
+
+    margin-bottom: 15px;
+
+  }
+
+  .qsp-seo-intro-divider {
+
+    margin-bottom: 25px;
+
+  }
+
+  .qid-service-page-main
+  .qsp-seo-intro .qsp-seo-intro-content p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 21px !important;
+
+  }
+
+  .qsp-seo-intro-bottom {
+
+    margin-top: 28px;
+
+  }
+
+  .qsp-seo-intro-bottom span:last-child {
+
+    font-size: 19px;
+
+  }
+
+}
+
+
+/* ======================================================
+   REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qsp-seo-intro * {
+
+    animation: none !important;
+
+  }
+
+}
+
+
+
+
+
+/* ============================================================
+   QUANTUM INTERIOR DESIGN
+   TURNKEY INTERIOR FIT-OUT PAGE
+
+   Add to the END of style2.css
+
+   Scoped to .qsp-turnkey-page
+============================================================ */
+
+
+/* ======================================================
+   01. SHARED TURNKEY TYPOGRAPHY
+====================================================== */
+
+.qsp-turnkey-page {
+
+  --qst-brown: #8f654b;
+
+  --qst-brown-dark: #79533d;
+
+  --qst-cream: #f7f2ee;
+
+  --qst-soft: #fcfaf8;
+
+  --qst-text: #685e58;
+
+  --qst-line: rgba(130, 91, 68, 0.2);
+
+}
+
+
+/* All section headings */
+
+.qsp-turnkey-page
+.qst-intro-content h2,
+
+.qsp-turnkey-page
+.qst-audience-heading h2,
+
+.qsp-turnkey-page
+.qst-section-heading h2,
+
+.qsp-turnkey-page
+.qst-scope-heading h2,
+
+.qsp-turnkey-page
+.qst-faq-heading h2,
+
+.qsp-turnkey-page
+.qst-cta-content h2 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-weight: 300;
+
+  letter-spacing: -0.025em;
+
+}
+
+
+/* Small section labels */
+
+.qsp-turnkey-page
+.qst-section-kicker {
+
+  display: block;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+
+  color: var(--qst-brown);
+
+  margin-bottom: 20px;
+
+}
+
+.qsp-turnkey-page
+.qst-kicker-light {
+
+  color: rgba(255,255,255,0.82);
+
+}
+
+
+/* Small heading divider */
+
+.qst-heading-line {
+
+  display: block;
+
+  width: 65px;
+
+  height: 1px;
+
+  background: var(--qst-brown);
+
+}
+
+.qst-heading-line-light {
+
+  background: rgba(255,255,255,0.6);
+
+}
+
+
+/* ======================================================
+   02. ORIGINAL TURNKEY HERO
+   Keep split-image design
+====================================================== */
+
+.qsp-turnkey-page
+.qsp-service-detail-hero {
+
+  background: #ffffff;
+
+}
+
+
+/* H1 */
+
+.qsp-turnkey-page
+.qsp-detail-content h1 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(47px, 4.8vw, 76px);
+
+  line-height: 1.06;
+
+  font-weight: 300;
+
+  letter-spacing: -0.025em;
+
+  color: #805940;
+
+  margin-bottom: 26px;
+
+}
+
+
+/* Lead paragraph */
+
+.qsp-turnkey-page
+.qsp-detail-content
+.qsp-service-lead {
+
+  font-size: 19px;
+
+  line-height: 1.65;
+
+  color: #8b6047;
+
+  margin-bottom: 20px;
+
+}
+
+
+/* Main paragraph */
+
+.qsp-turnkey-page
+.qsp-detail-content > p:not(.qsp-service-lead) {
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  color: #69605a;
+
+}
+
+
+/* Service image */
+
+.qsp-turnkey-page
+.qsp-detail-image img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
+
+/* ======================================================
+   03. BROWN INTRODUCTION
+====================================================== */
+
+.qsp-turnkey-page .qst-intro {
+
+  background: var(--qst-brown);
+
+  padding: 105px 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+/* Two-column editorial layout */
+
+.qst-intro-grid {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+
+  gap: clamp(45px, 6vw, 105px);
+
+  align-items: stretch;
+
+}
+
+
+/* Left panel */
+
+.qst-intro-aside {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  border-right: 1px solid rgba(255,255,255,0.2);
+
+  padding: 10px 35px 5px 0;
+
+  min-width: 0;
+
+}
+
+
+/* Decorative Q */
+
+.qst-intro-decor {
+
+  width: 100%;
+
+  min-height: 200px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  pointer-events: none;
+
+}
+
+.qst-intro-circle {
+
+  display: block;
+
+  width: min(220px, 75%);
+
+  aspect-ratio: 1;
+
+  border: 1px solid rgba(255,255,255,0.17);
+
+  border-radius: 50%;
+
+  position: absolute;
+
+}
+
+.qst-intro-mark {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 125px;
+
+  font-weight: 300;
+
+  font-style: italic;
+
+  line-height: 1;
+
+  color: rgba(255,255,255,0.14);
+
+}
+
+
+/* Left bottom text */
+
+.qst-intro-footnote {
+
+  font-size: 11px;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  color: rgba(255,255,255,0.7);
+
+}
+
+
+/* Right content */
+
+.qst-intro-content {
+
+  max-width: 800px;
+
+  min-width: 0;
+
+}
+
+.qst-intro-content h2 {
+
+  font-size: clamp(45px, 4.6vw, 70px);
+
+  line-height: 1.08;
+
+  color: #ffffff;
+
+  margin: 0 0 29px;
+
+}
+
+.qst-intro-content .qst-heading-line {
+
+  margin-bottom: 31px;
+
+}
+
+.qst-intro-content p {
+
+  font-size: 17px;
+
+  line-height: 1.95;
+
+  font-weight: 400;
+
+  color: rgba(255,255,255,0.91);
+
+  max-width: 750px;
+
+  margin: 0;
+
+}
+
+
+/* ======================================================
+   04. WHO IS THIS SERVICE FOR?
+====================================================== */
+
+.qsp-turnkey-page .qst-audience {
+
+  background: #ffffff;
+
+  padding: 115px 0;
+
+}
+
+
+/* Two columns */
+
+.qst-audience-grid {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+
+  gap: clamp(45px, 6vw, 105px);
+
+  align-items: start;
+
+}
+
+
+/* Left title */
+
+.qst-audience-heading h2 {
+
+  font-size: clamp(45px, 4.5vw, 70px);
+
+  line-height: 1.08;
+
+  color: #805940;
+
+  margin: 0 0 29px;
+
+}
+
+
+/* Right text */
+
+.qst-audience-content {
+
+  padding-top: 10px;
+
+}
+
+.qst-audience-content p {
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.95;
+
+  color: var(--qst-text);
+
+  margin: 0 0 26px;
+
+}
+
+.qst-audience-content p:last-of-type {
+
+  margin-bottom: 0;
+
+}
+
+
+/* Bottom signature */
+
+.qst-audience-footer {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 40px;
+
+}
+
+.qst-audience-footer-line {
+
+  display: block;
+
+  width: 36px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--qst-brown);
+
+}
+
+.qst-audience-footer span:last-child {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 22px;
+
+  font-style: italic;
+
+  color: #90664d;
+
+}
+
+
+/* ======================================================
+   05. PROJECT TYPES
+====================================================== */
+
+.qsp-turnkey-page .qst-project-types {
+
+  background: var(--qst-soft);
+
+  padding: 110px 0 120px;
+
+}
+
+
+/* Section heading */
+
+.qst-section-heading {
+
+  max-width: 900px;
+
+  margin-bottom: 60px;
+
+}
+
+.qst-section-heading h2 {
+
+  font-size: clamp(46px, 5vw, 75px);
+
+  line-height: 1.07;
+
+  color: #805940;
+
+  margin: 0;
+
+}
+
+
+/* Four project cards */
+
+.qst-project-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+}
+
+
+/* Card */
+
+.qst-project-card {
+
+  background: var(--qst-cream);
+
+  border: 1px solid rgba(135,94,68,0.11);
+
+  min-height: 290px;
+
+  padding: 42px 43px 45px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+
+}
+
+.qst-project-card:hover {
+
+  background: #f0e8e1;
+
+  border-color: rgba(135,94,68,0.23);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 35px rgba(60,39,27,0.055);
+
+}
+
+
+/* Card number */
+
+.qst-project-card-top {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 38px;
+
+}
+
+.qst-project-card-top > span:first-child {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 31px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  color: #9a6d52;
+
+}
+
+.qst-project-card-line {
+
+  display: block;
+
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(136,96,73,0.25);
+
+}
+
+
+/* Card title */
+
+.qst-project-card h3 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(30px, 2.6vw, 40px);
+
+  font-weight: 400;
+
+  line-height: 1.18;
+
+  color: #805940;
+
+  max-width: 430px;
+
+  margin: 0 0 21px;
+
+}
+
+
+/* Card description */
+
+.qst-project-card p {
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #685f59;
+
+  max-width: 470px;
+
+  margin: 0;
+
+}
+
+
+/* Projects link */
+
+.qst-project-footer {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 37px;
+
+}
+
+.qst-project-footer a {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #956d54;
+
+  color: #855d46;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+
+}
+
+.qst-project-footer a:hover {
+
+  gap: 30px;
+
+  color: #5e3c2b;
+
+  text-decoration: none;
+
+}
+
+
+/* ======================================================
+   06. WHAT'S INCLUDED IN A TURNKEY SCOPE?
+====================================================== */
+
+.qsp-turnkey-page .qst-scope {
+
+  background: #ffffff;
+
+  padding: 115px 0 125px;
+
+}
+
+
+/* Layout */
+
+.qst-scope-layout {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+
+  gap: clamp(45px, 6vw, 105px);
+
+  align-items: start;
+
+}
+
+
+/* Heading */
+
+.qst-scope-heading h2 {
+
+  font-size: clamp(45px, 4.5vw, 70px);
+
+  line-height: 1.08;
+
+  color: #805940;
+
+  margin: 0 0 30px;
+
+}
+
+
+/* List */
+
+.qst-scope-list {
+
+  border-top: 1px solid var(--qst-line);
+
+}
+
+
+/* Individual scope item */
+
+.qst-scope-item {
+
+  display: grid;
+
+  grid-template-columns: 44px minmax(0, 1fr);
+
+  gap: 20px;
+
+  padding: 28px 0 30px;
+
+  border-bottom: 1px solid var(--qst-line);
+
+  transition: padding-left 0.3s ease;
+
+}
+
+.qst-scope-item:hover {
+
+  padding-left: 7px;
+
+}
+
+
+/* Number */
+
+.qst-scope-number {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 29px;
+
+  line-height: 1.2;
+
+  color: #aa8066;
+
+}
+
+
+/* Scope heading */
+
+.qst-scope-item h3 {
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  line-height: 1.18;
+
+  color: #805940;
+
+  margin: 0 0 9px;
+
+}
+
+
+/* Scope text */
+
+.qst-scope-item p {
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+  color: #736962;
+
+  margin: 0;
+
+}
+
+
+/* ======================================================
+   07. FAQ SECTION
+====================================================== */
+
+.qsp-turnkey-page .qst-faq {
+
+  background: var(--qst-soft);
+
+  padding: 115px 0 125px;
+
+}
+
+
+/* Two-column layout */
+
+.qst-faq-layout {
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+
+  gap: clamp(45px, 6vw, 105px);
+
+  align-items: start;
+
+}
+
+
+/* Heading */
+
+.qst-faq-heading h2 {
+
+  font-size: clamp(45px, 4.5vw, 70px);
+
+  line-height: 1.08;
+
+  color: #805940;
+
+  margin: 0;
+
+}
+
+
+/* FAQ accordion */
+
+.qst-faq-list {
+
+  border-top: 1px solid var(--qst-line);
+
+}
+
+.qst-faq-item {
+
+  border-bottom: 1px solid var(--qst-line);
+
+  background: transparent;
+
+}
+
+
+/* Question */
+
+.qst-faq-item summary {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 28px 0;
+
+  cursor: pointer;
+
+  list-style: none;
+
+  color: #75543e;
+
+  transition: color 0.3s ease;
+
+}
+
+.qst-faq-item summary::-webkit-details-marker {
+
+  display: none;
+
+}
+
+.qst-faq-item summary > span:first-child {
+
+  flex: 1;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  line-height: 1.25;
+
+}
+
+.qst-faq-item summary:hover {
+
+  color: #a77b5f;
+
+}
+
+
+/* Plus icon */
+
+.qst-faq-icon {
+
+  width: 28px;
+
+  height: 28px;
+
+  flex-shrink: 0;
+
+  position: relative;
+
+}
+
+.qst-faq-icon::before,
+.qst-faq-icon::after {
+
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  background: #916349;
+
+  transform: translate(-50%, -50%);
+
+  transition: transform 0.25s ease;
+
+}
+
+.qst-faq-icon::before {
+
+  width: 16px;
+
+  height: 1px;
+
+}
+
+.qst-faq-icon::after {
+
+  width: 1px;
+
+  height: 16px;
+
+}
+
+.qst-faq-item[open] .qst-faq-icon::after {
+
+  transform: translate(-50%, -50%) rotate(90deg);
+
+}
+
+
+/* FAQ answer */
+
+.qst-faq-answer {
+
+  padding: 0 40px 28px 0;
+
+}
+
+.qst-faq-answer p {
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #726861;
+
+  max-width: 650px;
+
+  margin: 0;
+
+}
+
+
+/* ======================================================
+   08. CLOSING CONSULTATION CTA
+====================================================== */
+
+.qsp-turnkey-page .qst-cta {
+
+  background: var(--qst-brown);
+
+  padding: 90px 0;
+
+  overflow: hidden;
+
+}
+
+
+/* Layout */
+
+.qst-cta-layout {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 60px;
+
+}
+
+
+/* Left content */
+
+.qst-cta-content {
+
+  max-width: 760px;
+
+}
+
+.qst-cta-content h2 {
+
+  font-size: clamp(47px, 5vw, 75px);
+
+  line-height: 1.08;
+
+  color: #ffffff;
+
+  margin: 0 0 23px;
+
+}
+
+.qst-cta-content p {
+
+  font-size: 17px;
+
+  line-height: 1.85;
+
+  color: rgba(255,255,255,0.9);
+
+  max-width: 610px;
+
+  margin: 0;
+
+}
+
+
+/* CTA button */
+
+.qst-cta-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 38px;
+
+  flex-shrink: 0;
+
+  padding: 19px 25px;
+
+  border: 1px solid rgba(255,255,255,0.7);
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+.qst-cta-button span {
+
+  color: inherit;
+
+}
+
+.qst-cta-button:hover,
+.qst-cta-button:focus-visible {
+
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  color: #805940;
+
+  text-decoration: none;
+
+}
+
+
+/* Arrow */
+
+.qst-cta-arrow {
+
+  display: inline-block;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+
+}
+
+.qst-cta-button:hover .qst-cta-arrow {
+
+  transform: translate(3px, -3px);
+
+}
+
+
+/* ======================================================
+   RESPONSIVE: TABLETS
+====================================================== */
+
+@media (max-width: 991px) {
+
+
+  /* Hero */
+
+  .qsp-turnkey-page
+  .qsp-detail-content h1 {
+
+    font-size: 58px;
+
+  }
+
+
+  /* Introduction */
+
+  .qsp-turnkey-page .qst-intro {
+
+    padding: 80px 0;
+
+  }
+
+  .qst-intro-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+
+  }
+
+  .qst-intro-aside {
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+    padding: 0 0 25px;
+
+  }
+
+  .qst-intro-decor,
+  .qst-intro-footnote {
+
+    display: none;
+
+  }
+
+  .qst-intro-content {
+
+    max-width: 100%;
+
+  }
+
+
+  /* Audience */
+
+  .qsp-turnkey-page .qst-audience {
+
+    padding: 85px 0;
+
+  }
+
+  .qst-audience-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+  }
+
+
+  /* Project cards */
+
+  .qsp-turnkey-page .qst-project-types {
+
+    padding: 85px 0;
+
+  }
+
+  .qst-project-card {
+
+    padding: 33px;
+
+    min-height: 310px;
+
+  }
+
+
+  /* Scope */
+
+  .qsp-turnkey-page .qst-scope {
+
+    padding: 85px 0;
+
+  }
+
+  .qst-scope-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+  }
+
+
+  /* FAQ */
+
+  .qsp-turnkey-page .qst-faq {
+
+    padding: 85px 0;
+
+  }
+
+  .qst-faq-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+  }
+
+
+  /* CTA */
+
+  .qsp-turnkey-page .qst-cta {
+
+    padding: 75px 0;
+
+  }
+
+  .qst-cta-layout {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 35px;
+
+  }
+
+}
+
+
+/* ======================================================
+   RESPONSIVE: MOBILE
+====================================================== */
+
+@media (max-width: 767px) {
+
+
+  /* Hero */
+
+  .qsp-turnkey-page
+  .qsp-detail-content h1 {
+
+    font-size: clamp(43px, 10vw, 58px);
+
+  }
+
+
+  /* Brown introduction */
+
+  .qsp-turnkey-page .qst-intro {
+
+    padding: 65px 0;
+
+  }
+
+  .qst-intro-grid {
+
+    gap: 28px;
+
+  }
+
+  .qst-intro-content h2 {
+
+    font-size: clamp(40px, 10vw, 50px);
+
+  }
+
+  .qst-intro-content p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+  }
+
+
+  /* Audience */
+
+  .qsp-turnkey-page .qst-audience {
+
+    padding: 70px 0;
+
+  }
+
+  .qst-audience-heading h2 {
+
+    font-size: 47px;
+
+  }
+
+  .qst-audience-content {
+
+    padding-top: 0;
+
+  }
+
+  .qst-audience-content p {
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+  }
+
+  .qst-audience-footer span:last-child {
+
+    font-size: 19px;
+
+  }
+
+
+  /* Project types */
+
+  .qsp-turnkey-page .qst-project-types {
+
+    padding: 70px 0;
+
+  }
+
+  .qst-section-heading {
+
+    margin-bottom: 35px;
+
+  }
+
+  .qst-section-heading h2 {
+
+    font-size: 45px;
+
+  }
+
+  .qst-project-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+  }
+
+  .qst-project-card {
+
+    min-height: auto;
+
+    padding: 30px 26px 34px;
+
+  }
+
+  .qst-project-card-top {
+
+    margin-bottom: 25px;
+
+  }
+
+  .qst-project-card h3 {
+
+    font-size: 34px;
+
+    margin-bottom: 16px;
+
+  }
+
+  .qst-project-card p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+  }
+
+  .qst-project-footer {
+
+    justify-content: flex-start;
+
+  }
+
+
+  /* Scope */
+
+  .qsp-turnkey-page .qst-scope {
+
+    padding: 70px 0;
+
+  }
+
+  .qst-scope-heading h2 {
+
+    font-size: 46px;
+
+  }
+
+  .qst-scope-layout {
+
+    gap: 35px;
+
+  }
+
+  .qst-scope-item {
+
+    grid-template-columns: 35px minmax(0, 1fr);
+
+    gap: 14px;
+
+    padding: 24px 0;
+
+  }
+
+  .qst-scope-item h3 {
+
+    font-size: 27px;
+
+  }
+
+  .qst-scope-item p {
+
+    font-size: 15px;
+
+  }
+
+
+  /* FAQ */
+
+  .qsp-turnkey-page .qst-faq {
+
+    padding: 70px 0;
+
+  }
+
+  .qst-faq-layout {
+
+    gap: 35px;
+
+  }
+
+  .qst-faq-heading h2 {
+
+    font-size: 47px;
+
+  }
+
+  .qst-faq-item summary {
+
+    padding: 24px 0;
+
+  }
+
+  .qst-faq-item summary > span:first-child {
+
+    font-size: 25px;
+
+  }
+
+  .qst-faq-answer {
+
+    padding: 0 15px 25px 0;
+
+  }
+
+  .qst-faq-answer p {
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+  }
+
+
+  /* CTA */
+
+  .qsp-turnkey-page .qst-cta {
+
+    padding: 65px 0;
+
+  }
+
+  .qst-cta-content h2 {
+
+    font-size: 48px;
+
+  }
+
+  .qst-cta-content p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+  }
+
+  .qst-cta-button {
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 19px 22px;
+
+  }
+
+}
+
+
+/* ======================================================
+   VERY SMALL DEVICES
+====================================================== */
+
+@media (max-width: 400px) {
+
+  .qst-intro-content h2 {
+
+    font-size: 39px;
+
+  }
+
+  .qst-section-heading h2 {
+
+    font-size: 40px;
+
+  }
+
+  .qst-audience-heading h2,
+  .qst-scope-heading h2 {
+
+    font-size: 42px;
+
+  }
+
+  .qst-faq-heading h2 {
+
+    font-size: 42px;
+
+  }
+
+  .qst-cta-content h2 {
+
+    font-size: 43px;
+
+  }
+
+}
+
+
+/* ======================================================
+   ACCESSIBILITY: REDUCED MOTION
+====================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qst-project-card,
+  .qst-project-footer a,
+  .qst-scope-item,
+  .qst-cta-button,
+  .qst-cta-arrow,
+  .qst-faq-icon::after {
+
+    transition: none;
+
+  }
+
+  .qst-project-card:hover {
+
+    transform: none;
+
+  }
+
+}
+
+
+
+
+
+/* ======================================================
+   DESIGN & BUILD PAGE
+   ADD AFTER THE EXISTING TURNKEY CSS
+====================================================== */
+
+
+/* Keep the original text-left / image-right hero */
+
+.qsp-design-build-page .qsp-service-detail-hero {
+  background: #ffffff;
+}
+
+
+/* Longer SEO H1 */
+
+.qsp-design-build-page .qsp-detail-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(43px, 4.2vw, 67px);
+  font-weight: 300;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  color: #805940;
+  margin-bottom: 25px;
+}
+
+
+/* Preserve the original project image */
+
+.qsp-design-build-page .qsp-detail-image {
+  overflow: hidden;
+}
+
+.qsp-design-build-page .qsp-detail-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Office project link inside the FAQ */
+
+.qsp-design-build-page .qst-faq-answer a {
+  color: #8f654b;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(143, 101, 75, 0.5);
+  transition:
+    color 0.25s ease,
+    text-decoration-color 0.25s ease;
+}
+
+.qsp-design-build-page .qst-faq-answer a:hover {
+  color: #60412f;
+  text-decoration-color: #60412f;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .qsp-design-build-page .qsp-detail-content h1 {
+    font-size: 58px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .qsp-design-build-page .qsp-detail-content h1 {
+    font-size: clamp(40px, 9.5vw, 54px);
+    line-height: 1.1;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .qsp-design-build-page .qsp-detail-content h1 {
+    font-size: 39px;
+  }
+
+}
+
+
+
+
+
+/* ======================================================
+   RENOVATIONS PAGE
+   ADD AFTER THE EXISTING SERVICE CSS
+====================================================== */
+
+
+/* Original image-left / text-right hero */
+
+.qsp-renovations-page .qsp-service-detail-hero {
+  background: #ffffff;
+}
+
+
+/* SEO H1 */
+
+.qsp-renovations-page .qsp-detail-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(45px, 4.5vw, 72px);
+  font-weight: 300;
+  line-height: 1.07;
+  letter-spacing: -0.025em;
+  color: #805940;
+  margin-bottom: 26px;
+}
+
+
+/* Hero lead paragraph */
+
+.qsp-renovations-page
+.qsp-detail-content .qsp-service-lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #8b6047;
+  margin-bottom: 20px;
+}
+
+
+/* Preserve the original image presentation */
+
+.qsp-renovations-page .qsp-detail-image {
+  overflow: hidden;
+}
+
+.qsp-renovations-page .qsp-detail-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Keep the brown introduction clean */
+
+.qsp-renovations-page .qst-intro-content {
+  max-width: 800px;
+}
+
+
+/* Comfortable spacing for the audience section */
+
+.qsp-renovations-page .qst-audience-content {
+  max-width: 780px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .qsp-renovations-page .qsp-detail-content h1 {
+    font-size: 58px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .qsp-renovations-page .qsp-detail-content h1 {
+    font-size: clamp(42px, 10vw, 54px);
+    line-height: 1.1;
+  }
+
+  .qsp-renovations-page
+  .qsp-detail-content .qsp-service-lead {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .qsp-renovations-page .qsp-detail-content h1 {
+    font-size: 40px;
+  }
+
+}
