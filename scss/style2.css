@@ -22342,3 +22342,913 @@ h3::after{
   }
 
 }
+
+
+
+
+
+/* ==========================================================
+   QUANTUM CONTACT — HORIZONTAL COMPACT REDESIGN
+   Add at the END of style2.css
+========================================================== */
+
+
+/* ==========================================================
+   01. MAIN SECTION
+========================================================== */
+
+#qcv-consultation {
+  background: #f7f4f0;
+
+  padding: 55px 0 65px;
+
+  min-height: 0;
+}
+
+
+/* Existing section heading */
+
+#qcv-consultation .qcv-section-header {
+  max-width: 1160px;
+
+  margin: 0 auto 28px;
+  padding: 0;
+}
+
+
+#qcv-consultation .qcv-section-header-row h2 {
+  font-size: clamp(35px, 3.5vw, 48px);
+  line-height: 1.03;
+}
+
+
+
+/* ==========================================================
+   02. CONTACT GRID — VERTICAL STACK
+========================================================== */
+
+#qcv-consultation .qcv-contact-grid {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  gap: 0;
+
+  width: 100%;
+  max-width: 1160px;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border: 1px solid #e8ded5;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 16px 42px rgba(74, 47, 29, 0.055);
+}
+
+
+
+/* ==========================================================
+   03. BROWN INTRO — HORIZONTAL BANNER
+========================================================== */
+
+#qcv-consultation .qcv-contact-intro {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.1fr)
+    minmax(0, 0.9fr);
+
+  align-items: center;
+
+  gap: 50px;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  height: auto;
+
+  margin: 0;
+
+  padding: 30px 48px;
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 95% 0%,
+      rgba(230, 190, 152, 0.13),
+      transparent 45%
+    ),
+    linear-gradient(
+      110deg,
+      #74503b 0%,
+      #634330 58%,
+      #503628 100%
+    );
+
+  border: none;
+  border-radius: 0;
+
+  box-shadow: none;
+
+  isolation: isolate;
+}
+
+
+
+/* Subtle inner border */
+
+#qcv-consultation .qcv-contact-intro::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 10px;
+
+  display: block;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  border-radius: 3px;
+
+  background: none;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+#qcv-consultation .qcv-contact-intro::after {
+  display: none;
+}
+
+
+
+/* ==========================================================
+   04. INTRO LEFT CONTENT
+========================================================== */
+
+#qcv-consultation .qcv-intro-content {
+  min-width: 0;
+}
+
+
+#qcv-consultation .qcv-intro-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 24px;
+
+  width: 100%;
+
+  margin: 0 0 13px;
+  padding: 0;
+}
+
+
+#qcv-consultation .qcv-intro-top span {
+  color: #e6c8aa;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  letter-spacing: 1.4px;
+
+  line-height: 1.4;
+}
+
+
+
+/* Large but compact heading */
+
+#qcv-consultation .qcv-contact-intro h3 {
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(29px, 3vw, 43px);
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.4px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+#qcv-consultation .qcv-contact-intro h3 span {
+  color: #e9c7a5;
+}
+
+
+
+/* ==========================================================
+   05. INTRO RIGHT CONTENT
+========================================================== */
+
+#qcv-consultation .qcv-intro-side {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  min-width: 0;
+
+  padding-left: 35px;
+
+  border-left: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+
+#qcv-consultation .qcv-intro-description {
+  color: rgba(255, 255, 255, 0.89);
+
+  font-size: 12px;
+
+  line-height: 1.75;
+
+  max-width: 410px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Intro footer */
+
+#qcv-consultation .qcv-contact-intro-footer {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+
+#qcv-consultation .qcv-contact-footer-line {
+  display: block;
+
+  flex: 0 0 22px;
+
+  width: 22px;
+  height: 1px;
+
+  background: #e4be99;
+}
+
+
+#qcv-consultation .qcv-contact-intro-footer > span:last-child {
+  color: #e4be99;
+
+  font-size: 9px;
+
+  letter-spacing: 1.2px;
+
+  line-height: 1.4;
+}
+
+
+
+/* ==========================================================
+   06. FORM PANEL — FULL WIDTH
+========================================================== */
+
+#qcv-consultation .qcv-form-panel {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+
+  height: auto;
+
+  margin: 0;
+
+  padding: 32px 48px 37px;
+
+  background: #fffdfa;
+  background-image: none;
+
+  border: none;
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+#qcv-consultation .qcv-form-panel::before,
+#qcv-consultation .qcv-form-panel::after {
+  display: none;
+}
+
+
+
+/* ==========================================================
+   07. FORM HEADING — COMPACT HORIZONTAL
+========================================================== */
+
+#qcv-consultation .qcv-form-heading {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 0.8fr);
+
+  align-items: end;
+
+  column-gap: 32px;
+
+  margin: 0 0 25px;
+  padding: 0;
+}
+
+
+#qcv-consultation .qcv-form-heading > span {
+  grid-column: 1 / -1;
+
+  display: block;
+
+  color: #946b50;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  margin: 0 0 9px;
+}
+
+
+#qcv-consultation .qcv-form-heading h3 {
+  color: #2e2925;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(30px, 3vw, 39px);
+  font-weight: 400;
+
+  line-height: 1.03;
+
+  letter-spacing: -0.5px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+#qcv-consultation .qcv-form-heading h3 br {
+  display: none;
+}
+
+
+#qcv-consultation .qcv-form-heading p {
+  color: #82766e;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  max-width: 300px;
+
+  margin: 0 0 3px;
+  padding: 0;
+
+  justify-self: end;
+}
+
+
+
+/* ==========================================================
+   08. CONTACT FORM — COMPACT ROWS
+========================================================== */
+
+#qcv-consultation .qcv-contact-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+}
+
+
+
+/* Two-column row: project type and location */
+
+#qcv-consultation .qcv-form-row {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 17px;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* First row: name, email, phone */
+
+#qcv-consultation .qcv-form-row-three {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+
+
+/* Individual field */
+
+#qcv-consultation .qcv-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  min-width: 0;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ==========================================================
+   09. FIELD LABELS
+========================================================== */
+
+#qcv-consultation .qcv-field label {
+  display: block;
+
+  color: #634b3b;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.8px;
+
+  line-height: 1.4;
+
+  margin: 0;
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+
+#qcv-consultation .qcv-field label span {
+  color: #b98160;
+}
+
+
+
+/* ==========================================================
+   10. INPUTS AND SELECTS
+========================================================== */
+
+#qcv-consultation .qcv-field input,
+#qcv-consultation .qcv-field select,
+#qcv-consultation .qcv-field textarea {
+  display: block;
+
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  color: #2f2924;
+
+  background: #ffffff;
+
+  border: 1px solid #e7dcd2;
+  border-radius: 5px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  letter-spacing: normal;
+
+  outline: none;
+
+  box-shadow: none;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+
+/* Compact input height */
+
+#qcv-consultation .qcv-field input,
+#qcv-consultation .qcv-field select {
+  height: 42px;
+  min-height: 42px;
+
+  padding: 0 13px;
+}
+
+
+
+/* Select */
+
+#qcv-consultation .qcv-field select {
+  padding-right: 12px;
+
+  appearance: auto;
+  -webkit-appearance: auto;
+
+  cursor: pointer;
+}
+
+
+
+/* Smaller message area */
+
+#qcv-consultation .qcv-field textarea {
+  height: 88px;
+  min-height: 88px;
+
+  padding: 12px 13px;
+
+  line-height: 1.55;
+
+  resize: vertical;
+}
+
+
+
+/* Placeholder */
+
+#qcv-consultation .qcv-field input::placeholder,
+#qcv-consultation .qcv-field textarea::placeholder {
+  color: #a59b93;
+
+  font-size: 11px;
+
+  opacity: 1;
+}
+
+
+
+/* Focus */
+
+#qcv-consultation .qcv-field input:focus,
+#qcv-consultation .qcv-field select:focus,
+#qcv-consultation .qcv-field textarea:focus {
+  border-color: #916349;
+
+  box-shadow:
+    0 0 0 3px rgba(145, 99, 73, 0.09);
+}
+
+
+
+/* ==========================================================
+   11. FORM FOOTER
+========================================================== */
+
+#qcv-consultation .qcv-form-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  width: 100%;
+
+  margin: 1px 0 0;
+
+  padding: 13px 0 0;
+
+  border-top: 1px solid #eee6de;
+}
+
+
+#qcv-consultation .qcv-form-footer > span {
+  color: #8f8175;
+
+  font-size: 9px;
+
+  letter-spacing: 0.8px;
+}
+
+
+
+/* ==========================================================
+   12. SEND ENQUIRY BUTTON
+========================================================== */
+
+#qcv-consultation .qcv-submit-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 19px;
+
+  width: auto;
+  min-width: 174px;
+  min-height: 43px;
+
+  padding: 11px 18px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  background: #825940;
+
+  border: 1px solid #825940;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 13px rgba(86, 54, 32, 0.13);
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+#qcv-consultation .qcv-submit-button > span:first-child {
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  white-space: nowrap;
+}
+
+
+#qcv-consultation .qcv-submit-button .qcv-svg-arrow {
+  display: inline-block;
+
+  flex: 0 0 15px;
+
+  width: 15px;
+  height: 15px;
+
+  color: #ffffff;
+}
+
+
+#qcv-consultation .qcv-submit-button:hover {
+  color: #ffffff;
+
+  background: #684632;
+
+  border-color: #684632;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 17px rgba(86, 54, 32, 0.17);
+}
+
+
+
+/* ==========================================================
+   13. TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+  #qcv-consultation .qcv-contact-intro {
+    gap: 25px;
+
+    padding: 27px 30px;
+  }
+
+
+  #qcv-consultation .qcv-intro-side {
+    padding-left: 23px;
+  }
+
+
+  #qcv-consultation .qcv-form-panel {
+    padding: 30px;
+  }
+
+
+  #qcv-consultation .qcv-contact-intro h3 {
+    font-size: 35px;
+  }
+
+
+  #qcv-consultation .qcv-form-row-three {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  /* Phone occupies full row on tablet */
+
+  #qcv-consultation .qcv-form-row-three > .qcv-field:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+
+/* ==========================================================
+   14. MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+  #qcv-consultation {
+    padding: 42px 0 50px;
+  }
+
+
+  /* Brown banner becomes stacked */
+
+  #qcv-consultation .qcv-contact-intro {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 16px;
+
+    padding: 27px 22px;
+  }
+
+
+  #qcv-consultation .qcv-contact-intro h3 {
+    font-size: 35px;
+  }
+
+
+  #qcv-consultation .qcv-intro-top {
+    margin-bottom: 12px;
+  }
+
+
+  #qcv-consultation .qcv-intro-side {
+    padding: 0;
+
+    border-left: none;
+  }
+
+
+  #qcv-consultation .qcv-intro-description {
+    font-size: 12px;
+  }
+
+
+  /* Form panel */
+
+  #qcv-consultation .qcv-form-panel {
+    padding: 26px 21px 29px;
+  }
+
+
+  #qcv-consultation .qcv-form-heading {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 9px;
+
+    margin-bottom: 22px;
+  }
+
+
+  #qcv-consultation .qcv-form-heading > span {
+    grid-column: 1;
+    margin-bottom: 0;
+  }
+
+
+  #qcv-consultation .qcv-form-heading h3 {
+    font-size: 33px;
+  }
+
+
+  #qcv-consultation .qcv-form-heading p {
+    justify-self: start;
+
+    max-width: 100%;
+  }
+
+
+  /* Fields stack naturally */
+
+  #qcv-consultation .qcv-form-row,
+  #qcv-consultation .qcv-form-row-three {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 15px;
+  }
+
+
+  #qcv-consultation .qcv-form-row-three > .qcv-field:last-child {
+    grid-column: auto;
+  }
+
+
+  #qcv-consultation .qcv-contact-form {
+    gap: 15px;
+  }
+
+
+  #qcv-consultation .qcv-form-footer {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+/* ==========================================================
+   15. VERY SMALL SCREENS
+========================================================== */
+
+@media (max-width: 380px) {
+
+  #qcv-consultation .qcv-contact-intro {
+    padding: 25px 18px;
+  }
+
+
+  #qcv-consultation .qcv-form-panel {
+    padding: 25px 18px;
+  }
+
+
+  #qcv-consultation .qcv-submit-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+
+
+
+/* ==========================================================
+   16. REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #qcv-consultation .qcv-submit-button,
+  #qcv-consultation .qcv-field input,
+  #qcv-consultation .qcv-field select,
+  #qcv-consultation .qcv-field textarea {
+    transition: none;
+  }
+
+
+  #qcv-consultation .qcv-submit-button:hover {
+    transform: none;
+  }
+
+}
