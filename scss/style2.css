@@ -5658,7 +5658,7 @@ html{
     9px;
 
   font-weight:
-    500 !important;
+    200 !important;
 
   letter-spacing:
     3px;
@@ -6699,12 +6699,13 @@ html{
   color: #916349;
   font-family: "Broadacre", serif !important;
 
-  font-size: 33px;
-  font-weight: 300 !important;
-
+  font-size: 15px;
+  font-weight: 200 !important;
+  font-weight: bold;
   letter-spacing: 3px;
-
+  box-shadow: #000;
   text-transform: uppercase;
+  font-synthesis-weight:var(--qab-dark) ;
 }
 
 
@@ -19005,9 +19006,8 @@ h3::after{
 
   font-family: 'Cormorant Garamond', serif;
 
-  font-size: 28px;
+  font-size: 22px;
 
-  font-weight: 500;
 
   line-height: 1.25;
 
