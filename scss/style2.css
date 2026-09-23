@@ -25027,3 +25027,505 @@ h3::after{
 
   transform: none !important;
 }
+
+
+/* =====================================================
+   QUANTUM PROJECTS PAGE
+   FIX ALL LINK ARROWS — DESKTOP & MOBILE
+===================================================== */
+
+
+/* 01. Target all three types of arrows */
+
+.qpp-seo-page .qpp-seo-service-link > span:last-child,
+.qpp-seo-page .qpp-seo-faq-intro > a > span:last-child,
+.qpp-seo-page .qpp-seo-final-button > span:last-child {
+
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  vertical-align: middle;
+
+  overflow: visible;
+
+  transform: none;
+
+}
+
+
+/* 02. Draw the diagonal arrow shaft */
+
+.qpp-seo-page .qpp-seo-service-link > span:last-child::before,
+.qpp-seo-page .qpp-seo-faq-intro > a > span:last-child::before,
+.qpp-seo-page .qpp-seo-final-button > span:last-child::before {
+
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+
+  transform-origin: center;
+
+}
+
+
+/* 03. Draw the arrow head */
+
+.qpp-seo-page .qpp-seo-service-link > span:last-child::after,
+.qpp-seo-page .qpp-seo-faq-intro > a > span:last-child::after,
+.qpp-seo-page .qpp-seo-final-button > span:last-child::after {
+
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+
+}
+
+
+/* 04. Preserve the hover animation */
+
+.qpp-seo-page .qpp-seo-service-link:hover > span:last-child,
+.qpp-seo-page .qpp-seo-faq-intro > a:hover > span:last-child,
+.qpp-seo-page .qpp-seo-final-button:hover > span:last-child {
+
+  transform: translate(3px, -3px);
+
+}
+
+
+/* 05. Keep arrows consistent on small screens */
+
+@media (max-width: 767px) {
+
+  .qpp-seo-page .qpp-seo-service-link > span:last-child,
+  .qpp-seo-page .qpp-seo-faq-intro > a > span:last-child,
+  .qpp-seo-page .qpp-seo-final-button > span:last-child {
+
+    flex: 0 0 16px !important;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    font-size: 0 !important;
+
+  }
+
+}
+
+
+
+/* =====================================================
+   QUANTUM SERVICES PAGE
+   REQUEST CONSULTATION — ARROW FIX
+===================================================== */
+
+/* Hide the original emoji-style arrow */
+
+.qsp-service-cta-button .qsp-service-cta-arrow {
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  color: inherit;
+
+  overflow: visible;
+}
+
+
+/* Draw the diagonal arrow shaft */
+
+.qsp-service-cta-button .qsp-service-cta-arrow::before {
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+
+/* Draw the arrow head */
+
+.qsp-service-cta-button .qsp-service-cta-arrow::after {
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+}
+
+
+/* Keep arrow size consistent on mobile */
+
+@media (max-width: 767px) {
+
+  .qsp-service-cta-button .qsp-service-cta-arrow {
+    flex: 0 0 16px;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    font-size: 0 !important;
+  }
+
+}
+
+
+
+/* =====================================================
+   QUANTUM — DESIGN & BUILD
+   REQUEST CONSULTATION ARROW FIX
+===================================================== */
+
+/* Hide the original arrow character */
+
+.qst-cta-button .qst-cta-arrow {
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  color: inherit;
+
+  overflow: visible;
+}
+
+
+/* Diagonal arrow shaft */
+
+.qst-cta-button .qst-cta-arrow::before {
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+
+/* Arrow head */
+
+.qst-cta-button .qst-cta-arrow::after {
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+}
+
+
+/* Consistent arrow size on mobile */
+
+@media (max-width: 767px) {
+
+  .qst-cta-button .qst-cta-arrow {
+    flex: 0 0 16px;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    font-size: 0 !important;
+  }
+
+}
+
+
+
+/* =====================================================
+   QUANTUM — SERVICE DETAIL PAGES
+   EXPLORE PROJECTS + REQUEST CONSULTATION ARROWS
+===================================================== */
+
+/* Hide the original emoji-style arrow character */
+
+.qst-project-footer a > span:last-child,
+.qst-cta-button .qst-cta-arrow {
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  color: inherit;
+
+  overflow: visible;
+}
+
+
+/* Draw the diagonal arrow shaft */
+
+.qst-project-footer a > span:last-child::before,
+.qst-cta-button .qst-cta-arrow::before {
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+
+/* Draw the arrow head */
+
+.qst-project-footer a > span:last-child::after,
+.qst-cta-button .qst-cta-arrow::after {
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+}
+
+
+/* Maintain consistent dimensions on phones */
+
+@media (max-width: 767px) {
+
+  .qst-project-footer a > span:last-child,
+  .qst-cta-button .qst-cta-arrow {
+    flex: 0 0 16px !important;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    font-size: 0 !important;
+  }
+
+}
+
+
+/* =====================================================
+   QUANTUM — SERVICE DETAIL PAGE ARROWS
+   Explore Our Projects + Request Consultation
+===================================================== */
+
+.qst-project-footer a > span:last-child,
+.qst-cta-button .qst-cta-arrow {
+  position: relative !important;
+  display: inline-block !important;
+
+  flex: 0 0 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  color: inherit;
+  overflow: visible;
+}
+
+/* Diagonal arrow line */
+
+.qst-project-footer a > span:last-child::before,
+.qst-cta-button .qst-cta-arrow::before {
+  content: "" !important;
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+/* Arrow head */
+
+.qst-project-footer a > span:last-child::after,
+.qst-cta-button .qst-cta-arrow::after {
+  content: "" !important;
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+  background: none !important;
+
+  transform: none !important;
+}
+
+
+
+/* =====================================================
+   QUANTUM CONTACT PAGE — FINAL ARROW FIX
+   Email Our Team + Explore Our Projects
+   One-piece SVG arrow: no emoji, no disconnected lines
+===================================================== */
+
+.qid-contact-v3 .qcv-location-action > span:last-child,
+.qid-contact-v3 .qcv-final-content > a > span:last-child {
+
+  /* Hide the original ↗ character */
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  /* Consistent arrow dimensions */
+  position: relative !important;
+  display: inline-block !important;
+  flex: 0 0 20px !important;
+  width: 20px !important;
+  height: 20px !important;
+
+  /* Use the link's existing brown/white color */
+  color: inherit !important;
+  background-color: currentColor !important;
+
+  /* Draw the entire arrow as ONE shape */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19 L19 5 M9 5 H19 V15' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 19 L19 5 M9 5 H19 V15' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+
+  overflow: visible;
+}
+
+
+/* Remove the OLD separately drawn shaft and arrowhead */
+
+.qid-contact-v3 .qcv-location-action > span:last-child::before,
+.qid-contact-v3 .qcv-location-action > span:last-child::after,
+.qid-contact-v3 .qcv-final-content > a > span:last-child::before,
+.qid-contact-v3 .qcv-final-content > a > span:last-child::after {
+  content: none !important;
+  display: none !important;
+}
