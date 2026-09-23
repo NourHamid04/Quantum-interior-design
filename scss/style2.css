@@ -23252,3 +23252,248 @@ h3::after{
   }
 
 }
+
+/* =============================================================
+   QUANTUM HOME — SEO CONTENT + NEW SECTIONS
+   Paste at the very END of scss/style2.css.
+   All rules are scoped to the homepage sections; navbar and hero
+   video are deliberately untouched.
+============================================================= */
+
+/* Story: keep longer source-approved copy comfortable to read. */
+#qid-story .qid-home-story-subtitle {
+  margin: 0 0 19px;
+  color: #795640;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(25px, 2.3vw, 33px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+#qid-story .qid-story-classic-text p {
+  margin-bottom: 19px;
+  line-height: 1.85;
+}
+#qid-story .qid-story-classic-text p a,
+#services .qid-home-services-intro a {
+  color: #835d45;
+  text-decoration: underline;
+  text-decoration-color: rgba(131, 93, 69, .4);
+  text-underline-offset: 3px;
+}
+.qid-home-inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 5px;
+  color: #835d45;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .07em;
+  text-decoration: none;
+  transition: gap .25s ease, color .25s ease;
+}
+.qid-home-inline-link:hover { color: #583b2c; gap: 19px; }
+.qid-home-inline-link span { font-size: 16px; }
+
+/* Services: make the existing bullet list link to its real pages. */
+#services .qid-home-services-intro {
+  max-width: 500px;
+  margin-bottom: 17px;
+  color: #6f645d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+#services .qid-services-list li a {
+  display: inline;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+#services .qid-services-list li a:hover,
+#services .qid-services-list li a:focus-visible {
+  color: #916349;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Project teaser: allow expanded descriptive text to wrap. */
+.qid-projects-gateway .qid-projects-gateway-content p {
+  max-width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Shared styling for the new homepage-only content. */
+.qid-home-contact-cta,
+.qid-home-faq { scroll-margin-top: 100px; }
+.qid-home-eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: #b99370;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  line-height: 1.4;
+}
+
+/* Call-to-action: short horizontal band, not a second form. */
+.qid-home-contact-cta {
+  padding: 61px 0;
+  background: linear-gradient(120deg, #654533 0%, #4c3429 100%);
+}
+.qid-home-contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: clamp(24px, 5vw, 86px);
+  row-gap: 25px;
+}
+.qid-home-contact-inner h2 {
+  max-width: 680px;
+  margin: 0 0 14px;
+  color: #fff8f0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(34px, 4vw, 53px);
+  font-weight: 400;
+  line-height: 1.08;
+}
+.qid-home-contact-inner p {
+  max-width: 710px;
+  margin: 0;
+  color: rgba(255, 255, 255, .8);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.qid-home-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  min-height: 52px;
+  padding: 14px 19px;
+  background: #fff9f2;
+  border: 1px solid #fff9f2;
+  border-radius: 3px;
+  color: #593d2e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s ease, transform .2s ease;
+}
+.qid-home-contact-button span { font-size: 17px; line-height: 1; }
+.qid-home-contact-button:hover {
+  background: #ead8c4;
+  color: #453024;
+  transform: translateY(-2px);
+}
+
+/* FAQ: split editorial heading and clean expanding questions. */
+.qid-home-faq {
+  padding: clamp(66px, 7vw, 105px) 0;
+  background: #f9f6f1;
+}
+.qid-home-faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.25fr);
+  align-items: start;
+  gap: clamp(28px, 5vw, 88px);
+}
+.qid-home-faq-intro h2 {
+  margin: 0 0 16px;
+  color: #302821;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(38px, 4vw, 55px);
+  font-weight: 400;
+  line-height: 1.04;
+}
+.qid-home-faq-intro > p {
+  max-width: 330px;
+  margin: 0 0 19px;
+  color: #736b64;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.qid-home-faq-list { border-top: 1px solid #dacfc4; }
+.qid-home-faq-list details {
+  border-bottom: 1px solid #dacfc4;
+  padding: 0;
+}
+.qid-home-faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 21px 0;
+  color: #382e27;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  list-style: none;
+}
+.qid-home-faq-list summary::-webkit-details-marker { display: none; }
+.qid-home-faq-list summary::after {
+  content: "+";
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #cbb9a8;
+  border-radius: 50%;
+  color: #815a42;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+}
+.qid-home-faq-list details[open] summary::after { content: "−"; }
+.qid-home-faq-list details > p {
+  margin: -3px 32px 22px 0;
+  color: #71675f;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.qid-home-faq-list details > p a {
+  color: #79543d;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.qid-home-faq-list summary:focus-visible,
+.qid-home-contact-button:focus-visible,
+.qid-home-inline-link:focus-visible {
+  outline: 2px solid #b99370;
+  outline-offset: 4px;
+}
+
+/* Contact links should wrap rather than push the footer past the viewport. */
+.ftco-footer .block-23 .text { overflow-wrap: anywhere; }
+.qid-home-footer-links li { margin-bottom: 7px; }
+
+@media (max-width: 900px) {
+  .qid-home-contact-inner,
+  .qid-home-faq-grid { grid-template-columns: minmax(0, 1fr); }
+  .qid-home-contact-button { justify-self: start; }
+  .qid-home-faq-intro > p { max-width: 650px; }
+}
+@media (max-width: 575px) {
+  .qid-home-contact-cta { padding: 48px 0; }
+  .qid-home-contact-inner h2 { font-size: 36px; }
+  .qid-home-contact-button {
+    width: 100%;
+    white-space: normal;
+    font-size: 10px;
+  }
+  .qid-home-faq { padding: 55px 0; }
+  .qid-home-faq-list summary { font-size: 13px; }
+  .qid-home-faq-list details > p { margin-right: 0; }
+  #qid-story .qid-story-classic-text p { line-height: 1.72; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qid-home-contact-button,
+  .qid-home-inline-link { transition: none; }
+  .qid-home-contact-button:hover { transform: none; }
+}
