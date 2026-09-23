@@ -24857,3 +24857,173 @@ h3::after{
   }
 
 }
+
+
+/* =====================================================
+   QUANTUM — FIX EXPLORE BUTTON ARROWS
+   Prevent emoji rendering on mobile and desktop
+===================================================== */
+
+/* Target Explore Projects and Explore Services arrows */
+
+.qab-experience-links a > span:last-child {
+
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  vertical-align: middle;
+
+  overflow: visible;
+
+}
+
+
+/* Diagonal arrow shaft */
+
+.qab-experience-links a > span:last-child::before {
+
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+
+  transform-origin: center;
+
+}
+
+
+/* Arrow head */
+
+.qab-experience-links a > span:last-child::after {
+
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+
+}
+
+
+/* =====================================================
+   MOBILE — PRESERVE THE SAME ARROW
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .qab-experience-links a > span:last-child {
+
+    flex: 0 0 16px;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    font-size: 0 !important;
+
+  }
+
+}
+
+/* =====================================================
+   QUANTUM — REQUEST CONSULTATION ARROW FIX
+   About page: Have a space in mind?
+===================================================== */
+
+/* Hide original arrow character visually */
+
+.qab-cta-button .qab-cta-arrow {
+  position: relative !important;
+
+  display: inline-block !important;
+
+  flex: 0 0 16px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+
+  color: inherit;
+
+  overflow: visible;
+}
+
+
+/* Diagonal arrow shaft */
+
+.qab-cta-button .qab-cta-arrow::before {
+  content: "" !important;
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 16px;
+  height: 0;
+
+  border-top: 1.5px solid currentColor;
+
+  background: none !important;
+
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+
+
+/* Arrow head */
+
+.qab-cta-button .qab-cta-arrow::after {
+  content: "" !important;
+
+  position: absolute;
+
+  right: 0;
+  top: 0;
+
+  width: 8px;
+  height: 8px;
+
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+
+  border-radius: 0;
+
+  background: none !important;
+
+  transform: none !important;
+}
