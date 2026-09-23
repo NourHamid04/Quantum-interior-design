@@ -1,1 +1,71 @@
+
+# ============================================================
+# QUANTUM INTERIOR DESIGN
+# CLEAN URLS + CUSTOM 404 PAGE
+# ============================================================
+
+# Keep the existing custom 404 page
 ErrorDocument 404 /404.html
+
+# Prevent Apache MultiViews from interfering with clean URLs
+Options -MultiViews
+
+# Needed because /services is also a real directory
+DirectorySlash Off
+
+RewriteEngine On
+
+
+# ============================================================
+# 1. REDIRECT /index.html TO /
+# ============================================================
+
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+
+# ============================================================
+# 2. KEEP THE CUSTOM 404 ERROR DOCUMENT WORKING
+# ============================================================
+
+RewriteRule ^404\.html$ - [L]
+
+
+# ============================================================
+# 3. REDIRECT ALL .html URLS TO CLEAN URLS
+#
+# /about.html                  -> /about
+# /projects.html               -> /projects
+# /services.html               -> /services
+# /contact.html                -> /contact
+# /services/turnkey.html       -> /services/turnkey
+# /services/design-build.html  -> /services/design-build
+# ============================================================
+
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]) [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+
+# ============================================================
+# 4. SPECIAL CASE: /services
+#
+# The site has both services.html and a services/ directory.
+# Make /services display services.html.
+# ============================================================
+
+RewriteRule ^services/?$ services.html [END]
+
+
+# ============================================================
+# 5. SERVE EXISTING HTML FILES FOR CLEAN URLS
+#
+# /about         -> about.html
+# /projects      -> projects.html
+# /contact       -> contact.html
+# /services/...  -> services/...html
+# ============================================================
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [END]
