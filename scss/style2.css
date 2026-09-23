@@ -23497,3 +23497,1363 @@ h3::after{
   .qid-home-inline-link { transition: none; }
   .qid-home-contact-button:hover { transform: none; }
 }
+
+/* ============================================================
+   QUANTUM INTERIOR DESIGN
+   PROJECTS PAGE — SEO CONTENT & DESIGN
+   Add to the bottom of style2.css
+============================================================ */
+
+
+/* ============================================================
+   01. PROJECT PAGE COLORS
+============================================================ */
+
+.qpp-seo-page {
+  --qpp-brown: #916349;
+  --qpp-brown-dark: #594031;
+  --qpp-gold: #c6a486;
+  --qpp-cream: #f8f5f1;
+  --qpp-ivory: #fffcf9;
+  --qpp-text: #292522;
+  --qpp-muted: #77716b;
+  --qpp-border: #e9e1d8;
+
+  color: var(--qpp-text);
+}
+
+
+/* ============================================================
+   02. PAGE INTRODUCTION
+============================================================ */
+
+.qpp-seo-page .qpp-intro {
+  background:
+    radial-gradient(
+      ellipse at 90% 10%,
+      rgba(145, 99, 73, 0.08),
+      transparent 43%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f8f4ef 100%
+    );
+
+  padding: 115px 0 80px;
+}
+
+
+.qpp-seo-page .qpp-intro-inner {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.qpp-seo-eyebrow {
+  display: block;
+
+  color: #916349;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.qpp-seo-page .qpp-intro h1 {
+  color: #292522;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(43px, 6vw, 76px);
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -1px;
+
+  margin: 20px 0 25px;
+}
+
+
+.qpp-seo-page .qpp-intro h1 span {
+  color: #916349;
+}
+
+
+.qpp-seo-page .qpp-seo-lead {
+  color: #51483f;
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  max-width: 800px;
+
+  margin: 0 auto 15px;
+}
+
+
+.qpp-seo-page .qpp-seo-description {
+  color: #81766e;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+
+  max-width: 740px;
+
+  margin: 0 auto;
+}
+
+
+
+/* ============================================================
+   03. INTRO SERVICE LINKS
+============================================================ */
+
+.qpp-seo-page .qpp-seo-intro-services {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 32px;
+}
+
+
+.qpp-seo-page .qpp-seo-intro-services > span {
+  color: #8d7c70;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  margin-right: 6px;
+}
+
+
+.qpp-seo-page .qpp-seo-intro-services a {
+  display: inline-flex;
+
+  align-items: center;
+
+  color: #76513d;
+
+  background: #ffffff;
+
+  border: 1px solid #e9ded4;
+  border-radius: 3px;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  padding: 9px 14px;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-intro-services a:hover {
+  color: #ffffff;
+
+  background: #76513d;
+
+  border-color: #76513d;
+}
+
+
+
+/* ============================================================
+   04. HORIZONTAL CATEGORY FILTERS
+============================================================ */
+
+.qpp-seo-page .qpp-sector-filters {
+  position: relative;
+
+  z-index: 5;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eee6df;
+  border-bottom: 1px solid #eee6df;
+}
+
+
+.qpp-seo-page .qpp-sector-filter-inner {
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 0;
+
+  width: 100%;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.qpp-seo-page .qpp-filter-btn {
+  position: relative;
+
+  display: inline-flex;
+
+  flex: 0 0 auto;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 68px;
+
+  padding: 15px 17px;
+
+  color: #6e625a;
+
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.2px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-filter-btn span {
+  color: #b39681;
+
+  font-size: 9px;
+}
+
+
+.qpp-seo-page .qpp-filter-btn:hover {
+  color: #916349;
+
+  background: #fbf8f5;
+}
+
+
+.qpp-seo-page .qpp-filter-btn.is-active {
+  color: #76513d;
+
+  background: #faf6f2;
+
+  border-bottom-color: #916349;
+}
+
+
+.qpp-seo-page .qpp-filter-btn:focus-visible {
+  outline: 2px solid #916349;
+  outline-offset: -4px;
+}
+
+
+
+/* ============================================================
+   05. CATEGORY SECTIONS
+============================================================ */
+
+.qpp-seo-page .qpp-seo-category {
+  padding: 82px 0 88px;
+}
+
+
+.qpp-seo-page .qpp-seo-category[hidden] {
+  display: none !important;
+}
+
+
+.qpp-seo-page .qpp-category-alt {
+  background: #f8f5f1;
+}
+
+
+.qpp-seo-page .qpp-category-heading {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 27px;
+
+  margin-bottom: 37px;
+}
+
+
+.qpp-seo-page .qpp-category-number {
+  color: #be9e84;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 52px;
+  font-weight: 400;
+
+  line-height: 1;
+
+  flex: 0 0 auto;
+}
+
+
+.qpp-seo-page .qpp-category-label {
+  display: block;
+
+  color: #916349;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 1.6px;
+
+  line-height: 1.5;
+
+  margin-bottom: 9px;
+}
+
+
+.qpp-seo-page .qpp-category-heading h2 {
+  color: #302923;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 400;
+
+  line-height: 1.03;
+
+  margin: 0 0 14px;
+}
+
+
+.qpp-seo-page .qpp-seo-category-intro {
+  color: #7b7169;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+
+  max-width: 650px;
+
+  margin: 0;
+}
+
+
+
+/* ============================================================
+   06. PROJECT CARD STRUCTURE
+============================================================ */
+
+.qpp-seo-page .qpp-project-grid {
+  row-gap: 32px;
+}
+
+
+.qpp-seo-page .qpp-seo-project {
+  display: flex;
+
+  min-width: 0;
+}
+
+
+.qpp-seo-page .qpp-seo-card {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #eae1d8;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 7px 22px rgba(58, 38, 27, 0.035);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d8c4b3;
+
+  box-shadow:
+    0 17px 36px rgba(58, 38, 27, 0.09);
+}
+
+
+
+/* ============================================================
+   07. PROJECT IMAGE BUTTON
+============================================================ */
+
+.qpp-seo-page .qpp-seo-card > .qid-project-trigger {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 0;
+
+  color: inherit;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font: inherit;
+}
+
+
+.qpp-seo-page .qpp-seo-card > .qid-project-trigger:focus-visible {
+  outline: 2px solid #916349;
+  outline-offset: -4px;
+}
+
+
+.qpp-seo-page .qpp-seo-card .img {
+  position: relative;
+
+  width: 100%;
+  height: 245px;
+
+  overflow: hidden;
+
+  background-color: #eee8e1;
+  background-image: none !important;
+}
+
+
+.qpp-seo-page .qpp-seo-card .img img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.65s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-card:hover .img img {
+  transform: scale(1.045);
+}
+
+
+
+/* Small photo overlay */
+
+.qpp-seo-page .qpp-seo-card .img::after {
+  content: "VIEW PROJECT ↗";
+
+  position: absolute;
+
+  right: 15px;
+  bottom: 15px;
+
+  padding: 9px 12px;
+
+  background: rgba(52, 35, 25, 0.82);
+
+  color: #ffffff;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+
+  opacity: 0;
+
+  transform: translateY(6px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  pointer-events: none;
+}
+
+
+.qpp-seo-page .qpp-seo-card:hover .img::after,
+.qpp-seo-page .qpp-seo-card
+  > .qid-project-trigger:focus-visible .img::after {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+
+/* ============================================================
+   08. PROJECT CARD TITLES
+============================================================ */
+
+.qpp-seo-page .qpp-seo-card .text {
+  padding: 20px 23px 15px !important;
+
+  margin: 0;
+
+  min-height: 100px;
+
+  background: #ffffff;
+}
+
+
+.qpp-seo-page .qpp-seo-card .qpp-project-type {
+  display: block;
+
+  color: #916349;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 1.1px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+}
+
+
+.qpp-seo-page .qpp-seo-card h3 {
+  color: #292522;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+  font-weight: 500;
+
+  line-height: 1.15;
+
+  margin: 0;
+}
+
+
+
+/* ============================================================
+   09. CARD CONTENT
+============================================================ */
+
+.qpp-seo-page .qpp-seo-card-body {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 0 23px 24px;
+}
+
+
+.qpp-seo-page .qpp-seo-project-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 0 0 15px;
+
+  padding: 12px 0;
+
+  border-top: 1px solid #eee6de;
+  border-bottom: 1px solid #eee6de;
+}
+
+
+.qpp-seo-page .qpp-seo-project-meta span {
+  display: inline-block;
+
+  padding: 5px 8px;
+
+  color: #80624d;
+
+  background: #f7f2ed;
+
+  border-radius: 2px;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.3px;
+}
+
+
+.qpp-seo-page .qpp-seo-card-body p {
+  color: #77716b;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  margin: 0 0 12px;
+}
+
+
+.qpp-seo-page .qpp-seo-card-body p:last-of-type {
+  margin-bottom: 20px;
+}
+
+
+
+/* ============================================================
+   10. PROJECT SERVICE LINKS
+============================================================ */
+
+.qpp-seo-page .qpp-seo-service-link {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 13px 0 0;
+
+  color: #76513d;
+
+  border-top: 1px solid #eae1d8;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.8px;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-service-link span {
+  font-size: 17px;
+  font-weight: 400;
+
+  transition: transform 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-service-link:hover {
+  color: #3f2c20;
+}
+
+
+.qpp-seo-page .qpp-seo-service-link:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+
+/* ============================================================
+   11. FAQ SECTION
+============================================================ */
+
+.qpp-seo-page .qpp-seo-faq {
+  background: #f5f0ea;
+
+  padding: 90px 0;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(0, 1.2fr);
+
+  gap: 75px;
+
+  align-items: start;
+}
+
+
+
+/* FAQ left heading */
+
+.qpp-seo-page .qpp-seo-faq-intro h2 {
+  color: #302720;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(43px, 4.5vw, 62px);
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  margin: 20px 0;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-intro h2 span {
+  color: #916349;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-intro p {
+  color: #756a61;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+
+  max-width: 340px;
+
+  margin: 0 0 26px;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-intro > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color: #76513d;
+
+  border-bottom: 1px solid #ad8d75;
+
+  padding-bottom: 8px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+}
+
+
+
+/* FAQ individual items */
+
+.qpp-seo-page .qpp-seo-faq-item {
+  background: #fffdfa;
+
+  border: 1px solid #e9ded3;
+  border-radius: 4px;
+
+  margin-bottom: 11px;
+
+  overflow: hidden;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-item summary {
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  min-height: 70px;
+
+  padding: 17px 21px;
+
+  color: #342b25;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  cursor: pointer;
+
+  list-style: none;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-number {
+  color: #b9977f;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  flex: 0 0 auto;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-item summary > span:nth-child(2) {
+  flex: 1;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-icon {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-icon::before,
+.qpp-seo-page .qpp-seo-faq-icon::after {
+  content: "";
+
+  position: absolute;
+
+  top: 7px;
+  left: 0;
+
+  width: 16px;
+  height: 1px;
+
+  background: #916349;
+
+  transition: transform 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-icon::after {
+  transform: rotate(90deg);
+}
+
+
+.qpp-seo-page .qpp-seo-faq-item[open]
+  .qpp-seo-faq-icon::after {
+  transform: rotate(0deg);
+}
+
+
+.qpp-seo-page .qpp-seo-faq-answer {
+  padding: 0 23px 20px 64px;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-answer p {
+  color: #77716b;
+
+  font-size: 12px;
+
+  line-height: 1.85;
+
+  margin: 0;
+}
+
+
+.qpp-seo-page .qpp-seo-faq-answer a {
+  color: #916349;
+
+  text-decoration: underline;
+}
+
+
+
+/* ============================================================
+   12. FINAL CONSULTATION CTA
+============================================================ */
+
+.qpp-seo-page .qpp-seo-final {
+  padding: 70px 0;
+
+  background: #ffffff;
+}
+
+
+.qpp-seo-page .qpp-seo-final-inner {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 45px 54px;
+
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(225, 184, 143, 0.13),
+      transparent 45%
+    ),
+    linear-gradient(
+      125deg,
+      #77513c 0%,
+      #4b3327 100%
+    );
+
+  border-radius: 7px;
+}
+
+
+.qpp-seo-page .qpp-seo-final .qpp-seo-eyebrow {
+  color: #e4c19f;
+}
+
+
+.qpp-seo-page .qpp-seo-final h2 {
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(42px, 4.8vw, 66px);
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  margin: 17px 0;
+}
+
+
+.qpp-seo-page .qpp-seo-final h2 span {
+  color: #e8c29e;
+}
+
+
+.qpp-seo-page .qpp-seo-final p {
+  color: rgba(255, 255, 255, 0.83);
+
+  font-size: 13px;
+
+  line-height: 1.85;
+
+  max-width: 535px;
+
+  margin: 0;
+}
+
+
+.qpp-seo-page .qpp-seo-final-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 28px;
+
+  flex: 0 0 auto;
+
+  min-width: 225px;
+
+  padding: 17px 21px;
+
+  color: #4c3325;
+
+  background: #f7eee3;
+
+  border: 1px solid #f7eee3;
+  border-radius: 3px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.qpp-seo-page .qpp-seo-final-button:hover {
+  color: #4c3325;
+
+  background: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+
+/* ============================================================
+   13. MODAL IMPROVEMENTS
+============================================================ */
+
+.qid-modal {
+  z-index: 99999;
+}
+
+
+.qid-modal .qid-slider-thumbs {
+  display: flex;
+
+  gap: 8px;
+
+  overflow-x: auto;
+
+  padding: 10px 0;
+
+  scrollbar-width: thin;
+}
+
+
+.qid-modal .qpp-gallery-thumb-button {
+  display: block;
+
+  flex: 0 0 73px;
+
+  width: 73px;
+  height: 58px;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: 2px solid transparent;
+  border-radius: 3px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+
+.qid-modal .qpp-gallery-thumb-button.active {
+  border-color: #916349;
+}
+
+
+.qid-modal .qpp-gallery-thumb-button img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+.qid-modal .qpp-gallery-thumb-button:focus-visible,
+.qid-modal .qid-modal-close:focus-visible,
+.qid-modal .qid-slider-btn:focus-visible {
+  outline: 2px solid #916349;
+  outline-offset: 3px;
+}
+
+
+
+/* ============================================================
+   14. TABLET
+============================================================ */
+
+@media (max-width: 991px) {
+
+  .qpp-seo-page .qpp-intro {
+    padding: 100px 0 65px;
+  }
+
+
+  .qpp-seo-page .qpp-sector-filter-inner {
+    justify-content: flex-start;
+  }
+
+
+  .qpp-seo-page .qpp-filter-btn {
+    min-height: 60px;
+
+    padding: 13px 15px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-category {
+    padding: 65px 0;
+  }
+
+
+  .qpp-seo-page .qpp-seo-faq-layout {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-faq {
+    padding: 65px 0;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final-inner {
+    padding: 38px 36px;
+  }
+
+}
+
+
+
+/* ============================================================
+   15. MOBILE
+============================================================ */
+
+@media (max-width: 767px) {
+
+  .qpp-seo-page .qpp-intro {
+    padding: 90px 0 52px;
+  }
+
+
+  .qpp-seo-page .qpp-intro h1 {
+    font-size: 46px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-lead {
+    font-size: 14px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-description {
+    font-size: 12px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-intro-services {
+    gap: 8px;
+
+    margin-top: 25px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-intro-services > span {
+    width: 100%;
+
+    margin: 0 0 3px;
+  }
+
+
+  .qpp-seo-page .qpp-sector-filters .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  .qpp-seo-page .qpp-filter-btn {
+    min-height: 57px;
+
+    padding: 12px 13px;
+
+    font-size: 10px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-category {
+    padding: 54px 0 60px;
+  }
+
+
+  .qpp-seo-page .qpp-category-heading {
+    gap: 15px;
+
+    margin-bottom: 27px;
+  }
+
+
+  .qpp-seo-page .qpp-category-number {
+    font-size: 42px;
+  }
+
+
+  .qpp-seo-page .qpp-category-heading h2 {
+    font-size: 37px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-category-intro {
+    font-size: 12px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card .img {
+    height: 245px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card .text {
+    min-height: 0;
+
+    padding: 18px 20px 14px !important;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card-body {
+    padding: 0 20px 22px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card h3 {
+    font-size: 25px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-faq {
+    padding: 55px 0;
+  }
+
+
+  .qpp-seo-page .qpp-seo-faq-intro h2 {
+    font-size: 48px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-faq-answer {
+    padding-left: 23px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final {
+    padding: 45px 0;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 29px;
+
+    padding: 32px 26px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final h2 {
+    font-size: 51px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final-button {
+    width: 100%;
+  }
+
+}
+
+
+
+/* ============================================================
+   16. SMALL SCREENS
+============================================================ */
+
+@media (max-width: 420px) {
+
+  .qpp-seo-page .qpp-intro h1 {
+    font-size: 39px;
+  }
+
+
+  .qpp-seo-page .qpp-category-heading h2 {
+    font-size: 32px;
+  }
+
+
+  .qpp-seo-page .qpp-category-number {
+    font-size: 37px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card .img {
+    height: 220px;
+  }
+
+
+  .qpp-seo-page .qpp-seo-final h2 {
+    font-size: 45px;
+  }
+
+}
+
+
+
+/* ============================================================
+   17. REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qpp-seo-page .qpp-seo-card,
+  .qpp-seo-page .qpp-seo-card .img img,
+  .qpp-seo-page .qpp-seo-service-link,
+  .qpp-seo-page .qpp-filter-btn,
+  .qpp-seo-page .qpp-seo-final-button {
+    transition: none;
+  }
+
+
+  .qpp-seo-page .qpp-seo-card:hover,
+  .qpp-seo-page .qpp-seo-card:hover .img img,
+  .qpp-seo-page .qpp-seo-final-button:hover {
+    transform: none;
+  }
+
+}
