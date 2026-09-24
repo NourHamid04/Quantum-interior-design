@@ -25529,3 +25529,334 @@ h3::after{
   content: none !important;
   display: none !important;
 }
+
+
+/* ============================================================
+   QUANTUM INTERIOR DESIGN
+   PROJECTS PAGE — COMPACT READ MORE CARDS
+============================================================ */
+
+
+/* ============================================================
+   01. COMPACT CARD LAYOUT
+============================================================ */
+
+/*
+   Let each card use its own height.
+   Opening one project story will not create
+   an unnecessarily tall neighboring card.
+*/
+
+.qpp-seo-page .qpp-project-grid {
+  align-items: flex-start;
+}
+
+.qpp-seo-page .qpp-seo-project {
+  align-self: flex-start;
+}
+
+.qpp-seo-page .qpp-seo-card {
+  height: auto;
+  min-height: 0;
+}
+
+.qpp-seo-page .qpp-seo-card .text {
+  min-height: 0;
+
+  padding-bottom: 15px !important;
+}
+
+.qpp-seo-page .qpp-seo-card-body {
+  padding-bottom: 21px;
+}
+
+.qpp-seo-page .qpp-seo-project-meta {
+  margin-bottom: 14px;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+
+/* ============================================================
+   02. READ MORE CONTAINER
+============================================================ */
+
+.qpp-seo-page .qpp-project-details {
+  width: 100%;
+
+  margin: 0 0 18px;
+}
+
+.qpp-seo-page .qpp-project-details summary {
+  display: block;
+
+  padding: 0;
+
+  list-style: none;
+
+  cursor: pointer;
+}
+
+.qpp-seo-page
+.qpp-project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.qpp-seo-page
+.qpp-project-details summary::marker {
+  content: "";
+}
+
+
+/* ============================================================
+   03. SHORT PROJECT PREVIEW
+============================================================ */
+
+.qpp-seo-page .qpp-project-teaser {
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  line-clamp: 2;
+
+  max-height: 45px;
+
+  overflow: hidden;
+
+  color: #77716b;
+
+  font-size: 12px;
+
+  line-height: 1.85;
+
+  margin-bottom: 12px;
+}
+
+
+/* Hide the preview when full story opens.
+   The complete text is displayed below instead. */
+
+.qpp-seo-page
+.qpp-project-details[open] .qpp-project-teaser {
+  display: none;
+}
+
+
+/* ============================================================
+   04. READ PROJECT STORY BUTTON
+============================================================ */
+
+.qpp-seo-page .qpp-readmore-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  color: #76513d;
+
+  background: #f8f4ef;
+
+  border: 1px solid #e9ded3;
+
+  border-radius: 3px;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.qpp-seo-page .qpp-readmore-label {
+  color: inherit;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.9px;
+
+  line-height: 1.5;
+}
+
+
+/* Hover effect */
+
+.qpp-seo-page
+.qpp-project-details summary:hover .qpp-readmore-row {
+  color: #ffffff;
+
+  background: #76513d;
+
+  border-color: #76513d;
+}
+
+
+/* Keyboard focus */
+
+.qpp-seo-page
+.qpp-project-details summary:focus-visible {
+  outline: 2px solid #916349;
+  outline-offset: 4px;
+}
+
+
+/* ============================================================
+   05. CSS-DRAWN CHEVRON
+
+   No Unicode arrow or emoji is used.
+============================================================ */
+
+.qpp-seo-page .qpp-readmore-chevron {
+  display: inline-block;
+
+  flex: 0 0 8px;
+
+  width: 8px;
+  height: 8px;
+
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+
+  transform: rotate(45deg);
+
+  transition: transform 0.25s ease;
+}
+
+
+/* Rotate when the project story opens */
+
+.qpp-seo-page
+.qpp-project-details[open] .qpp-readmore-chevron {
+  transform: rotate(225deg);
+}
+
+
+/* Change button label when expanded */
+
+.qpp-seo-page
+.qpp-project-details[open] .qpp-readmore-label {
+  font-size: 0;
+}
+
+.qpp-seo-page
+.qpp-project-details[open] .qpp-readmore-label::after {
+  content: "SHOW LESS";
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.9px;
+}
+
+
+/* Open state */
+
+.qpp-seo-page
+.qpp-project-details[open] .qpp-readmore-row {
+  background: #eee5dc;
+
+  border-color: #dfccbc;
+}
+
+
+/* ============================================================
+   06. EXPANDED PROJECT STORY
+============================================================ */
+
+.qpp-seo-page .qpp-readmore-content {
+  padding: 17px 2px 4px;
+
+  animation: qppStoryAppear 0.25s ease;
+}
+
+.qpp-seo-page .qpp-readmore-content p {
+  color: #6f6963;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+
+  margin: 0 0 12px;
+}
+
+.qpp-seo-page .qpp-readmore-content p:last-child {
+  margin-bottom: 8px;
+}
+
+
+@keyframes qppStoryAppear {
+
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* ============================================================
+   07. SEPARATE SERVICE LINK
+============================================================ */
+
+.qpp-seo-page .qpp-seo-service-link {
+  margin-top: auto;
+
+  padding-top: 13px;
+}
+
+
+/* ============================================================
+   08. MOBILE
+============================================================ */
+
+@media (max-width: 767px) {
+
+  .qpp-seo-page .qpp-seo-card .text {
+    padding-bottom: 13px !important;
+  }
+
+  .qpp-seo-page .qpp-seo-card-body {
+    padding-bottom: 20px;
+  }
+
+  .qpp-seo-page .qpp-readmore-row {
+    min-height: 45px;
+  }
+
+  .qpp-seo-page .qpp-project-teaser {
+    font-size: 12px;
+  }
+
+}
+
+
+/* ============================================================
+   09. REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .qpp-seo-page .qpp-readmore-row,
+  .qpp-seo-page .qpp-readmore-chevron {
+    transition: none;
+  }
+
+  .qpp-seo-page .qpp-readmore-content {
+    animation: none;
+  }
+
+}
