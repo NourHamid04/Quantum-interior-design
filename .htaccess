@@ -17,7 +17,7 @@ RewriteEngine On
 
 
 # ============================================================
-# 1. REDIRECT /index.html TO /
+# 1. REDIRECT / TO /
 # ============================================================
 
 RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]) [NC]
