@@ -15116,7 +15116,7 @@ h3::after{
 
   font-family: "Broadacre", serif;
 
-  font-size: 23px;
+  font-size: 18px;
 
   font-weight: 100;
 
@@ -23423,16 +23423,28 @@ h3::after{
   padding: 0;
 }
 .qid-home-faq-list summary {
-  display: flex;
+display: flex;
+
   align-items: center;
+
   justify-content: space-between;
-  gap: 18px;
-  padding: 21px 0;
-  color: #382e27;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
+
+  gap: 22px;
+
+  padding: 26px 4px;
+
+  color: #7d5232;
+
+  font-family: "Broadacre", serif;
+
+  font-size: 18px;
+
+  font-weight: 100;
+
+  line-height: 1.35;
+
   cursor: pointer;
+
   list-style: none;
 }
 .qid-home-faq-list summary::-webkit-details-marker { display: none; }
@@ -24244,10 +24256,10 @@ h3::after{
 .qpp-seo-page .qpp-seo-faq-intro h2 {
   color: #302720;
 
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Broadacre", serif;
 
   font-size: clamp(43px, 4.5vw, 62px);
-  font-weight: 400;
+  font-weight: 200;
 
   line-height: 0.98;
 
@@ -24311,22 +24323,25 @@ h3::after{
 
 
 .qpp-seo-page .qpp-seo-faq-item summary {
-  display: flex;
+display: flex;
 
   align-items: center;
 
-  gap: 18px;
+  justify-content: space-between;
 
-  min-height: 70px;
+  gap: 22px;
 
-  padding: 17px 21px;
+  padding: 20px ;
 
-  color: #342b25;
+  color: #7d5232;
 
-  font-size: 13px;
-  font-weight: 500;
+  font-family: "Broadacre", serif;
 
-  line-height: 1.5;
+  font-size: 16px;
+
+  font-weight: 100;
+
+  line-height: 1.35;
 
   cursor: pointer;
 
@@ -24465,10 +24480,10 @@ h3::after{
 .qpp-seo-page .qpp-seo-final h2 {
   color: #ffffff;
 
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Broadacre", serif;
 
   font-size: clamp(42px, 4.8vw, 66px);
-  font-weight: 400;
+  font-weight: 200;
 
   line-height: 0.98;
 
