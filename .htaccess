@@ -15,6 +15,13 @@ DirectorySlash Off
 
 RewriteEngine On
 
+# ============================================================
+# BLOCK URLS WITH DOUBLE / MULTIPLE SLASHES
+# Example: //about, /services//turnkey -> 404
+# ============================================================
+
+RewriteCond %{THE_REQUEST} \s/+[^\s?]*//+[^\s?]* [NC]
+RewriteRule ^ - [R=404,L]
 
 # ============================================================
 # 1. REDIRECT / TO /
