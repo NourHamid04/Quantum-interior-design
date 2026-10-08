@@ -26378,3 +26378,1064 @@ display: flex;
   }
 
 }
+
+
+/* ==========================================================
+   QUANTUM SERVICES INTRO
+========================================================== */
+
+.qsp-brand-intro {
+  position: relative;
+
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #986d52;
+
+  color: #fff;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.qsp-brand-intro-layout {
+  display: grid;
+
+  grid-template-columns: 300px minmax(0, 1fr);
+
+  gap: 85px;
+
+  align-items: stretch;
+}
+
+
+/* ==========================================================
+   LEFT BRAND COLUMN
+========================================================== */
+
+.qsp-brand-intro-brand {
+  display: flex;
+
+  flex-direction: column;
+
+  min-height: 520px;
+
+  padding-right: 45px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* OUR APPROACH */
+
+.qsp-brand-intro-label {
+  display: block;
+
+  margin-bottom: 70px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+
+/* WHITE QUANTUM LOGO */
+
+.qsp-brand-intro-logo {
+  display: block;
+
+  width: 210px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin: 0;
+}
+
+
+/* BRAND INFORMATION */
+
+.qsp-brand-intro-brand-copy {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-top: auto;
+
+  padding-top: 60px;
+}
+
+
+.qsp-brand-intro-brand-copy span {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.66);
+}
+
+
+/* ==========================================================
+   RIGHT CONTENT
+========================================================== */
+
+.qsp-brand-intro-content {
+  width: 100%;
+  color: #fff;
+  max-width: 1000px;
+}
+
+
+/* EYEBROW */
+
+.qsp-brand-intro-eyebrow {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 3.5px;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.qsp-brand-intro-content h2 {
+  max-width: 900px;
+
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size:45px;
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -1.5px;
+
+  color: #fff;
+}
+
+
+.qsp-brand-intro-content h2 span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-style: italic;
+}
+
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.qsp-brand-intro-line {
+  width: 70px;
+
+  height: 1px;
+
+  margin: 38px 0;
+
+  background: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.qsp-brand-intro-lead {
+  max-width: 920px;
+
+  margin: 0 0 25px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  color: #fff;
+}
+
+
+.qsp-brand-intro-text {
+  max-width: 900px;
+
+  margin: 0 0 18px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 14px;
+  color: #ffff;
+
+  font-weight: 300;
+
+  line-height: 1.9;
+
+}
+
+
+/* ==========================================================
+   SERVICES ROW
+========================================================== */
+
+.qsp-brand-intro-services {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 50px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.qsp-brand-intro-services a {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 22px 20px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition:
+    background 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+
+.qsp-brand-intro-services a:last-child {
+  border-right: 0;
+}
+
+
+.qsp-brand-intro-services a span {
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+
+.qsp-brand-intro-services a:hover {
+  background: rgba(255, 255, 255, 0.08);
+
+  padding-left: 25px;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .qsp-brand-intro {
+    padding: 80px 0;
+  }
+
+
+  .qsp-brand-intro-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+
+    gap: 50px;
+  }
+
+
+  .qsp-brand-intro-brand {
+    padding-right: 30px;
+  }
+
+
+  .qsp-brand-intro-logo {
+    width: 170px;
+  }
+
+
+  .qsp-brand-intro-content h2 {
+    font-size: 60px;
+  }
+
+
+  .qsp-brand-intro-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .qsp-brand-intro-services a:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .qsp-brand-intro-services a:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .qsp-brand-intro {
+    padding: 65px 0;
+  }
+
+
+  .qsp-brand-intro-layout {
+    display: block;
+  }
+
+
+  .qsp-brand-intro-brand {
+    min-height: auto;
+
+    padding: 0 0 30px;
+
+    margin-bottom: 42px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+
+  .qsp-brand-intro-label {
+    margin-bottom: 28px;
+  }
+
+
+  .qsp-brand-intro-logo {
+    width: 175px;
+  }
+
+
+  .qsp-brand-intro-brand-copy {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    gap: 8px 18px;
+
+    margin-top: 30px;
+
+    padding: 0;
+  }
+
+
+  .qsp-brand-intro-content h2 {
+    font-size: 47px;
+
+    line-height: 1;
+  }
+
+
+  .qsp-brand-intro-line {
+    margin: 28px 0;
+  }
+
+
+  .qsp-brand-intro-lead {
+    font-size: 22px;
+  }
+
+
+  .qsp-brand-intro-text {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+
+  .qsp-brand-intro-services {
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 38px;
+  }
+
+
+  .qsp-brand-intro-services a {
+    min-height: 80px;
+
+    padding: 18px 15px;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .qsp-brand-intro-content h2 {
+    font-size: 41px;
+  }
+
+
+  .qsp-brand-intro-services {
+    grid-template-columns: 1fr;
+  }
+
+
+  .qsp-brand-intro-services a {
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+
+  .qsp-brand-intro-services a:last-child {
+    border-bottom: 0;
+  }
+
+}
+/* ==========================================================
+   FIXES FOR THE BRAND INTRO SECTION
+========================================================== */
+
+/* whole section */
+.qsp-brand-intro {
+  color: #fff;
+}
+
+
+/* left brand column */
+.qsp-brand-intro-brand {
+  min-height: 620px;
+  justify-content: flex-start;
+}
+
+
+/* move the logo lower */
+.qsp-brand-intro-logo {
+  display: block;
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+
+  margin-top: 95px;   /* pushes logo down */
+  margin-bottom: 0;
+}
+
+
+/* keep footer text at bottom of left column */
+.qsp-brand-intro-brand-copy {
+  margin-top: auto;
+  padding-top: 40px;
+}
+
+
+/* make all main texts white */
+.qsp-brand-intro-label,
+.qsp-brand-intro-eyebrow,
+.qsp-brand-intro-content h2,
+.qsp-brand-intro-content h2 span,
+.qsp-brand-intro-lead,
+.qsp-brand-intro-text,
+.qsp-brand-intro-services a,
+.qsp-brand-intro-services a span,
+.qsp-brand-intro-brand-copy span {
+  color: #fff !important;
+}
+
+
+/* slightly softer small texts if you want contrast */
+.qsp-brand-intro-eyebrow,
+.qsp-brand-intro-brand-copy span,
+.qsp-brand-intro-services a span {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+
+/* paragraph readability */
+.qsp-brand-intro-lead {
+  color: #fff !important;
+}
+
+.qsp-brand-intro-text {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+
+/* divider line */
+.qsp-brand-intro-line {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+
+/* services links */
+.qsp-brand-intro-services {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.qsp-brand-intro-services a {
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.qsp-brand-intro-services a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+@media (max-width: 991px) {
+
+  .qsp-brand-intro-brand {
+    min-height: 520px;
+  }
+
+  .qsp-brand-intro-logo {
+    margin-top: 70px;
+    width: 180px;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media (max-width: 767px) {
+
+  .qsp-brand-intro-brand {
+    min-height: auto;
+  }
+
+  .qsp-brand-intro-logo {
+    margin-top: 35px;
+    width: 170px;
+  }
+
+}
+
+
+/* ==========================================================
+   DESIGN & BUILD INTRO
+========================================================== */
+
+.qst-brand-intro {
+  position: relative;
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #986d52;
+
+  color: #fff;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+.qst-brand-intro-layout {
+  display: grid;
+
+  grid-template-columns: 300px minmax(0, 1fr);
+
+  gap: 85px;
+
+  align-items: stretch;
+}
+
+
+/* ==========================================================
+   LEFT BRAND COLUMN
+========================================================== */
+
+.qst-brand-intro-brand {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 600px;
+
+  padding-right: 45px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* TOP LABEL */
+
+.qst-brand-intro-label {
+  display: block;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+
+/* LOGO */
+
+.qst-brand-intro-logo {
+  display: block;
+
+  width: 210px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin-top: 120px;
+}
+
+
+/* BOTTOM LEFT TEXT */
+
+.qst-brand-intro-brand-copy {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-top: auto;
+}
+
+
+.qst-brand-intro-brand-copy span {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ==========================================================
+   RIGHT CONTENT
+========================================================== */
+
+.qst-brand-intro-content {
+  width: 100%;
+
+  max-width: 1000px;
+}
+
+
+/* EYEBROW */
+
+.qst-brand-intro-eyebrow {
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 3.5px;
+
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ==========================================================
+   HEADING
+========================================================== */
+
+.qst-brand-intro-content h2 {
+  max-width: 950px;
+
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 45px;
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -1.5px;
+
+  color: #fff;
+}
+
+
+.qst-brand-intro-content h2 span {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-style: italic;
+}
+
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.qst-brand-intro-line {
+  width: 70px;
+
+  height: 1px;
+
+  margin: 38px 0;
+
+  background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.qst-brand-intro-lead {
+  max-width: 900px;
+
+  margin: 0 0 26px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  color: #fff;
+}
+
+
+.qst-brand-intro-text {
+  max-width: 900px;
+
+  margin: 0 0 18px;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 300;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.92);
+}
+
+
+/* ==========================================================
+   PROCESS ROW
+========================================================== */
+
+.qst-brand-intro-process {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 50px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.qst-brand-intro-process > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding: 22px 20px;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.qst-brand-intro-process > div:last-child {
+  border-right: 0;
+}
+
+
+.qst-brand-intro-process span {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.qst-brand-intro-process strong {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+  .qst-brand-intro {
+    padding: 80px 0;
+  }
+
+
+  .qst-brand-intro-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+
+    gap: 50px;
+  }
+
+
+  .qst-brand-intro-brand {
+    min-height: 520px;
+
+    padding-right: 30px;
+  }
+
+
+  .qst-brand-intro-logo {
+    width: 175px;
+
+    margin-top: 90px;
+  }
+
+
+  .qst-brand-intro-content h2 {
+    font-size: 60px;
+  }
+
+
+  .qst-brand-intro-process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .qst-brand-intro-process > div:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .qst-brand-intro-process > div:nth-child(-n+2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+  .qst-brand-intro {
+    padding: 65px 0;
+  }
+
+
+  .qst-brand-intro-layout {
+    display: block;
+  }
+
+
+  .qst-brand-intro-brand {
+    min-height: auto;
+
+    padding: 0 0 30px;
+
+    margin-bottom: 42px;
+
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+
+  .qst-brand-intro-logo {
+    width: 170px;
+
+    margin-top: 35px;
+  }
+
+
+  .qst-brand-intro-brand-copy {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    gap: 8px 18px;
+
+    margin-top: 30px;
+  }
+
+
+  .qst-brand-intro-content h2 {
+    font-size: 47px;
+
+    line-height: 1;
+  }
+
+
+  .qst-brand-intro-line {
+    margin: 28px 0;
+  }
+
+
+  .qst-brand-intro-lead {
+    font-size: 22px;
+  }
+
+
+  .qst-brand-intro-text {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+
+  .qst-brand-intro-process {
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 38px;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+  .qst-brand-intro-content h2 {
+    font-size: 41px;
+  }
+
+
+  .qst-brand-intro-process {
+    grid-template-columns: 1fr;
+  }
+
+
+  .qst-brand-intro-process > div {
+    border-right: 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+
+  .qst-brand-intro-process > div:last-child {
+    border-bottom: 0;
+  }
+
+}
+/* FORCE ALL TEXT IN DESIGN & BUILD INTRO TO WHITE */
+
+.qst-brand-intro,
+.qst-brand-intro *,
+.qst-brand-intro-content,
+.qst-brand-intro-content *,
+.qst-brand-intro-brand,
+.qst-brand-intro-brand * {
+  color: #fff !important;
+}
